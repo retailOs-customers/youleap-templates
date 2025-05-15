@@ -12,12 +12,12 @@ const filters = [
     id: 'color',
     name: 'Color',
     options: [
-      { value: 'white', label: 'White', checked: true },
-      { value: 'beige', label: 'Beige' },
-      { value: 'blue', label: 'Blue' },
-      { value: 'brown', label: 'Brown' },
-      { value: 'green', label: 'Green' },
-      { value: 'purple', label: 'Purple' },
+      { value: 'white', label: 'לבן', checked: true },
+      { value: 'beige', label: 'בז׳' },
+      { value: 'blue', label: 'כחול' },
+      { value: 'brown', label: 'חום' },
+      { value: 'green', label: 'ירוק' },
+      { value: 'purple', label: 'סגול' },
     ],
   },
   {

@@ -34,7 +34,7 @@ export const VectorArrowDown4 = ({ ...props }: VectorArrowDownProps) => {
   return (
     <svg width="292" height="94" viewBox="0 0 292 94" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path
-        d="M0.608725 16.6322C237.719 -43.8656 290.428 92.5312 290.428 92.5312M290.428 92.5312L285.5 90.5M290.428 92.5312L291.5 87.5"
+        d="M291.391 16.6316C54.2811 -43.8662 1.57208 92.5306 1.57208 92.5306M1.57208 92.5306L6.50009 90.4994M1.57208 92.5306L0.500092 87.4994"
         stroke="black"
       />
     </svg>

@@ -22,14 +22,14 @@ interface ProductSortDropdownProps {
 const ProductSortDropdown = ({ className, align = 'left' }: ProductSortDropdownProps) => {
   return (
     <div className={className}>
-      <Menu as="div" className="relative inline-block text-left">
+      <Menu as="div" className="relative inline-block text-right">
         <div>
           <MenuButton className="group inline-flex justify-center focus-visible:outline-none">
             <Text>Sort by</Text>
             <span className="sr-only">Sort products</span>
             <HugeiconsIcon
               icon={ArrowDown01Icon}
-              className="-mr-1 ml-1 size-5 shrink-0 text-zinc-400 group-hover:text-zinc-500"
+              className="mr-1 -ml-1 size-5 shrink-0 text-zinc-400 group-hover:text-zinc-500"
               size={16}
               color="currentColor"
               strokeWidth={1.5}

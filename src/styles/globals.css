@@ -1,0 +1,8 @@
+html {
+  direction: rtl;
+}
+
+[data-slot='italic'] {
+  font-weight: 400;
+  font-family: var(--font-serif);
+}

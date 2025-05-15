@@ -31,7 +31,10 @@ const SectionProductCarousel = ({
   collectionDescription,
 }: SectionProductCarouselProps) => {
   // Tạo ref để truy cập các phương thức của carousel
-  const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions)
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    ...emblaOptions,
+    direction: 'rtl',
+  })
 
   const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } = useCarouselArrowButtons(emblaApi)
 
@@ -39,13 +42,13 @@ const SectionProductCarousel = ({
     <div className={className}>
       <div className="flex flex-wrap items-center justify-between gap-6">
         <Button outline href={collectionHandle ? `/collections/${collectionHandle}` : '#'}>
-          EXPLORE COLLECTION
+          גלה את הקולקציה
         </Button>
 
         <div className="relative">
           <Heading>
-            <span data-slot="dim">Explore</span> <br />
-            <span data-slot="italic">{collectionTitle || 'Collection'}</span>
+            <span data-slot="dim">גלו</span> <br />
+            <span data-slot="italic">{collectionTitle || 'קולקציה'}</span>
           </Heading>
           <div className="absolute top-[35%] left-2/3 hidden lg:block">
             <VectorArrowDown />

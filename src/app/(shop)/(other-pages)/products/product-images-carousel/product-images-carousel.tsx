@@ -30,7 +30,10 @@ const ProductImageCarousel: React.FC<PropType> = (props) => {
     className,
   } = props
 
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    ...options,
+    direction: 'rtl',
+  })
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi)
 
   // get the scroll progress by selectedIndex

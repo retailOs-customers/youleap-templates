@@ -15,6 +15,8 @@ const styles = {
     'data-disabled:opacity-50',
     // Icon
     '*:data-[slot=icon]:-mx-0.5 *:data-[slot=icon]:my-0.5 *:data-[slot=icon]:size-5 *:data-[slot=icon]:shrink-0 *:data-[slot=icon]:self-center *:data-[slot=icon]:text-(--btn-icon) sm:*:data-[slot=icon]:my-1 sm:*:data-[slot=icon]:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-hover:[--btn-icon:ButtonText]',
+    // RTL Support
+    'rtl:flex-row-reverse',
   ],
   solid: [
     // Optical border, implemented as the button background to avoid corner artifacts
@@ -227,7 +229,7 @@ export function TouchTarget({ children }: { children: React.ReactNode }) {
   return (
     <>
       <span
-        className="absolute top-1/2 left-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
+        className="absolute top-1/2 right-1/2 size-[max(100%,2.75rem)] translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
         aria-hidden="true"
       />
       {children}

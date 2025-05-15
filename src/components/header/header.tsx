@@ -11,50 +11,50 @@ import SearchIconPopover from './search-icon-popover'
 import UserIconPopover from './user-icon-popover'
 
 const demo_pages_menu = [
-  { name: 'Home skincare', href: '/' },
-  { name: 'Home fashion', href: '/home-fashion' },
-  { name: 'Home hjiab', href: '/home-hjiab' },
-  { name: 'Coming soon', href: '#' },
+  { name: 'דף הבית טיפוח', href: '/' },
+  { name: 'דף הבית אופנה', href: '/home-fashion' },
+  { name: 'דף הבית כיסויי ראש', href: '/home-hjiab' },
+  { name: 'בקרוב', href: '#' },
 ]
 const mega_menus = [
   {
-    name: 'Demo pages',
+    name: 'עמודי דמו',
     href: '#',
     chidren: demo_pages_menu,
   },
   {
-    name: 'Collections',
+    name: 'קולקציות',
     href: '#',
     chidren: [
-      { name: 'All collections 1', href: '/collections/all' },
-      { name: 'All collections 2', href: '/collections/page-style-2/all' },
-      { name: 'Collection page', href: '/collections/face-wash' },
-      { name: 'Product Detail', href: '/products/demo-product-1' },
-      { name: 'Product Detail 2', href: '/products/page-style-2/demo-product-2' },
-      { name: 'Product Detail 3', href: '/products/page-style-3/demo-product-3' },
+      { name: 'כל הקולקציות 1', href: '/collections/all' },
+      { name: 'כל הקולקציות 2', href: '/collections/page-style-2/all' },
+      { name: 'עמוד קולקציה', href: '/collections/face-wash' },
+      { name: 'פרטי מוצר', href: '/products/demo-product-1' },
+      { name: 'פרטי מוצר 2', href: '/products/page-style-2/demo-product-2' },
+      { name: 'פרטי מוצר 3', href: '/products/page-style-3/demo-product-3' },
     ],
   },
   {
-    name: "What's new",
+    name: 'מה חדש',
     href: '#',
     chidren: [
-      { name: 'Contact us', href: '/contact' },
-      { name: 'About us', href: '/about-us' },
-      { name: 'Journal', href: '/blog' },
-      { name: 'Login / Sign up', href: '/login' },
-      { name: 'Shopping Cart', href: '/cart' },
-      { name: 'Orders', href: '/orders' },
+      { name: 'צור קשר', href: '/contact' },
+      { name: 'אודות', href: '/about-us' },
+      { name: 'בלוג', href: '/blog' },
+      { name: 'התחברות / הרשמה', href: '/login' },
+      { name: 'עגלת קניות', href: '/cart' },
+      { name: 'ההזמנות שלי', href: '/orders' },
     ],
   },
 ]
 
 const demo_checkout_menu = [
-  { name: 'Login / Sign up', href: '/login' },
-  { name: 'Cart', href: '/cart' },
-  { name: 'Checkout', href: '/checkout' },
-  { name: 'Order successful', href: '/order-successful' },
-  { name: 'Orders', href: '/orders' },
-  { name: 'Orders Detail', href: '/orders/4657' },
+  { name: 'התחברות / הרשמה', href: '/login' },
+  { name: 'עגלת קניות', href: '/cart' },
+  { name: 'לתשלום', href: '/checkout' },
+  { name: 'הזמנה הושלמה', href: '/order-successful' },
+  { name: 'ההזמנות שלי', href: '/orders' },
+  { name: 'פרטי הזמנה', href: '/orders/4657' },
 ]
 
 interface HeaderProps {
@@ -89,7 +89,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
           {/* LEFT LOGO */}
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">החברה שלך</span>
               <Logo />
             </Link>
           </div>
@@ -97,7 +97,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
           {/* MAIN CENTER MENUS */}
           <div className="hidden lg:flex lg:gap-x-8">
             {/* DROPDOWN */}
-            <DropdownMenuPopover dropdownMenu={demo_pages_menu}>Demo pages</DropdownMenuPopover>
+            <DropdownMenuPopover dropdownMenu={demo_pages_menu}>עמודי דמו</DropdownMenuPopover>
 
             {/* MEGA MENU */}
             <MegaMenuPopover
@@ -109,12 +109,12 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
               featuredCollections={featuredCollections}
               variant={megamenuVariant}
             >
-              Explore
+              גלו
             </MegaMenuPopover>
 
             {/* TEXT LINKS */}
-            <TextLink href="/collections/page-style-2/all">Shop</TextLink>
-            <DropdownMenuPopover dropdownMenu={demo_checkout_menu}>Checkout</DropdownMenuPopover>
+            <TextLink href="/collections/page-style-2/all">חנות</TextLink>
+            <DropdownMenuPopover dropdownMenu={demo_checkout_menu}>לתשלום</DropdownMenuPopover>
           </div>
 
           {/* RIGHT ICON BUTTONS */}

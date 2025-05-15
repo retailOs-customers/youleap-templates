@@ -36,7 +36,7 @@ export default async function Page() {
               <Field className="mt-10">
                 <Label>Email address</Label>
                 <Input type="email" name="email" />
-                <Description>We’ll send you a confirmation email when your order has shipped.</Description>
+                <Description>We'll send you a confirmation email when your order has shipped.</Description>
               </Field>
             </div>
 
@@ -166,7 +166,7 @@ export default async function Page() {
           {/* Order summary */}
           <div className="mt-10 lg:mt-0">
             <Heading fontSize="text-2xl font-medium text-zinc-950" level={3}>
-              <span data-slot="italic">Order</span> summary
+              <span data-slot="italic">סיכום</span> הזמנה
             </Heading>
 
             <div className="mt-5 rounded-lg border border-zinc-200 bg-white">
@@ -178,32 +178,32 @@ export default async function Page() {
               </ul>
               <dl className="space-y-6 border-t border-zinc-200 px-4 py-6 sm:px-6">
                 <div className="flex items-center justify-between">
-                  <dt className="text-sm uppercase">Subtotal</dt>
+                  <dt className="text-sm uppercase">סך ביניים</dt>
                   <dd className="text-sm font-medium text-zinc-900">$64.00</dd>
                 </div>
                 <div className="flex items-center justify-between">
-                  <dt className="text-sm uppercase">Shipping</dt>
+                  <dt className="text-sm uppercase">משלוח</dt>
                   <dd className="text-sm font-medium text-zinc-900">$5.00</dd>
                 </div>
                 <div className="flex items-center justify-between">
-                  <dt className="text-sm uppercase">Taxes</dt>
+                  <dt className="text-sm uppercase">מיסים</dt>
                   <dd className="text-sm font-medium text-zinc-900">$5.52</dd>
                 </div>
                 <div className="flex items-center justify-between border-t border-zinc-200 pt-6">
-                  <dt className="text-base font-medium uppercase">Total</dt>
+                  <dt className="text-base font-medium uppercase">סה"כ</dt>
                   <dd className="text-base font-medium text-zinc-900">$75.52</dd>
                 </div>
               </dl>
 
               <div className="border-t border-zinc-200 px-4 py-6 sm:px-6">
                 <Button className="w-full font-medium" type="submit" href={'/order-successful'}>
-                  Confirm order
+                  אשר הזמנה
                 </Button>
                 <div className="mt-4 flex justify-center text-center text-sm text-zinc-500">
                   <span className="text-xs">
                     or{' '}
                     <span className="text-xs font-medium text-zinc-900 uppercase">
-                      <Link href="/collections/all">Continue Shopping</Link>
+                      <Link href="/collections/all">המשך קנייה</Link>
                       <span aria-hidden="true"> →</span>
                     </span>
                   </span>

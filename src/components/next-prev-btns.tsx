@@ -1,5 +1,6 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
+import { useEffect, useState } from 'react'
 import { ButtonCircle } from './button'
 
 interface NextPrevButtonsProps {
@@ -17,15 +18,22 @@ const NextPrevButtons = ({
   prevBtnDisabled,
   className,
 }: NextPrevButtonsProps) => {
+  const [isRTL, setIsRTL] = useState(false)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsRTL(document.dir === 'rtl')
+    }
+  }, [])
+
   return (
     <div className={clsx('flex gap-2', className)}>
       <ButtonCircle outline onClick={onPrevClick} disabled={prevBtnDisabled}>
         <span className="sr-only">Prev</span>
-        <ChevronLeftIcon className="h-4 w-4" />
+        {isRTL ? <ChevronRightIcon className="h-4 w-4" /> : <ChevronLeftIcon className="h-4 w-4" />}
       </ButtonCircle>
       <ButtonCircle outline onClick={onNextClick} disabled={nextBtnDisabled}>
         <span className="sr-only">Next</span>
-        <ChevronRightIcon className="h-4 w-4" />
+        {isRTL ? <ChevronLeftIcon className="h-4 w-4" /> : <ChevronRightIcon className="h-4 w-4" />}
       </ButtonCircle>
     </div>
   )

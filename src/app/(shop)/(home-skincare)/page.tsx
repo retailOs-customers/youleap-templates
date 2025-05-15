@@ -9,9 +9,8 @@ import clsx from 'clsx'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Skincare',
-  description:
-    'Discover the latest trends in skincare and beauty with our curated collection of products, tips, and more.',
+  title: 'טיפוח',
+  description: 'גלו את הטרנדים האחרונים בטיפוח ויופי עם האוסף המובחר שלנו של מוצרים, טיפים ועוד.',
 }
 
 export default async function Home() {
@@ -30,15 +29,15 @@ export default async function Home() {
           src: '/images/skincare/feature-1.webp',
           width: 325,
           height: 335,
-          alt: 'feature-1-1',
+          alt: 'תכונה-1-1',
         }}
         image2={{
           src: '/images/skincare/feature-6.webp',
           width: 495,
           height: 530,
-          alt: 'feature-1-2',
+          alt: 'תכונה-1-2',
         }}
-        heading={`Clean, Beyond Reproach <span data-slot="italic">Skincare.</span>`}
+        heading={`נקי, מעבר לכל ספק <span data-slot="italic">טיפוח.</span>`}
       />
 
       <FeatureSection5 className="mt-24 sm:mt-28 lg:mt-40" />
@@ -59,34 +58,31 @@ export default async function Home() {
       <FeatureSection2
         className="container mt-20 sm:mt-28 lg:mt-32"
         variant="up"
-        heading={`Clean, Conscious, Performance <span data-slot="italic">Skincare.</span>`}
+        heading={`נקי, מודע, ביצועים <span data-slot="italic">טיפוח.</span>`}
         faqs={[
           {
-            question: 'Radical Transparency',
+            question: 'שקיפות מוחלטת',
             answer:
-              "No black boxes, nothing to hide, we disclose our full formulas, so you will never have to guess what's in it and how much.",
+              'ללא קופסאות שחורות, אין מה להסתיר, אנו חושפים את כל הנוסחאות שלנו, כך שלעולם לא תצטרך לנחש מה יש בהם וכמה.',
           },
           {
-            question: 'Clean, Beyond Reproach',
-            answer:
-              'We are committed to using only the safest, most effective ingredients, and we never compromise on quality.',
+            question: 'נקי, מעבר לכל ספק',
+            answer: 'אנו מחויבים להשתמש רק בחומרים הבטוחים והיעילים ביותר, ואף פעם לא מתפשרים על איכות.',
           },
           {
-            question: 'Conscious & Responsible',
-            answer:
-              'We are committed to using only the safest, most effective ingredients, and we never compromise on quality.',
+            question: 'מודע ואחראי',
+            answer: 'אנו מחויבים להשתמש רק בחומרים הבטוחים והיעילים ביותר, ואף פעם לא מתפשרים על איכות.',
           },
           {
-            question: 'Potent & Multi Tasking',
-            answer:
-              'We are committed to using only the safest, most effective ingredients, and we never compromise on quality.',
+            question: 'חזק ורב-תכליתי',
+            answer: 'אנו מחויבים להשתמש רק בחומרים הבטוחים והיעילים ביותר, ואף פעם לא מתפשרים על איכות.',
           },
         ]}
         image={{
           src: '/images/skincare/feature-3.png',
           width: 662,
           height: 653,
-          alt: 'skincare-feature-3',
+          alt: 'תכונת-טיפוח-3',
         }}
       />
     </div>

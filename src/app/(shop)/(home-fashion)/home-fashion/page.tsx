@@ -9,9 +9,8 @@ import clsx from 'clsx'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Fashion',
-  description:
-    'Discover the latest trends in fashion and style with our curated collection of clothing, accessories, and more.',
+  title: 'אופנה',
+  description: 'גלו את הטרנדים האחרונים באופנה וסטייל עם האוסף המובחר שלנו של בגדים, אביזרים ועוד.',
 }
 
 export default async function Home() {
@@ -40,34 +39,31 @@ export default async function Home() {
       <FeatureSection2
         className="container mt-20 sm:mt-28 lg:mt-32"
         variant="up"
-        heading={`Culture Is <span data-slot="italic">More</span> Than a Set <span data-slot="italic">Of</span> Documents`}
+        heading={`תרבות היא <span data-slot="italic">יותר</span> ממערכת <span data-slot="italic">של</span> מסמכים`}
         faqs={[
           {
-            question: 'Radical Transparency',
+            question: 'שקיפות מוחלטת',
             answer:
-              "No black boxes, nothing to hide, we disclose our full formulas, so you will never have to guess what's in it and how much.",
+              'ללא קופסאות שחורות, אין מה להסתיר, אנו חושפים את כל הנוסחאות שלנו, כך שלעולם לא תצטרך לנחש מה יש בהם וכמה.',
           },
           {
-            question: 'Clean, Beyond Reproach',
-            answer:
-              'We are committed to using only the safest, most effective ingredients, and we never compromise on quality.',
+            question: 'נקי, מעבר לכל ספק',
+            answer: 'אנו מחויבים להשתמש רק בחומרים הבטוחים והיעילים ביותר, ואף פעם לא מתפשרים על איכות.',
           },
           {
-            question: 'Conscious & Responsible',
-            answer:
-              'We are committed to using only the safest, most effective ingredients, and we never compromise on quality.',
+            question: 'מודע ואחראי',
+            answer: 'אנו מחויבים להשתמש רק בחומרים הבטוחים והיעילים ביותר, ואף פעם לא מתפשרים על איכות.',
           },
           {
-            question: 'Potent & Multi Tasking',
-            answer:
-              'We are committed to using only the safest, most effective ingredients, and we never compromise on quality.',
+            question: 'חזק ורב-תכליתי',
+            answer: 'אנו מחויבים להשתמש רק בחומרים הבטוחים והיעילים ביותר, ואף פעם לא מתפשרים על איכות.',
           },
         ]}
         image={{
           src: '/images/fashion/feature-1.png',
           width: 644,
           height: 653,
-          alt: 'fashion-feature-1',
+          alt: 'תכונת-אופנה-1',
         }}
       />
 
@@ -77,10 +73,10 @@ export default async function Home() {
 
       <FeatureSection3
         className="mt-20 sm:mt-28 lg:mt-32"
-        heading={`Explore our exclusive designs, blending luxury with <span data-slot="italic">timeless elegance.</span>`}
+        heading={`גלו את העיצובים האקסקלוסיביים שלנו, המשולבים עם <span data-slot="italic">אלגנטיות נצחית.</span>`}
         collection1={{
-          title: 'NYC collection <br /><span data-slot="italic">edition.</span>',
-          desciption: 'Discover our exclusive collection of printed modal scarves, designed to elevate your style',
+          title: 'אוסף ניו יורק <br /><span data-slot="italic">מהדורה.</span>',
+          desciption: 'גלו את האוסף האקסקלוסיבי שלנו של צעיפי מודל מודפסים, מעוצבים להעלות את הסטייל שלכם',
           images: [
             '/images/fashion/newyork.jpg',
             '/images/fashion/newyork-1.jpg',
@@ -89,8 +85,8 @@ export default async function Home() {
           ],
         }}
         collection2={{
-          title: 'The artist´s <br /> <span data-slot="italic">wardrobe.</span>',
-          desciption: 'Discover our exclusive collection of printed modal scarves, designed to elevate your style',
+          title: 'ארון הבגדים <br /> <span data-slot="italic">של האמן.</span>',
+          desciption: 'גלו את האוסף האקסקלוסיבי שלנו של צעיפי מודל מודפסים, מעוצבים להעלות את הסטייל שלכם',
           images: [
             '/images/fashion/NewYork-3.png',
             '/images/fashion/p1.jpg',

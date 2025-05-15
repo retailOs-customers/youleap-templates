@@ -62,7 +62,7 @@ export function DropdownItem({
     // Base styles
     'group cursor-default rounded-lg px-3.5 py-2.5 focus:outline-hidden sm:px-3 sm:py-1.5',
     // Text styles
-    'text-left text-base/6 text-zinc-950 sm:text-sm/6 dark:text-white forced-colors:text-[CanvasText]',
+    'text-right text-base/6 text-zinc-950 sm:text-sm/6 dark:text-white forced-colors:text-[CanvasText]',
     // Focus
     'data-focus:bg-blue-500 data-focus:text-white',
     // Disabled state
@@ -177,7 +177,7 @@ export function DropdownShortcut({
           className={clsx([
             'min-w-[2ch] text-center font-sans text-zinc-400 capitalize group-data-focus:text-white forced-colors:group-data-focus:text-[HighlightText]',
             // Make sure key names that are longer than one character (like "Tab") have extra space
-            index > 0 && char.length > 1 && 'pl-1',
+            index > 0 && char.length > 1 && 'pr-1',
           ])}
         >
           {char}

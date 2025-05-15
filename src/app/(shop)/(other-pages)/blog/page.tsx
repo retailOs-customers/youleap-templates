@@ -9,7 +9,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Blog',
   description:
-    'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
+    'הישארו מעודכנים עם החדשות האחרונות בתעשייה כשצוותי השיווק שלנו מוצאים דרכים חדשות למחזר טריקי CSS ישנים.',
 }
 
 export default async function Page() {
@@ -19,15 +19,14 @@ export default async function Page() {
     <div className="container">
       <div className="flex flex-col items-center py-14 text-center lg:py-20">
         <Heading bigger level={1} className="mt-5">
-          <span>Clean</span>
+          <span>נקי</span>
           <br />
           <span data-slot="italic" className="underline">
-            Journal.
+            יומן.
           </span>
         </Heading>
         <Text className="mt-5 max-w-xl">
-          Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS
-          tricks articles.
+          הישארו מעודכנים עם החדשות האחרונות בתעשייה כשצוותי השיווק שלנו מוצאים דרכים חדשות למחזר טריקי CSS ישנים.
         </Text>
       </div>
 

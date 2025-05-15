@@ -92,7 +92,7 @@ export function ProductGallery({ media, className }: { media: TImage[]; classNam
               <HugeiconsIcon icon={Cancel01Icon} size={32} color="currencyColor" strokeWidth={1} />
             </button>
 
-            <div className="inline-block w-full overflow-hidden bg-white text-left align-middle text-neutral-900 shadow-xl">
+            <div className="inline-block w-full overflow-hidden bg-white text-right align-middle text-neutral-900 shadow-xl">
               <div className="container">
                 <ModalImageGallery media={media} indexActive={activeIndex} />
               </div>

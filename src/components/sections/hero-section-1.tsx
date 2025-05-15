@@ -35,7 +35,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
           />
         </div>
         <div className="flex w-full flex-col justify-end gap-2.5">
-          <Text className="max-w-xs self-end text-right">
+          <Text className="max-w-xs self-end text-left">
             The fabric is comfortable to wear in any season of the year.
           </Text>
           <Image
@@ -50,7 +50,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
           <Text className="max-w-xs">sophisticated but timeless design.</Text>
         </div>
       </div>
-      <ButtonLargeWithIcon href="/collections/all">explore all products</ButtonLargeWithIcon>
+      <ButtonLargeWithIcon href="/collections/all">גלו את כל המוצרים</ButtonLargeWithIcon>
     </div>
   )
 }

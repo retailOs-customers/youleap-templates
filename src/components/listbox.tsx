@@ -48,9 +48,9 @@ export function Listbox<T>({
             // Set minimum height for when no value is selected
             'min-h-11 sm:min-h-9',
             // Horizontal padding
-            'pr-[calc(--spacing(7)-1px)] pl-[calc(--spacing(3.5)-1px)] sm:pl-[calc(--spacing(3)-1px)]',
+            'pl-[calc(--spacing(3.5)-1px)] pl-[calc(--spacing(7)-1px)] sm:pl-[calc(--spacing(3)-1px)]',
             // Typography
-            'text-left text-base/6 text-zinc-950 placeholder:text-zinc-500 sm:text-sm/6 dark:text-white forced-colors:text-[CanvasText]',
+            'text-right text-base/6 text-zinc-950 placeholder:text-zinc-500 sm:text-sm/6 dark:text-white forced-colors:text-[CanvasText]',
             // Border
             'border border-zinc-950/10 group-data-active:border-zinc-950/20 group-data-hover:border-zinc-950/20 dark:border-white/10 dark:group-data-active:border-white/20 dark:group-data-hover:border-white/20',
             // Background color
@@ -61,7 +61,7 @@ export function Listbox<T>({
             'group-data-disabled:border-zinc-950/20 group-data-disabled:opacity-100 dark:group-data-disabled:border-white/15 dark:group-data-disabled:bg-white/[2.5%] dark:group-data-disabled:data-hover:border-white/15',
           ])}
         />
-        <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+        <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pl-2">
           <svg
             className="size-5 stroke-zinc-500 group-data-disabled:stroke-zinc-600 sm:size-4 dark:stroke-zinc-400 forced-colors:stroke-[CanvasText]"
             viewBox="0 0 16 16"
@@ -129,7 +129,7 @@ export function ListboxOption<T>({
           <div
             className={clsx(
               // Basic layout
-              'group/option grid cursor-default grid-cols-[--spacing(5)_1fr] items-baseline gap-x-2 rounded-lg py-2.5 pr-3.5 pl-2 sm:grid-cols-[--spacing(4)_1fr] sm:py-1.5 sm:pr-3 sm:pl-1.5',
+              'group/option grid cursor-default grid-cols-[--spacing(5)_1fr] items-baseline gap-x-2 rounded-lg py-2.5 pl-2 pl-3.5 sm:grid-cols-[--spacing(4)_1fr] sm:py-1.5 sm:pl-1.5 sm:pl-3',
               // Typography
               'text-base/6 text-zinc-950 sm:text-sm/6 dark:text-white forced-colors:text-[CanvasText]',
               // Focus

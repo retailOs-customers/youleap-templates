@@ -55,7 +55,7 @@ export default async function Product({ params }: { params: Promise<{ handle: st
           </div>
 
           {/* Product Details */}
-          <div className="w-full pt-10 lg:w-1/2 lg:pt-16 lg:pl-10 xl:pl-14 2xl:pl-16">
+          <div className="w-full pt-10 lg:w-1/2 lg:pt-16 lg:pr-10 xl:pr-14 2xl:pr-16">
             <div className="sticky top-16">
               {/* Heading, Price, Options,...  */}
               <ProductForm product={product} />
@@ -107,7 +107,7 @@ export default async function Product({ params }: { params: Promise<{ handle: st
               <ProductUsageSection imageSrc="/images/skincare/feature-3.png" />
             </TabPanel>
             <TabPanel>
-              <ProductFaqsSection imageSrc="/images/skincare/hero.png" />
+              <ProductFaqsSection imageSrc="/images/skincare/hero.jpg" />
             </TabPanel>
           </TabPanels>
         </TabGroup>

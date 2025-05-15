@@ -18,8 +18,8 @@ const Page = () => {
         <div className="flex flex-2/3 flex-col gap-20 md:gap-24 lg:gap-28 xl:gap-32">
           <div className="relative">
             <Heading level={1} fontSize="text-7xl lg:text-8xl 2xl:text-9xl font-medium" className="relative w-fit">
-              <span>About </span>
-              <span data-slot="italic">US</span>
+              <span>אודות </span>
+              <span data-slot="italic">אנחנו</span>
 
               <VectorArrowDown2 className="absolute -end-32 top-1/2 hidden h-20 sm:block sm:h-32 lg:-end-16 2xl:top-2/3" />
             </Heading>
@@ -31,21 +31,18 @@ const Page = () => {
                 src={'/images/skincare/face-3-3.webp'}
                 width={494}
                 height={529}
-                alt={'feature-1-2'}
+                alt={'תכונה-1-2'}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
 
             <div className="flex flex-1/2 sm:justify-center xl:flex-2/3">
               <div className="max-w-sm self-end">
-                <Text>
-                  Our simple philosophy in all that we do. We are passionate about skin care, we are truekind.
-                </Text>
+                <Text>הפילוסופיה הפשוטה שלנו בכל מה שאנחנו עושים. אנחנו נלהבים מטיפוח העור, אנחנו אמיתיים.</Text>
                 <br />
                 <Text>
-                  We are a team of passionate individuals who believe in the power of natural ingredients and their
-                  ability to transform your skin. Our mission is to provide you with the best products that are not only
-                  effective but also safe for you and the environment.
+                  אנחנו צוות של אנשים נלהבים שמאמינים בכוחם של חומרים טבעיים וביכולתם לשנות את העור שלך. המשימה שלנו היא
+                  לספק לך את המוצרים הטובים ביותר שהם לא רק יעילים אלא גם בטוחים עבורך ועבור הסביבה.
                 </Text>
               </div>
             </div>
@@ -54,10 +51,10 @@ const Page = () => {
 
         <div className="flex flex-1/3">
           <Image
-            src={'/images/skincare/hero.png'}
+            src={'/images/skincare/hero.jpg'}
             width={494}
             height={529}
-            alt={'feature-1-2'}
+            alt={'תכונה-1-2'}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
@@ -66,8 +63,8 @@ const Page = () => {
       {/* SECTION 2 */}
       <div className="mt-24 sm:mt-28 lg:mt-40">
         <Heading level={2} bigger>
-          Some interesting information <br />
-          about the <span data-slot="italic">Bitpan store!</span>
+          מידע מעניין <br />
+          על <span data-slot="italic">חנות הביטפן!</span>
         </Heading>
         <div className="mt-14 flex flex-col justify-between gap-10 lg:flex-row">
           <div className="flex-4/9">
@@ -76,7 +73,7 @@ const Page = () => {
                 src={'/images/skincare/feature-1.webp'}
                 width={700}
                 height={440}
-                alt={'feature-1-2'}
+                alt={'תכונה-1-2'}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
