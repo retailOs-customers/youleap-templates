@@ -60,7 +60,7 @@ const CategoryFilters1 = () => {
         <span className="text-sm font-medium text-gray-700 uppercase">Filters</span>
         <HugeiconsIcon
           icon={PlusSignIcon}
-          className="ml-1 size-5 shrink-0 text-gray-400"
+          className="mr-1 size-5 shrink-0 text-gray-400"
           size={16}
           color="currentColor"
           strokeWidth={1.5}

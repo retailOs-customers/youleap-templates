@@ -26,7 +26,7 @@ export function NavbarSection({ className, ...props }: React.ComponentPropsWitho
 }
 
 export function NavbarSpacer({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
-  return <div aria-hidden="true" {...props} className={clsx(className, '-ml-4 flex-1')} />
+  return <div aria-hidden="true" {...props} className={clsx(className, '-mr-4 flex-1')} />
 }
 
 export const NavbarItem = forwardRef(function NavbarItem(
@@ -47,7 +47,7 @@ export const NavbarItem = forwardRef(function NavbarItem(
     // Leading icon/icon-only
     '*:data-[slot=icon]:size-6 *:data-[slot=icon]:shrink-0 *:data-[slot=icon]:fill-zinc-500 sm:*:data-[slot=icon]:size-5',
     // Trailing icon (down chevron or similar)
-    '*:not-nth-2:last:data-[slot=icon]:ml-auto *:not-nth-2:last:data-[slot=icon]:size-5 sm:*:not-nth-2:last:data-[slot=icon]:size-4',
+    '*:not-nth-2:last:data-[slot=icon]:mr-auto *:not-nth-2:last:data-[slot=icon]:size-5 sm:*:not-nth-2:last:data-[slot=icon]:size-4',
     // Avatar
     '*:data-[slot=avatar]:-m-0.5 *:data-[slot=avatar]:size-7 *:data-[slot=avatar]:[--avatar-radius:var(--radius-md)] sm:*:data-[slot=avatar]:size-6',
     // Hover

@@ -29,7 +29,7 @@ export default function ProductReviewSection({ reviews, className }: ProductRevi
                       />
                     ))}
                   </div>
-                  <p className="ml-3 text-sm text-zinc-700">
+                  <p className="mr-3 text-sm text-zinc-700">
                     {review.rating}
                     <span className="sr-only"> out of 5 stars</span>
                   </p>
@@ -49,7 +49,7 @@ export default function ProductReviewSection({ reviews, className }: ProductRevi
                 <p className="font-medium text-zinc-900 capitalize">{review.author}</p>
                 <time
                   dateTime={review.datetime}
-                  className="ml-4 border-l border-zinc-200 pr-4 text-zinc-500 lg:mt-2 lg:ml-0 lg:border-0 lg:pr-0"
+                  className="mr-4 border-l border-zinc-200 pr-4 text-zinc-500 lg:mt-2 lg:mr-0 lg:border-0 lg:pr-0"
                 >
                   {review.date}
                 </time>
