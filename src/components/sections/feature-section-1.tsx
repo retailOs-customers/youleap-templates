@@ -23,8 +23,8 @@ interface FeatureSection1Props {
 
 const FeatureSection1 = ({
   className,
-  description = 'We love it for modern UI design because of its simple, clean, and distinctive geometric style and the designers actively work. FEATHERLIGHT FEEL Experience unparalleled comfort with our breathable  hijabs, perfect for any season.',
-  heading = `<span>What makes us</span><br /><span data-slot="italic">Difference? </span>`,
+  description = 'אנחנו אוהבים את זה בזכות העיצוב המודרני, הפשוט והנקי, והתחושה הקלילה במיוחד. חוו נוחות שאין כמותה עם כיסויי הראש הנושמים שלנו, מושלמים לכל עונה.',
+  heading = `<span>מה מייחד אותנו?</span><br /><span data-slot="italic">בואו לגלות</span>`,
   image1 = {
     src: '/images/hijab/feature-1-1.png',
     width: 325,
@@ -37,7 +37,7 @@ const FeatureSection1 = ({
     height: 529,
     alt: 'feature-1-2',
   },
-  buttonText = 'EXPLORE PRODUCTS',
+  buttonText = 'לכל המוצרים',
   buttonLink = '/collections/all',
 }: FeatureSection1Props) => {
   return (

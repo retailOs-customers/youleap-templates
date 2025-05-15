@@ -52,10 +52,12 @@ const FeatureSection3 = ({
 }: FeatureSection3Props) => {
   const [emblaRef] = useEmblaCarousel({
     slidesToScroll: 'auto',
+    direction: 'rtl',
   })
   const [emblaRef2] = useEmblaCarousel({
     slidesToScroll: 'auto',
     startIndex: 9,
+    direction: 'rtl',
   })
 
   return (

@@ -49,7 +49,7 @@ export default function ProductReviewSection({ reviews, className }: ProductRevi
                 <p className="font-medium text-zinc-900 capitalize">{review.author}</p>
                 <time
                   dateTime={review.datetime}
-                  className="ml-4 border-l border-zinc-200 pl-4 text-zinc-500 lg:mt-2 lg:ml-0 lg:border-0 lg:pl-0"
+                  className="ml-4 border-l border-zinc-200 pr-4 text-zinc-500 lg:mt-2 lg:ml-0 lg:border-0 lg:pr-0"
                 >
                   {review.date}
                 </time>

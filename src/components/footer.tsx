@@ -5,27 +5,27 @@ import { Text } from './text'
 
 const navigation = {
   solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Automation', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+    { name: 'שיווק', href: '#' },
+    { name: 'אנליטיקה', href: '#' },
+    { name: 'אוטומציה', href: '#' },
+    { name: 'מסחר', href: '#' },
+    { name: 'תובנות', href: '#' },
   ],
   support: [
-    { name: 'Submit ticket', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
+    { name: 'פתיחת פנייה', href: '#' },
+    { name: 'תיעוד', href: '#' },
+    { name: 'מדריכים', href: '#' },
   ],
   company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
+    { name: 'אודות', href: '#' },
+    { name: 'בלוג', href: '#' },
+    { name: 'משרות', href: '#' },
+    { name: 'עיתונות', href: '#' },
   ],
   legal: [
-    { name: 'Terms of service', href: '#' },
-    { name: 'Privacy policy', href: '#' },
-    { name: 'License', href: '#' },
+    { name: 'תנאי שימוש', href: '#' },
+    { name: 'מדיניות פרטיות', href: '#' },
+    { name: 'רישיון', href: '#' },
   ],
   social: [
     {
@@ -104,7 +104,7 @@ export default function Footer({ className }: FooterProps) {
         <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <Text className="text-sm/6 font-medium">Solutions</Text>
+              <Text className="text-sm/6 font-medium">פתרונות</Text>
               <ul role="list" className="mt-6 space-y-4">
                 {navigation.solutions.map((item) => (
                   <li key={item.name}>
@@ -116,7 +116,7 @@ export default function Footer({ className }: FooterProps) {
               </ul>
             </div>
             <div className="mt-10 md:mt-0">
-              <Text className="text-sm/6 font-medium">Support</Text>
+              <Text className="text-sm/6 font-medium">תמיכה</Text>
               <ul role="list" className="mt-6 space-y-4">
                 {navigation.support.map((item) => (
                   <li key={item.name}>
@@ -130,7 +130,7 @@ export default function Footer({ className }: FooterProps) {
           </div>
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <Text className="text-sm/6 font-medium">Company</Text>
+              <Text className="text-sm/6 font-medium">החברה</Text>
               <ul role="list" className="mt-6 space-y-4">
                 {navigation.company.map((item) => (
                   <li key={item.name}>
@@ -142,7 +142,7 @@ export default function Footer({ className }: FooterProps) {
               </ul>
             </div>
             <div className="mt-10 md:mt-0">
-              <Text className="text-sm/6 font-medium">Legal</Text>
+              <Text className="text-sm/6 font-medium">משפטי</Text>
               <ul role="list" className="mt-6 space-y-4">
                 {navigation.legal.map((item) => (
                   <li key={item.name}>
@@ -167,7 +167,7 @@ export default function Footer({ className }: FooterProps) {
           ))}
         </div>
         <Text className="mt-8 text-sm/6 text-zinc-600 md:order-1 md:mt-0">
-          &copy; 2025 BitPan Company, Inc. All rights reserved.
+          &copy; 2025 BitPan Company, Inc. כל הזכויות שמורות.
         </Text>
       </div>
     </footer>

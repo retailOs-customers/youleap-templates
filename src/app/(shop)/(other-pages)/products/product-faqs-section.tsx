@@ -1,35 +1,31 @@
 import { Text } from '@/components/text'
 import { VectorArrowDown3 } from '@/components/vector-arrow-down'
+import { TProductFaq } from '@/data'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import Image from 'next/image'
 
-interface TProductFaq {
-  question: string
-  answer: string
-}
-
 const faqs_demo = [
   {
-    question: 'TO CREATE MODEST FASHION THAT EMPOWERS',
-    answer: 'TO CREATE MODEST FASHION THAT EMPOWERS, INSPIRES, AND ELEVATES WOMEN AROUND THE WORLD.',
+    question: 'ליצור אופנה צנועה שמעצימה',
+    answer: 'ליצור אופנה צנועה שמעצימה, מעוררת השראה ומרוממת נשים ברחבי העולם.',
   },
   {
-    question: 'TO DESIGN TIMELESS PIECES',
-    answer: 'TO DESIGN TIMELESS PIECES THAT TRANSCEND TRENDS AND LIVE IN YOUR WARDROBE FOREVER.',
+    question: 'לעצב פריטים נצחיים',
+    answer: 'לעצב פריטים נצחיים שחורגים מהטרנדים ונשארים בארון שלך לנצח.',
   },
   {
-    question: 'TO CHAMPION SUSTAINABLE PRACTICES',
-    answer: 'TO CHAMPION SUSTAINABLE PRACTICES, CRAFTING QUALITY THAT HONORS OUR PLANET.',
+    question: 'להוביל פרקטיקות מקיימות',
+    answer: 'להוביל פרקטיקות מקיימות, ליצור איכות שמכבדת את כדור הארץ שלנו.',
   },
   {
-    question: 'TO BUILD A COMMUNITY ROOTED IN FAITH',
-    answer: 'TO BUILD A COMMUNITY ROOTED IN FAITH, SELF-LOVE, AND EMPOWERMENT.',
+    question: 'לבנות קהילה מושרשת באמונה',
+    answer: 'לבנות קהילה מושרשת באמונה, אהבה עצמית והעצמה.',
   },
   {
-    question: 'FASHION SHOULD BE MEANINGFUL',
-    answer: 'TO CREATE WITH PURPOSE, BECAUSE FASHION SHOULD BE MEANINGFUL, NOT DISPOSABLE.',
+    question: 'אופנה צריכה להיות משמעותית',
+    answer: 'ליצור עם מטרה, כי אופנה צריכה להיות משמעותית, לא חד פעמית.',
   },
 ]
 

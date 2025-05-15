@@ -6,32 +6,32 @@ import { Text } from '../text'
 const data = [
   {
     id: 1,
-    title: 'DESIGNED TO LAST',
-    description: 'These designs will last in your wardrobe, forever.',
+    title: 'מעוצב להחזיק לאורך זמן',
+    description: 'העיצובים האלו יישארו בארון שלך, לנצח.',
     icon: AiIdeaIcon,
   },
   {
     id: 2,
-    title: 'WORLDWIDE SHIPPING',
-    description: 'Cheap, Fast Shipping Available to your Destination.',
+    title: 'משלוחים לכל העולם',
+    description: 'משלוח זול ומהיר זמין ליעד שלך.',
     icon: BoatIcon,
   },
   {
     id: 3,
-    title: '5 STAR CARE',
-    description: 'We\'re here for you anytime, <span class="underline">contact@bitpan.com',
+    title: 'שירות 5 כוכבים',
+    description: 'אנחנו כאן בשבילך בכל עת, <span class="underline">contact@bitpan.com',
     icon: Mailbox01Icon,
   },
   {
     id: 4,
-    title: 'SHOPPAY & AFTERPAY',
-    description: 'Pay in 4 installments, no interest. No fees, no interest.',
+    title: 'תשלום בשופיי ואפטרפיי',
+    description: 'שלם ב-4 תשלומים, ללא ריבית. ללא עמלות, ללא ריבית.',
     icon: CoinsDollarIcon,
   },
   {
     id: 5,
-    title: 'Kind to planet',
-    description: "you're doing good for yourself, and the planet.",
+    title: 'ידידותי לסביבה',
+    description: 'אתה עושה טוב לעצמך ולכדור הארץ.',
     icon: Plant03Icon,
   },
 ]

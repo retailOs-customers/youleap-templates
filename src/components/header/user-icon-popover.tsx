@@ -13,11 +13,11 @@ import { HugeiconsIcon } from '@hugeicons/react'
 import { Text, TextLink } from '../text'
 
 const userMenu = [
-  { name: 'My account', href: '/orders', icon: UserListIcon },
-  { name: 'Account settings', href: '/settings', icon: Settings03Icon },
-  { name: 'Orders', href: '/orders/4657', icon: ShoppingBasket01Icon },
-  { name: 'Wishlist', href: '/collections/all', icon: FavouriteIcon },
-  { name: 'Sign out', href: '#', icon: Logout01Icon },
+  { name: 'החשבון שלי', href: '/orders', icon: UserListIcon },
+  { name: 'הגדרות חשבון', href: '/settings', icon: Settings03Icon },
+  { name: 'ההזמנות שלי', href: '/orders/4657', icon: ShoppingBasket01Icon },
+  { name: 'רשימת המשאלות', href: '/collections/all', icon: FavouriteIcon },
+  { name: 'התנתקות', href: '#', icon: Logout01Icon },
 ]
 
 export interface UserIconPopoverProps {}

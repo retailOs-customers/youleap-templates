@@ -122,7 +122,7 @@ const Page = async ({ params }: { params: Promise<{ number: string }> }) => {
                       <div className="text-zinc-950">Order placed</div>
                       <div className={clsx(product.step > 0 ? 'text-zinc-950' : '', 'text-center')}>Processing</div>
                       <div className={clsx(product.step > 1 ? 'text-zinc-950' : '', 'text-center')}>Shipped</div>
-                      <div className={clsx(product.step > 2 ? 'text-zinc-950' : '', 'text-right')}>Delivered</div>
+                      <div className={clsx(product.step > 2 ? 'text-zinc-950' : '', 'text-left')}>Delivered</div>
                     </div>
                   </div>
                 </div>

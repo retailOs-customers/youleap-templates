@@ -13,21 +13,21 @@ const HeroSection2 = ({ className }: HeroSection2Props) => {
   return (
     <div className={className}>
       <div className="flex min-h-[calc(100vh-5rem)] flex-col justify-between bg-[#ECFF9F] sm:flex-row">
-        <div className="flex-3/5 self-end py-16 pr-6 pl-container xl:pb-20">
+        <div className="flex-3/5 self-end py-16 pr-container pl-6 xl:pb-20">
           <div className="max-w-2xl">
             <StarSvg width={48} height={48} />
             <Heading fontSize="text-5xl/none md:text-6xl/none lg:text-7xl/none font-semibold" className="mt-8">
-              <span data-slot="italic">True</span> to Oneself kind to <span data-slot="italic">Nature.</span>
+              <span data-slot="italic">יופי</span> אמיתי מתחיל <span data-slot="italic">בטבע.</span>
             </Heading>
             <Text className="mt-8 max-w-sm">
-              Unreservedly honest products that truly work, and be kind to skin and the planet – no exceptions!
+              מוצרים טבעיים, אמינים ויעילים באמת – כי מגיע לעור שלך את הטוב ביותר, ולכדור הארץ גם.
             </Text>
             <Button
               href={'/collections/all'}
               color="white"
               className="mt-16 w-full max-w-4xl cursor-pointer !border-white py-5 font-medium tracking-wide underline sm:py-6"
             >
-              Explore all products
+              לכל המוצרים
               <div className="absolute right-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-white sm:h-12 sm:w-12">
                 <ArrowUpRightIcon className="h-4 w-4" />
               </div>
@@ -37,7 +37,7 @@ const HeroSection2 = ({ className }: HeroSection2Props) => {
 
         <div className="relative flex-2/5">
           <Image
-            src={'/images/skincare/hero.png'}
+            src={'/images/skincare/hero.jpg'}
             alt="hero"
             className="object-cover object-center sm:absolute sm:h-full sm:w-full"
             width={815}

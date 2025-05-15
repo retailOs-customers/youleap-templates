@@ -55,7 +55,7 @@ export default async function Product({ params }: { params: Promise<{ handle: st
           </div>
 
           {/* Product Details */}
-          <div className="w-full pt-10 lg:w-4/9 lg:pt-14 lg:pl-10 xl:pt-16 xl:pl-14 2xl:pl-16">
+          <div className="w-full pt-10 lg:w-4/9 lg:pt-14 lg:pr-10 xl:pt-16 xl:pr-14 2xl:pr-16">
             <div className="sticky top-14">
               {/* Heading, Price, Options,...  */}
               <ProductForm product={product} />

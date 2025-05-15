@@ -85,7 +85,7 @@ export default function CategoryFilters2({ className }: Props) {
         {filters.map((section, sectionIdx) => {
           const bage = section.options.filter((option) => option.checked).length
           return (
-            <Popover key={section.name} id="menu" className="relative inline-block text-left">
+            <Popover key={section.name} id="menu" className="relative inline-block text-right">
               <div>
                 <PopoverButton className="group inline-flex items-center justify-center focus-visible:outline-none">
                   <Text>{section.name}</Text>
@@ -95,7 +95,7 @@ export default function CategoryFilters2({ className }: Props) {
 
                   <HugeiconsIcon
                     icon={ArrowDown01Icon}
-                    className="-mr-1 ml-1 size-5 shrink-0 text-zinc-400 group-hover:text-zinc-500"
+                    className="mr-1 -ml-1 size-5 shrink-0 text-zinc-400 group-hover:text-zinc-500"
                     size={16}
                     color="currentColor"
                     strokeWidth={1.5}

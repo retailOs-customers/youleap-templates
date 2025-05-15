@@ -36,11 +36,14 @@ const SectionCollectionCarousel = ({
     slidesToScroll: 'auto',
   },
   className,
-  sectonTitle = 'Find your own <span data-slot="italic">unique style,</span> and thousands <br /> of brands.',
+  sectonTitle = 'מצאו את <span data-slot="italic">הסגנון הייחודי</span> שלכם, ואלפי <br /> מותגים.',
   groupCollections,
 }: SectionCollectionCarouselProps) => {
   // Tạo ref để truy cập các phương thức của carousel
-  const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions)
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    ...emblaOptions,
+    direction: 'rtl',
+  })
   const [groupSelected, setGroupSelected] = useState<string>(groupCollections?.[0].handle || '')
   const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } = useCarouselArrowButtons(emblaApi)
 
@@ -52,9 +55,9 @@ const SectionCollectionCarousel = ({
         </div>
 
         <div className="flex-1/3">
-          <Text>get 15% discount on your first order!</Text>
+          <Text>קבלו 15% הנחה על ההזמנה הראשונה שלכם!</Text>
           <Button outline href={'/collections/all'} className="mt-4">
-            SHOP NOW
+            לקנייה עכשיו
           </Button>
         </div>
 

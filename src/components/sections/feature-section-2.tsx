@@ -20,24 +20,24 @@ interface FeatureSection2Props {
 
 const faqs_demo = [
   {
-    question: 'TO CREATE MODEST FASHION THAT EMPOWERS',
-    answer: 'TO CREATE MODEST FASHION THAT EMPOWERS, INSPIRES, AND ELEVATES WOMEN AROUND THE WORLD.',
+    question: 'לעצב אופנה צנועה שמעצימה',
+    answer: 'לעצב אופנה צנועה שמעצימה, מעניקה השראה ומרוממת נשים בכל העולם.',
   },
   {
-    question: 'TO DESIGN TIMELESS PIECES',
-    answer: 'TO DESIGN TIMELESS PIECES THAT TRANSCEND TRENDS AND LIVE IN YOUR WARDROBE FOREVER.',
+    question: 'לעצב פריטים על-זמניים',
+    answer: 'לעצב פריטים על-זמניים שישארו בארון שלך לנצח.',
   },
   {
-    question: 'TO CHAMPION SUSTAINABLE PRACTICES',
-    answer: 'TO CHAMPION SUSTAINABLE PRACTICES, CRAFTING QUALITY THAT HONORS OUR PLANET.',
+    question: 'לקדם קיימות',
+    answer: 'לקדם קיימות, ליצור איכות שמכבדת את כדור הארץ.',
   },
   {
-    question: 'TO BUILD A COMMUNITY ROOTED IN FAITH',
-    answer: 'TO BUILD A COMMUNITY ROOTED IN FAITH, SELF-LOVE, AND EMPOWERMENT.',
+    question: 'לבנות קהילה עם ערכים',
+    answer: 'לבנות קהילה שמבוססת על אמונה, אהבה עצמית והעצמה.',
   },
   {
-    question: 'FASHION SHOULD BE MEANINGFUL',
-    answer: 'TO CREATE WITH PURPOSE, BECAUSE FASHION SHOULD BE MEANINGFUL, NOT DISPOSABLE.',
+    question: 'אופנה עם משמעות',
+    answer: 'ליצור מתוך שליחות, כי אופנה צריכה להיות משמעותית ולא חד-פעמית.',
   },
 ]
 const image_demo = {
@@ -69,7 +69,7 @@ const FeatureSection2 = ({
           <VectorArrowDown3 className="absolute start-full top-full hidden -translate-x-1/5 -translate-y-full lg:block xl:top-[96%]" />
         ) : null}
         {variant === 'up' ? (
-          <VectorArrowDown4 className="absolute start-full top-0 hidden -translate-x-1/5 lg:block" />
+          <VectorArrowDown4 className="absolute start-full top-0 hidden translate-x-1/5 lg:block" />
         ) : null}
       </div>
 

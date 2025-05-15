@@ -275,11 +275,11 @@ export async function getProductByHandle(handle: string) {
             <div>
               <p class="mb-3 text-sm text-zinc-500 uppercase">Product Details</p>
               <ul class="list-inside list-disc *:marker:text-zinc-300">
-                <li>200x70 cm is our Regular Modal Hijab Size.</li>
-                <li>Two-piece set includes a hijab and matching undercap.</li>
-                <li>Made from 100% TENCEL™ Modal fabric.</li>
-                <li>Perfect for layering or wearing alone.</li>
-                <li>Easy to care for and maintain.</li>
+                <li>200x70 ס"מ הוא הגודל הרגיל של כיסוי הראש מודל שלנו.</li>
+                <li>הסט כולל שני חלקים: כיסוי ראש וכובע תחתון תואם.</li>
+                <li>עשוי 100% בד TENCEL™ Modal.</li>
+                <li>מושלם לשכבות או ללבישה בפני עצמה.</li>
+                <li>קל לניקוי ולתחזוקה.</li>
               </ul>
             </div>
             <div>
@@ -991,10 +991,9 @@ export async function getSkincareCollections() {
   return [
     {
       id: '1',
-      title: 'Face Wash',
+      title: 'שטיפת פנים',
       handle: 'face-wash',
-      description:
-        'A gentle cleanser for all skin types. Removes impurities and makeup. Leaves skin fresh and clean. Perfect for daily use.',
+      description: 'תכשיר ניקוי עדין לכל סוגי העור. מסיר לכלוך ואיפור. מותיר את העור רענן ונקי. מושלם לשימוש יומיומי.',
       updatedAt: '2025-05-06T10:00:00-04:00',
       image: '/images/skincare/feature-6.webp',
       url: '/collections/face-wash',
@@ -1128,10 +1127,9 @@ export async function getSkincareCollections() {
     },
     {
       id: '2',
-      title: 'Cleansers',
+      title: 'תכשירי ניקוי',
       handle: 'cleansers',
-      description:
-        'Gentle and effective cleansers to remove impurities and refresh your skin daily. Suitable for all skin types.',
+      description: 'תכשירי ניקוי עדינים ויעילים להסרת לכלוך ורענון העור מדי יום. מתאימים לכל סוגי העור.',
       updatedAt: '2025-05-06T10:00:00-04:00',
       image: '/images/skincare/c1.webp',
       url: '/collections/cleansers',
@@ -1265,23 +1263,23 @@ export async function getSkincareCollections() {
     },
     {
       id: '3',
-      title: 'Beauty tools',
+      title: 'כלי טיפוח',
       handle: 'beauty-tools',
-      description: 'Essential beauty tools to enhance your skincare routine and achieve salon-like results at home.',
+      description: 'כלי טיפוח חיוניים לשדרוג שגרת הטיפוח שלך ולהשגת תוצאות של מכון יופי בבית.',
       updatedAt: '2025-05-06T10:00:00-04:00',
       image: '/images/skincare/p2-1-1.webp',
       url: '/collections/serums',
       products: [
         {
           id: 3001,
-          title: 'Vitamin C Serum',
+          title: 'סרום ויטמין C',
           handle: 'vitamin-c-serum',
-          description: 'A brightening serum with Vitamin C to even skin tone and boost radiance.',
+          description: 'סרום להבהרה עם ויטמין C לאחידות גוון העור ולזוהר.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'GlowBeauty',
-          type: 'Serum',
-          tags: ['Brightening', 'Daily'],
+          type: 'סרום',
+          tags: ['הבהרה', 'יומיומי'],
           price: 3200,
           price_min: 3200,
           price_max: 3200,
@@ -1291,7 +1289,7 @@ export async function getSkincareCollections() {
           variants: [
             {
               id: 30011,
-              title: 'Vitamin C Serum',
+              title: 'סרום ויטמין C',
               price: 3200,
               selectedOptions: [{ name: 'Size', value: '30ml' }],
             },
@@ -1299,14 +1297,14 @@ export async function getSkincareCollections() {
         },
         {
           id: 3002,
-          title: 'Hyaluronic Acid Serum',
+          title: 'סרום חומצה היאלורונית',
           handle: 'hyaluronic-acid-serum',
-          description: 'A hydrating serum that plumps and moisturizes the skin.',
+          description: 'סרום לחות שמעניק נפח ולחות לעור.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'GlowBeauty',
-          type: 'Serum',
-          tags: ['Hydrating', 'All Skin Types'],
+          type: 'סרום',
+          tags: ['לחות', 'לכל סוגי העור'],
           price: 2800,
           price_min: 2800,
           price_max: 2800,
@@ -1316,7 +1314,7 @@ export async function getSkincareCollections() {
           variants: [
             {
               id: 30021,
-              title: 'Hyaluronic Acid Serum',
+              title: 'סרום חומצה היאלורונית',
               price: 2800,
               selectedOptions: [{ name: 'Size', value: '30ml' }],
             },
@@ -1324,14 +1322,14 @@ export async function getSkincareCollections() {
         },
         {
           id: 3003,
-          title: 'Retinol Serum',
+          title: 'סרום רטינול',
           handle: 'retinol-serum',
-          description: 'A potent retinol serum to reduce wrinkles and improve skin texture.',
+          description: 'סרום רטינול עוצמתי להפחתת קמטים ושיפור מרקם העור.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'GlowBeauty',
-          type: 'Serum',
-          tags: ['Anti-Aging', 'Night'],
+          type: 'סרום',
+          tags: ['אנטי אייג׳ינג', 'לילה'],
           price: 4500,
           price_min: 4500,
           price_max: 4500,
@@ -1341,7 +1339,7 @@ export async function getSkincareCollections() {
           variants: [
             {
               id: 30031,
-              title: 'Retinol Serum',
+              title: 'סרום רטינול',
               price: 4500,
               selectedOptions: [{ name: 'Size', value: '30ml' }],
             },
@@ -1349,14 +1347,14 @@ export async function getSkincareCollections() {
         },
         {
           id: 3004,
-          title: 'Niacinamide Serum',
+          title: 'סרום ניאצינאמיד',
           handle: 'niacinamide-serum',
-          description: 'A serum to minimize pores and control oil production.',
+          description: 'סרום לצמצום נקבוביות ושליטה על שומניות העור.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'GlowBeauty',
-          type: 'Serum',
-          tags: ['Oily Skin', 'Pore-Minimizing'],
+          type: 'סרום',
+          tags: ['עור שומני', 'צמצום נקבוביות'],
           price: 3000,
           price_min: 3000,
           price_max: 3000,
@@ -1366,7 +1364,7 @@ export async function getSkincareCollections() {
           variants: [
             {
               id: 30041,
-              title: 'Niacinamide Serum',
+              title: 'סרום ניאצינאמיד',
               price: 3000,
               selectedOptions: [{ name: 'Size', value: '30ml' }],
             },
@@ -1374,14 +1372,14 @@ export async function getSkincareCollections() {
         },
         {
           id: 3005,
-          title: 'Peptide Serum',
+          title: 'סרום פפטידים',
           handle: 'peptide-serum',
-          description: 'A firming serum with peptides to enhance skin elasticity.',
+          description: 'סרום ממצק עם פפטידים לשיפור גמישות העור.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'GlowBeauty',
-          type: 'Serum',
-          tags: ['Anti-Aging', 'Firming'],
+          type: 'סרום',
+          tags: ['אנטי אייג׳ינג', 'מיצוק'],
           price: 3800,
           price_min: 3800,
           price_max: 3800,
@@ -1391,7 +1389,7 @@ export async function getSkincareCollections() {
           variants: [
             {
               id: 30051,
-              title: 'Peptide Serum',
+              title: 'סרום פפטידים',
               price: 3800,
               selectedOptions: [{ name: 'Size', value: '30ml' }],
             },
@@ -1678,45 +1676,45 @@ export async function getSkincareGroupCollections() {
   return [
     {
       id: '1',
-      title: 'Skincare',
+      title: 'טיפוח עור',
       handle: 'skincare',
-      description: 'Explore our range of skincare products for all your beauty needs.',
+      description: 'גלי את מגוון מוצרי הטיפוח שלנו לכל צרכי היופי שלך.',
       updatedAt: '2025-05-06T10:00:00-04:00',
       url: '/collections/skincare',
       collections,
     },
     {
       id: '2',
-      title: 'Makeup',
+      title: 'איפור',
       handle: 'makeup',
-      description: 'Discover our makeup collection for a flawless look.',
+      description: 'גלי את קולקציית האיפור שלנו למראה מושלם.',
       updatedAt: '2025-05-06T10:00:00-04:00',
       url: '/collections/makeup',
       collections,
     },
     {
       id: '3',
-      title: 'Haircare',
+      title: 'טיפוח שיער',
       handle: 'haircare',
-      description: 'Nourish and style your hair with our premium haircare products.',
+      description: 'טפחי ועצבי את השיער שלך עם מוצרי טיפוח שיער איכותיים.',
       updatedAt: '2025-05-06T10:00:00-04:00',
       url: '/collections/haircare',
       collections,
     },
     {
       id: '4',
-      title: 'Fragrance',
+      title: 'בישום',
       handle: 'fragrance',
-      description: 'Find your signature scent with our exquisite fragrance collection.',
+      description: 'מצאי את הניחוח הייחודי שלך עם קולקציית הבשמים שלנו.',
       updatedAt: '2025-05-06T10:00:00-04:00',
       url: '/collections/fragrance',
       collections,
     },
     {
       id: '5',
-      title: 'Tools & Accessories',
+      title: 'שונות',
       handle: 'tools-accessories',
-      description: 'Enhance your beauty routine with our tools and accessories.',
+      description: 'שדרגי את שגרת היופי שלך עם כלים ואביזרים משלימים.',
       updatedAt: '2025-05-06T10:00:00-04:00',
       url: '/collections/tools-accessories',
       collections,
@@ -2011,14 +2009,14 @@ export async function getHijabCollections() {
       products: [
         {
           id: 3005,
-          title: 'Solid Cotton Hijab',
+          title: 'כיסוי ראש כותנה בצבע אחיד',
           handle: 'solid-cotton-hijab',
-          description: 'A solid-color cotton hijab for versatile and timeless styling.',
+          description: 'כיסוי ראש כותנה בצבע אחיד לעיצוב קלאסי ועל-זמני.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
-          tags: ['Cotton', 'Daily'],
+          type: 'כיסוי ראש',
+          tags: ['כותנה', 'יומיומי'],
           price: 1700,
           price_min: 1700,
           price_max: 1700,
@@ -2028,7 +2026,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30051,
-              title: 'Solid Cotton Hijab',
+              title: 'כיסוי ראש כותנה בצבע אחיד',
               price: 1700,
               selectedOptions: [{ name: 'Color', value: 'Charcoal' }],
             },
@@ -2036,14 +2034,14 @@ export async function getHijabCollections() {
         },
         {
           id: 3002,
-          title: 'Textured Cotton Hijab',
+          title: 'כיסוי ראש כותנה בטקסטורה',
           handle: 'classic-jersey-hijab',
-          description: 'A textured cotton hijab for a unique and stylish look.',
+          description: 'כיסוי ראש כותנה עם טקסטורה למראה ייחודי וסטייליסטי.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
-          tags: ['Cotton', 'Textured'],
+          type: 'כיסוי ראש',
+          tags: ['כותנה', 'מרקם'],
           price: 2000,
           price_min: 2000,
           price_max: 2000,
@@ -2053,7 +2051,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30021,
-              title: 'Textured Cotton Hijab',
+              title: 'כיסוי ראש כותנה בטקסטורה',
               price: 2000,
               selectedOptions: [{ name: 'Color', value: 'Taupe' }],
             },
@@ -2061,14 +2059,14 @@ export async function getHijabCollections() {
         },
         {
           id: 3003,
-          title: 'Printed Cotton Hijab',
+          title: 'כיסוי ראש כותנה עם הדפס',
           handle: 'classic-jersey-hijab',
-          description: 'A vibrant printed cotton hijab for a playful and modern style.',
+          description: 'כיסוי ראש כותנה עם הדפס צבעוני לסגנון שובב ומודרני.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
-          tags: ['Cotton', 'Printed'],
+          type: 'כיסוי ראש',
+          tags: ['כותנה', 'מודפס'],
           price: 1800,
           price_min: 1800,
           price_max: 1800,
@@ -2078,7 +2076,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30031,
-              title: 'Printed Cotton Hijab',
+              title: 'כיסוי ראש כותנה עם הדפס',
               price: 1800,
               selectedOptions: [{ name: 'Color', value: 'Floral Red' }],
             },
@@ -2086,14 +2084,14 @@ export async function getHijabCollections() {
         },
         {
           id: 3004,
-          title: 'Organic Cotton Hijab',
+          title: 'כיסוי ראש כותנה אורגנית',
           handle: 'organic-cotton-hijab',
-          description: 'An eco-friendly organic cotton hijab for sustainable fashion.',
+          description: 'כיסוי ראש כותנה אורגנית ידידותי לסביבה לאופנה בת-קיימא.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
-          tags: ['Cotton', 'Organic'],
+          type: 'כיסוי ראש',
+          tags: ['כותנה', 'אורגני'],
           price: 2300,
           price_min: 2300,
           price_max: 2300,
@@ -2103,7 +2101,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30041,
-              title: 'Organic Cotton Hijab',
+              title: 'כיסוי ראש כותנה אורגנית',
               price: 2300,
               selectedOptions: [{ name: 'Color', value: 'Sage Green' }],
             },
@@ -2111,14 +2109,14 @@ export async function getHijabCollections() {
         },
         {
           id: 3001,
-          title: 'Basic Cotton Hijab',
+          title: 'כיסוי ראש כותנה בסיסי',
           handle: 'basic-cotton-hijab',
-          description: 'A simple cotton hijab for comfortable daily wear.',
+          description: 'כיסוי ראש כותנה פשוט ללבישה יומיומית נוחה.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
-          tags: ['Cotton', 'Daily'],
+          type: 'כיסוי ראש',
+          tags: ['כותנה', 'יומיומי'],
           price: 1500,
           price_min: 1500,
           price_max: 1500,
@@ -2128,7 +2126,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30011,
-              title: 'Basic Cotton Hijab',
+              title: 'כיסוי ראש כותנה בסיסי',
               price: 1500,
               selectedOptions: [{ name: 'Color', value: 'White' }],
             },
@@ -3221,10 +3219,10 @@ export async function getCollectionByHandle(handle: string) {
     const collection4 = collections[4]
     return {
       id: '0',
-      title: 'All Products',
+      title: 'כל המוצרים',
       handle: '/all',
-      description:
-        'Discover our complete range of skincare, haircare, and body care products. Find the perfect product for your needs.',
+      description: 'גלו את כל מגוון מוצרי הטיפוח לעור, לשיער ולגוף. מצאו את המוצר המושלם עבור הצרכים שלכם.',
+
       updatedAt: '2025-05-06T10:00:00-04:00',
       image: '/images/skincare/c1.webp',
       url: '/collections/all-products',
