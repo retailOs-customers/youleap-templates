@@ -48,7 +48,7 @@ export default async function Page() {
                     </div>
                   </div>
 
-                  <div className="ml-4 flex flex-1 flex-col justify-between sm:ml-6">
+                  <div className="mr-4 flex flex-1 flex-col justify-between sm:mr-6">
                     <div className="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
                       <div>
                         <div className="flex justify-between">
@@ -113,7 +113,7 @@ export default async function Page() {
               <div className="flex items-center justify-between">
                 <dt className="flex items-center text-sm text-zinc-600">
                   <Text>Shipping estimate</Text>
-                  <a href="#" className="ml-2 shrink-0 text-zinc-400 hover:text-zinc-500">
+                  <a href="#" className="mr-2 shrink-0 text-zinc-400 hover:text-zinc-500">
                     <span className="sr-only">Learn more about how shipping is calculated</span>
                     <HugeiconsIcon icon={HelpCircleIcon} size={16} color="currentColor" strokeWidth={1.5} />
                   </a>
@@ -123,7 +123,7 @@ export default async function Page() {
               <div className="flex items-center justify-between">
                 <dt className="flex items-center text-sm text-zinc-600">
                   <Text>Tax estimate</Text>
-                  <a href="#" className="ml-2 shrink-0 text-zinc-400 hover:text-zinc-500">
+                  <a href="#" className="mr-2 shrink-0 text-zinc-400 hover:text-zinc-500">
                     <span className="sr-only">Learn more about how tax is calculated</span>
                     <HugeiconsIcon icon={HelpCircleIcon} size={16} color="currentColor" strokeWidth={1.5} />
                   </a>

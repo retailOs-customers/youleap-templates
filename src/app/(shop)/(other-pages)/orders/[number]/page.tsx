@@ -72,7 +72,7 @@ const Page = async ({ params }: { params: Promise<{ number: string }> }) => {
                       />
                     </div>
 
-                    <div className="mt-6 flex flex-col sm:mt-0 sm:ml-6">
+                    <div className="mt-6 flex flex-col sm:mt-0 sm:mr-6">
                       <h3 className="text-base font-medium text-zinc-900 uppercase">
                         <a href={product.href}>{product.name}</a>
                       </h3>
@@ -122,7 +122,7 @@ const Page = async ({ params }: { params: Promise<{ number: string }> }) => {
                       <div className="text-zinc-950">Order placed</div>
                       <div className={clsx(product.step > 0 ? 'text-zinc-950' : '', 'text-center')}>Processing</div>
                       <div className={clsx(product.step > 1 ? 'text-zinc-950' : '', 'text-center')}>Shipped</div>
-                      <div className={clsx(product.step > 2 ? 'text-zinc-950' : '', 'text-left')}>Delivered</div>
+                      <div className={clsx(product.step > 2 ? 'text-zinc-950' : '', 'text-right')}>Delivered</div>
                     </div>
                   </div>
                 </div>
@@ -147,8 +147,8 @@ const Page = async ({ params }: { params: Promise<{ number: string }> }) => {
               </div>
               <div>
                 <dt className="font-medium text-zinc-900">Payment information</dt>
-                <dd className="-mt-1 -ml-4 flex flex-wrap">
-                  <div className="mt-4 ml-4 shrink-0">
+                <dd className="-mt-1 -mr-4 flex flex-wrap">
+                  <div className="mt-4 mr-4 shrink-0">
                     <svg width={36} height={24} viewBox="0 0 36 24" aria-hidden="true" className="h-6 w-auto">
                       <rect rx={4} fill="#224DBA" width={36} height={24} />
                       <path
@@ -158,7 +158,7 @@ const Page = async ({ params }: { params: Promise<{ number: string }> }) => {
                     </svg>
                     <p className="sr-only">Visa</p>
                   </div>
-                  <div className="mt-4 ml-4">
+                  <div className="mt-4 mr-4">
                     <p className="text-zinc-900">Ending with 4242</p>
                     <p className="text-zinc-600">Expires 02 / 24</p>
                   </div>

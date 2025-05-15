@@ -12,7 +12,7 @@ interface HeroSection2Props {
 const HeroSection2 = ({ className }: HeroSection2Props) => {
   return (
     <div className={className}>
-      <div className="flex min-h-[calc(100vh-5rem)] flex-col justify-between bg-[#ECFF9F] sm:flex-row">
+      <div className="flex min-h-[calc(100vh-5rem)] flex-col justify-between bg-primary sm:flex-row">
         <div className="flex-3/5 self-end py-16 pr-container pl-6 xl:pb-20">
           <div className="max-w-2xl">
             <StarSvg width={48} height={48} />

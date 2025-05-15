@@ -74,7 +74,7 @@ export default function CategoryFilters2({ className }: Props) {
         <span className="text-sm font-medium text-zinc-700 uppercase">Filters</span>
         <HugeiconsIcon
           icon={PlusSignIcon}
-          className="ml-1 size-5 shrink-0 text-zinc-400"
+          className="mr-1 size-5 shrink-0 text-zinc-400"
           size={16}
           color="currentColor"
           strokeWidth={1.5}
@@ -90,12 +90,12 @@ export default function CategoryFilters2({ className }: Props) {
                 <PopoverButton className="group inline-flex items-center justify-center focus-visible:outline-none">
                   <Text>{section.name}</Text>
                   {bage ? (
-                    <span className="ml-1 text-xs font-semibold text-zinc-950 tabular-nums underline">({bage})</span>
+                    <span className="mr-1 text-xs font-semibold text-zinc-950 tabular-nums underline">({bage})</span>
                   ) : null}
 
                   <HugeiconsIcon
                     icon={ArrowDown01Icon}
-                    className="mr-1 -ml-1 size-5 shrink-0 text-zinc-400 group-hover:text-zinc-500"
+                    className="-mr-1 mr-1 size-5 shrink-0 text-zinc-400 group-hover:text-zinc-500"
                     size={16}
                     color="currentColor"
                     strokeWidth={1.5}

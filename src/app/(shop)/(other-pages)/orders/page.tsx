@@ -69,7 +69,7 @@ export default async function Page() {
                         <Text className="mt-auto font-medium text-zinc-900">{product.price}</Text>
                       </div>
                     </div>
-                    <div className="mt-6 max-w-48 space-y-2 sm:mt-0 sm:ml-6 sm:w-40 sm:flex-none">
+                    <div className="mt-6 max-w-48 space-y-2 sm:mt-0 sm:mr-6 sm:w-40 sm:flex-none">
                       <Button type="button" className="w-full" outline>
                         Shop similar
                       </Button>

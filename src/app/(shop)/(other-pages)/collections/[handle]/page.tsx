@@ -60,7 +60,7 @@ export default async function Collection({ params }: { params: Promise<{ handle:
               <ProductSortDropdown />
             </div>
 
-            <CategoryFilters2 className="ml-auto" />
+            <CategoryFilters2 className="mr-auto" />
           </div>
 
           <Divider className="mt-5" />
