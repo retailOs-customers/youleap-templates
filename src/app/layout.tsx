@@ -3,14 +3,6 @@ import '@/styles/globals.css'
 import '@/styles/tailwind.css'
 import clsx from 'clsx'
 import type { Metadata } from 'next'
-import { Heebo } from 'next/font/google'
-
-const heebo = Heebo({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-heebo',
-})
 
 export const metadata: Metadata = {
   title: {
@@ -27,7 +19,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html
       lang="he"
       dir="rtl"
-      className={clsx('text-zinc-950 antialiased dark:bg-zinc-900 dark:text-white dark:lg:bg-zinc-950', heebo.variable)}
+      className={clsx('text-zinc-950 antialiased dark:bg-zinc-900 dark:text-white dark:lg:bg-zinc-950', 'font-asimon')}
     >
       <body>
         <Aside.Provider>{children}</Aside.Provider>

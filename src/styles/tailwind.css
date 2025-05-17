@@ -41,8 +41,8 @@
   --color-error-700: #b91c1c;
 
   /* Typography */
-  --font-sans: 'Heebo', sans-serif;
-  --font-serif: 'Heebo', sans-serif;
+  --font-sans: 'Asimon', sans-serif;
+  --font-serif: 'Asimon', sans-serif;
 
   /* Font Sizes */
   --text-xs: 0.75rem; /* 12px */
@@ -98,6 +98,22 @@
   --transition-fast: 150ms;
   --transition-normal: 300ms;
   --transition-slow: 500ms;
+}
+
+/* Font Face */
+@font-face {
+  font-family: 'Asimon';
+  src:
+    url('/fonts/asimon-regular-aaa.woff2') format('woff2'),
+    url('/fonts/asimon-regular-aaa.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font Utilities */
+@utility font-asimon {
+  font-family: var(--font-sans);
 }
 
 /* Color Utilities */
