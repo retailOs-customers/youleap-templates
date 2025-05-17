@@ -1,6 +1,5 @@
 import { Text } from '@/components/text'
 import { VectorArrowDown3 } from '@/components/vector-arrow-down'
-import { TProductFaq } from '@/data'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
@@ -21,13 +20,14 @@ const faqs_demo = [
   },
   {
     question: 'לבנות קהילה מושרשת באמונה',
-    answer: 'לבנות קהילה מושרשת באמונה, אהבה עצמית והעצמה.',
-  },
-  {
-    question: 'אופנה צריכה להיות משמעותית',
-    answer: 'ליצור עם מטרה, כי אופנה צריכה להיות משמעותית, לא חד פעמית.',
+    answer: 'לבנות קהילה מושרשת באמונה, לתמוך ולעודד נשים בדרכן.',
   },
 ]
+
+type TProductFaq = {
+  question: string
+  answer: string
+}
 
 interface ProductFaqsSectionProps {
   className?: string
