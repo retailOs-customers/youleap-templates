@@ -1754,7 +1754,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 10011,
-              title: 'Pastel Chiffon Hijab',
+              title: 'כיסוי ראש כותנה בצבע בורדו',
               price: 2500,
               selectedOptions: [{ name: 'Color', value: 'Blush Pink' }],
             },
