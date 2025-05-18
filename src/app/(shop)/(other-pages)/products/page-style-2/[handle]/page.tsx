@@ -34,7 +34,7 @@ export default async function Product({ params }: { params: Promise<{ handle: st
 
   const product = await getProductByHandle('demo-product-2')
   // for demo product. you need to change for the yourself
-  const relatedProducts = (await getCollections('hijab'))?.[0].products
+  const relatedProducts = (await getCollections('shoe'))?.[0].products
   // for demo product. you need to change for the yourself
   const combineProduct = relatedProducts?.[1]
   const productReviews = await getProductReviews()

@@ -10,18 +10,18 @@ import { Text } from '../text'
 
 const demo_collections = [
   {
-    title: '<span data-slot="italic">Premium Rayon</span> Hijab',
+    title: '<span data-slot="italic">Premium Rayon</span> shoe',
     desciption: 'The fabric is soft and smooth, making it easy to wear and style, and it is comfortable to wear.',
     images: [
-      '/images/hijab/premium-rayon-1.webp',
+      '/images/shoe/premium-rayon-1.webp',
       //  more images ...
     ],
   },
   {
-    title: '<span data-slot="italic">Premium Chiffon</span> Hijab',
-    desciption: 'Experience unparalleled comfort with our breathable hijabs, perfect for any season.',
+    title: '<span data-slot="italic">Premium Chiffon</span> shoe',
+    desciption: 'Experience unparalleled comfort with our breathable shoes, perfect for any season.',
     images: [
-      '/images/hijab/essential-modal-1-1.webp',
+      '/images/shoe/essential-modal-1-1.webp',
       //  more images ...
     ],
   },

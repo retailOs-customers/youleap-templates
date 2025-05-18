@@ -26,13 +26,13 @@ const FeatureSection1 = ({
   description = 'אנחנו אוהבים את זה בזכות העיצוב המודרני, הפשוט והנקי, והתחושה הקלילה במיוחד. חוו נוחות שאין כמותה עם כיסויי הראש הנושמים שלנו, מושלמים לכל עונה.',
   heading = `<span>מה מייחד אותנו?</span><br /><span data-slot="italic">בואו לגלות</span>`,
   image1 = {
-    src: '/images/hijab/feature-1-1.png',
+    src: '/images/shoe/feature-1-1.png',
     width: 325,
     height: 325,
     alt: 'feature-1-1',
   },
   image2 = {
-    src: '/images/hijab/feature-1-2.png',
+    src: '/images/shoe/feature-1-2.png',
     width: 494,
     height: 529,
     alt: 'feature-1-2',

@@ -13,7 +13,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
       <div className="flex w-full flex-col justify-between gap-6 md:flex-row">
         <div className="w-full">
           <Image
-            src="/images/hijab/hero-1-1.png"
+            src="/images/shoe/hero-1-1.png"
             alt="hero-1"
             width={450}
             height={340}
@@ -25,7 +25,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
         </div>
         <div className="w-full">
           <Image
-            src="/images/hijab/hero-1-2.png"
+            src="/images/shoe/hero-1-2.png"
             alt="hero-1"
             width={450}
             className="w-full"
@@ -39,7 +39,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
             The fabric is comfortable to wear in any season of the year.
           </Text>
           <Image
-            src="/images/hijab/hero-1-3.png"
+            src="/images/shoe/hero-1-3.png"
             alt="hero-1"
             className="w-full"
             width={450}

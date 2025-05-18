@@ -24,7 +24,7 @@ export async function getOrders() {
           address: ['Floyd Miles', '7363 Cynthia Pass', 'Toronto, ON N3Y 4H8'],
           email: 'f•••@example.com',
           phone: '1•••••••••40',
-          imageSrc: '/images/hijab/hijab-coral-1.webp',
+          imageSrc: '/images/shoe/shoe-coral-1.webp',
           imageAlt: 'Insulated bottle with white base and black snap lid.',
           quantity: 1,
           size: 'M',
@@ -52,7 +52,7 @@ export async function getOrders() {
           address: ['Floyd Miles', '7363 Cynthia Pass', 'Toronto, ON N3Y 4H8'],
           email: 'f•••@example.com',
           phone: '1•••••••••40',
-          imageSrc: '/images/hijab/hijab-coral-1.webp',
+          imageSrc: '/images/shoe/shoe-coral-1.webp',
           imageAlt: 'Insulated bottle with white base and black snap lid.',
           quantity: 1,
           size: 'XS',
@@ -72,7 +72,7 @@ export async function getOrders() {
           address: ['Floyd Miles', '7363 Cynthia Pass', 'Toronto, ON N3Y 4H8'],
           email: 'f•••@example.com',
           phone: '1•••••••••40',
-          imageSrc: '/images/hijab/hijab-coral-2.webp',
+          imageSrc: '/images/shoe/shoe-coral-2.webp',
           imageAlt:
             'Arm modeling wristwatch with black leather band, white watch face, thin watch hands, and fine time markings.',
           quantity: 1,
@@ -223,11 +223,11 @@ export async function getProductByHandle(handle: string) {
   if (handle === 'demo-product-2') {
     return {
       id: 'id://Product/9895276099',
-      title: 'Modal Matching Hijab',
+      title: 'Modal Matching shoe',
       vendor: 'All Saints',
       featured_image: {
         id: '1',
-        src: '/images/hijab/hijab-white-2.webp',
+        src: '/images/shoe/shoe-white-2.webp',
         alt: 'product image',
         width: 1200,
         height: 1800,
@@ -235,28 +235,28 @@ export async function getProductByHandle(handle: string) {
       images: [
         {
           id: '1',
-          src: '/images/hijab/premium-rayon-1.webp',
+          src: '/images/shoe/premium-rayon-1.webp',
           alt: 'product image',
           width: 1200,
           height: 1800,
         },
         {
           id: '2',
-          src: '/images/hijab/premium-rayon-4.webp',
+          src: '/images/shoe/premium-rayon-4.webp',
           alt: 'product image',
           width: 1200,
           height: 1800,
         },
         {
           id: '3',
-          src: '/images/hijab/rayon-hijab.webp',
+          src: '/images/shoe/rayon-shoe.webp',
           alt: 'product image',
           width: 1200,
           height: 1800,
         },
         {
           id: '4',
-          src: '/images/hijab/premium-rayon-2.webp',
+          src: '/images/shoe/premium-rayon-2.webp',
           alt: 'product image',
           width: 1200,
           height: 1800,
@@ -266,10 +266,10 @@ export async function getProductByHandle(handle: string) {
       descriptionHtml: `<div class="space-y-8">
             <div>
               <p>
-                Jersey Hijabs are unbelievably lightweight. We&lsquo;ve spent months designing the perfect fabric that
-                keeps you cool and comfortable with our all-season lightweight bamboo jersey hijab. Its breathable
+                Jersey shoes are unbelievably lightweight. We&lsquo;ve spent months designing the perfect fabric that
+                keeps you cool and comfortable with our all-season lightweight bamboo jersey shoe. Its breathable
                 fabric is perfect for any occasion from weddings to going to the gym - this is our must-have fabric that
-                will keep your hijab in place and looking chic all day.
+                will keep your shoe in place and looking chic all day.
               </p>
             </div>
             <div>
@@ -299,8 +299,8 @@ export async function getProductByHandle(handle: string) {
       collections: [
         {
           id: 'id://Collection/389242499',
-          handle: 'chiffon-hijabs',
-          title: 'Chiffon Hijabs',
+          handle: 'chiffon-shoes',
+          title: 'Chiffon shoes',
         },
       ],
       options: [
@@ -446,17 +446,17 @@ export async function getProductByHandle(handle: string) {
       descriptionHtml: `<div class="space-y-8">
             <div>
               <p>
-                Jersey Hijabs are unbelievably lightweight. We&lsquo;ve spent months designing the perfect fabric that
-                keeps you cool and comfortable with our all-season lightweight bamboo jersey hijab. Its breathable
+                Jersey shoes are unbelievably lightweight. We&lsquo;ve spent months designing the perfect fabric that
+                keeps you cool and comfortable with our all-season lightweight bamboo jersey shoe. Its breathable
                 fabric is perfect for any occasion from weddings to going to the gym - this is our must-have fabric that
-                will keep your hijab in place and looking chic all day.
+                will keep your shoe in place and looking chic all day.
               </p>
             </div>
             <div>
               <p class="mb-3 text-sm text-zinc-500 uppercase">Product Details</p>
               <ul class="list-inside list-disc *:marker:text-zinc-300">
-                <li>200x70 cm is our Regular Modal Hijab Size.</li>
-                <li>Two-piece set includes a hijab and matching undercap.</li>
+                <li>200x70 cm is our Regular Modal shoe Size.</li>
+                <li>Two-piece set includes a shoe and matching undercap.</li>
                 <li>Made from 100% TENCEL™ Modal fabric.</li>
                 <li>Perfect for layering or wearing alone.</li>
                 <li>Easy to care for and maintain.</li>
@@ -618,17 +618,17 @@ export async function getProductByHandle(handle: string) {
     descriptionHtml: `<div class="space-y-8">
           <div>
             <p>
-              Jersey Hijabs are unbelievably lightweight. We&lsquo;ve spent months designing the perfect fabric that
-              keeps you cool and comfortable with our all-season lightweight bamboo jersey hijab. Its breathable
+              Jersey shoes are unbelievably lightweight. We&lsquo;ve spent months designing the perfect fabric that
+              keeps you cool and comfortable with our all-season lightweight bamboo jersey shoe. Its breathable
               fabric is perfect for any occasion from weddings to going to the gym - this is our must-have fabric that
-              will keep your hijab in place and looking chic all day.
+              will keep your shoe in place and looking chic all day.
             </p>
           </div>
           <div>
             <p class="mb-3 text-sm text-zinc-500 uppercase">Product Details</p>
             <ul class="list-inside list-disc *:marker:text-zinc-300">
-              <li>200x70 cm is our Regular Modal Hijab Size.</li>
-              <li>Two-piece set includes a hijab and matching undercap.</li>
+              <li>200x70 cm is our Regular Modal shoe Size.</li>
+              <li>Two-piece set includes a shoe and matching undercap.</li>
               <li>Made from 100% TENCEL™ Modal fabric.</li>
               <li>Perfect for layering or wearing alone.</li>
               <li>Easy to care for and maintain.</li>
@@ -866,8 +866,8 @@ export function getBlogPosts() {
     },
     {
       id: 3,
-      title: 'The Must-Have Hijabi Friendly Fabrics for 2024',
-      handle: 'the-must-have-hijabi-friendly-fabrics-for-2024',
+      title: 'The Must-Have shoei Friendly Fabrics for 2024',
+      handle: 'the-must-have-shoei-friendly-fabrics-for-2024',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       imageUrl: '/images/blog3.jpg',
@@ -878,8 +878,8 @@ export function getBlogPosts() {
     },
     {
       id: 4,
-      title: 'The Hijabi Friendly Fabrics for 2025',
-      handle: 'the-must-have-hijabi-friendly-fabrics-for',
+      title: 'The shoei Friendly Fabrics for 2025',
+      handle: 'the-must-have-shoei-friendly-fabrics-for',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
       imageUrl: '/images/blog4.jpg',
@@ -954,7 +954,7 @@ export function getCartProducts() {
       color: 'Sienna',
       inStock: true,
       size: 'Large',
-      imageSrc: '/images/hijab/hijab-coral-1.webp',
+      imageSrc: '/images/shoe/shoe-coral-1.webp',
       imageAlt: "Front of men's Basic Tee in sienna.",
       quantity: 1,
     },
@@ -967,7 +967,7 @@ export function getCartProducts() {
       inStock: false,
       leadTime: '3–4 weeks',
       size: 'Large',
-      imageSrc: '/images/hijab/hijab-coral-2.webp',
+      imageSrc: '/images/shoe/shoe-coral-2.webp',
       imageAlt: "Front of men's Basic Tee in black.",
       quantity: 1,
     },
@@ -978,7 +978,7 @@ export function getCartProducts() {
       price: '$35.00',
       color: 'White',
       inStock: true,
-      imageSrc: '/images/hijab/hijab-yellow-2.webp',
+      imageSrc: '/images/shoe/shoe-yellow-2.webp',
       imageAlt: 'Insulated bottle with white base and black snap lid.',
       quantity: 1,
     },
@@ -1722,35 +1722,35 @@ export async function getSkincareGroupCollections() {
   ]
 }
 
-// ------------------------ HIJAB DATA ------------------------
-// ------------------------ HIJAB DATA ------------------------
-export async function getHijabCollections() {
+// ------------------------ shoe DATA ------------------------
+// ------------------------ shoe DATA ------------------------
+export async function getshoeCollections() {
   return [
     {
       id: '1',
-      title: 'Chiffon Hijabs',
-      handle: 'chiffon-hijabs',
-      description: 'Lightweight and elegant chiffon hijabs for a soft, flowy look.',
+      title: 'Chiffon shoes',
+      handle: 'chiffon-shoes',
+      description: 'Lightweight and elegant chiffon shoes for a soft, flowy look.',
       updatedAt: '2025-05-06T10:00:00-04:00',
-      image: '/images/hijab/c1.webp',
-      url: '/collections/chiffon-hijabs',
+      image: '/images/shoe/c1.webp',
+      url: '/collections/chiffon-shoes',
       products: [
         {
           id: 1001,
-          title: 'Pastel Chiffon Hijab',
-          handle: 'pastel-chiffon-hijab',
-          description: 'A delicate pastel chiffon hijab, perfect for everyday elegance.',
+          title: 'Pastel Chiffon shoe',
+          handle: 'pastel-chiffon-shoe',
+          description: 'A delicate pastel chiffon shoe, perfect for everyday elegance.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Daily'],
           price: 2500,
           price_min: 2500,
           price_max: 2500,
-          images: ['/images/hijab/essential-modal-1.webp', '/images/hijab/keffiyeh-modal-1.webp'],
-          featured_image: '/images/hijab/essential-modal-1.webp',
-          url: '/products/pastel-chiffon-hijab',
+          images: ['/images/shoe/essential-modal-1.webp', '/images/shoe/keffiyeh-modal-1.webp'],
+          featured_image: '/images/shoe/essential-modal-1.webp',
+          url: '/products/pastel-chiffon-shoe',
           variants: [
             {
               id: 10011,
@@ -1762,24 +1762,24 @@ export async function getHijabCollections() {
         },
         {
           id: 1002,
-          title: 'Embroidered Chiffon Hijab',
-          handle: 'embroidered-chiffon-hijab',
-          description: 'A chiffon hijab with intricate embroidery for special occasions.',
+          title: 'Embroidered Chiffon shoe',
+          handle: 'embroidered-chiffon-shoe',
+          description: 'A chiffon shoe with intricate embroidery for special occasions.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Formal'],
           price: 3500,
           price_min: 3500,
           price_max: 3500,
-          images: ['/images/hijab/essential-modal-2.webp', '/images/hijab/essential-modal-1-1.webp'],
-          featured_image: '/images/hijab/essential-modal-2.webp',
-          url: '/products/embroidered-chiffon-hijab',
+          images: ['/images/shoe/essential-modal-2.webp', '/images/shoe/essential-modal-1-1.webp'],
+          featured_image: '/images/shoe/essential-modal-2.webp',
+          url: '/products/embroidered-chiffon-shoe',
           variants: [
             {
               id: 10021,
-              title: 'Embroidered Chiffon Hijab',
+              title: 'Embroidered Chiffon shoe',
               price: 3500,
               selectedOptions: [{ name: 'Color', value: 'Ivory' }],
             },
@@ -1787,24 +1787,24 @@ export async function getHijabCollections() {
         },
         {
           id: 1003,
-          title: 'Bold Chiffon Hijab',
-          handle: 'bold-chiffon-hijab',
-          description: 'A vibrant chiffon hijab for a striking and confident look.',
+          title: 'Bold Chiffon shoe',
+          handle: 'bold-chiffon-shoe',
+          description: 'A vibrant chiffon shoe for a striking and confident look.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Statement'],
           price: 2800,
           price_min: 2800,
           price_max: 2800,
-          images: ['/images/hijab/essential-modal-3.webp', '/images/hijab/hijab-haze-1.webp'],
-          featured_image: '/images/hijab/essential-modal-3.webp',
-          url: '/products/bold-chiffon-hijab',
+          images: ['/images/shoe/essential-modal-3.webp', '/images/shoe/shoe-haze-1.webp'],
+          featured_image: '/images/shoe/essential-modal-3.webp',
+          url: '/products/bold-chiffon-shoe',
           variants: [
             {
               id: 10031,
-              title: 'Bold Chiffon Hijab',
+              title: 'Bold Chiffon shoe',
               price: 2800,
               selectedOptions: [{ name: 'Color', value: 'Emerald Green' }],
             },
@@ -1812,24 +1812,24 @@ export async function getHijabCollections() {
         },
         {
           id: 1004,
-          title: 'Printed Chiffon Hijab',
-          handle: 'printed-chiffon-hijab',
-          description: 'A chic printed chiffon hijab for a modern and stylish appearance.',
+          title: 'Printed Chiffon shoe',
+          handle: 'printed-chiffon-shoe',
+          description: 'A chic printed chiffon shoe for a modern and stylish appearance.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Printed'],
           price: 3000,
           price_min: 3000,
           price_max: 3000,
-          images: ['/images/hijab/keffiyeh-modal-1.webp', '/images/hijab/essential-modal-1.webp'],
-          featured_image: '/images/hijab/keffiyeh-modal-1.webp',
-          url: '/products/printed-chiffon-hijab',
+          images: ['/images/shoe/keffiyeh-modal-1.webp', '/images/shoe/essential-modal-1.webp'],
+          featured_image: '/images/shoe/keffiyeh-modal-1.webp',
+          url: '/products/printed-chiffon-shoe',
           variants: [
             {
               id: 10041,
-              title: 'Printed Chiffon Hijab',
+              title: 'Printed Chiffon shoe',
               price: 3000,
               selectedOptions: [{ name: 'Color', value: 'Floral Blue' }],
             },
@@ -1837,24 +1837,24 @@ export async function getHijabCollections() {
         },
         {
           id: 1005,
-          title: 'Neutral Chiffon Hijab',
-          handle: 'neutral-chiffon-hijab',
-          description: 'A versatile neutral chiffon hijab for effortless styling.',
+          title: 'Neutral Chiffon shoe',
+          handle: 'neutral-chiffon-shoe',
+          description: 'A versatile neutral chiffon shoe for effortless styling.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Daily'],
           price: 2200,
           price_min: 2200,
           price_max: 2200,
-          images: ['/images/hijab/hijab-white-1.webp', '/images/hijab/premium-rayon-1.webp'],
-          featured_image: '/images/hijab/hijab-white-1.webp',
-          url: '/products/neutral-chiffon-hijab',
+          images: ['/images/shoe/shoe-white-1.webp', '/images/shoe/premium-rayon-1.webp'],
+          featured_image: '/images/shoe/shoe-white-1.webp',
+          url: '/products/neutral-chiffon-shoe',
           variants: [
             {
               id: 10051,
-              title: 'Neutral Chiffon Hijab',
+              title: 'Neutral Chiffon shoe',
               price: 2200,
               selectedOptions: [{ name: 'Color', value: 'Beige' }],
             },
@@ -1864,33 +1864,33 @@ export async function getHijabCollections() {
     },
     {
       id: '2',
-      title: 'Jersey Hijabs',
-      handle: 'jersey-hijabs',
-      description: 'Soft and stretchy jersey hijabs for comfort and versatility.',
+      title: 'Jersey shoes',
+      handle: 'jersey-shoes',
+      description: 'Soft and stretchy jersey shoes for comfort and versatility.',
       updatedAt: '2025-05-06T10:00:00-04:00',
-      image: '/images/hijab/c2.webp',
-      url: '/collections/jersey-hijabs',
+      image: '/images/shoe/c2.webp',
+      url: '/collections/jersey-shoes',
       products: [
         {
           id: 2001,
-          title: 'Classic Jersey Hijab',
-          handle: 'classic-jersey-hijab',
-          description: 'A classic jersey hijab for all-day comfort and easy styling.',
+          title: 'Classic Jersey shoe',
+          handle: 'classic-jersey-shoe',
+          description: 'A classic jersey shoe for all-day comfort and easy styling.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Daily'],
           price: 1800,
           price_min: 1800,
           price_max: 1800,
-          images: ['/images/hijab/printed-modal-2.webp', '/images/hijab/printed-modal-2.png'],
-          featured_image: '/images/hijab/printed-modal-2.webp',
-          url: '/products/classic-jersey-hijab',
+          images: ['/images/shoe/printed-modal-2.webp', '/images/shoe/printed-modal-2.png'],
+          featured_image: '/images/shoe/printed-modal-2.webp',
+          url: '/products/classic-jersey-shoe',
           variants: [
             {
               id: 20011,
-              title: 'Classic Jersey Hijab',
+              title: 'Classic Jersey shoe',
               price: 1800,
               selectedOptions: [{ name: 'Color', value: 'Black' }],
             },
@@ -1898,24 +1898,24 @@ export async function getHijabCollections() {
         },
         {
           id: 2002,
-          title: 'Premium Jersey Hijab',
-          handle: 'classic-jersey-hijab',
-          description: 'A premium jersey hijab with a smooth, luxurious feel.',
+          title: 'Premium Jersey shoe',
+          handle: 'classic-jersey-shoe',
+          description: 'A premium jersey shoe with a smooth, luxurious feel.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Premium'],
           price: 2500,
           price_min: 2500,
           price_max: 2500,
-          images: ['/images/hijab/hijab-coral-2.webp', '/images/hijab/hijab-coral-1.webp'],
-          featured_image: '/images/hijab/hijab-coral-1.webp',
-          url: '/products/premium-jersey-hijab',
+          images: ['/images/shoe/shoe-coral-2.webp', '/images/shoe/shoe-coral-1.webp'],
+          featured_image: '/images/shoe/shoe-coral-1.webp',
+          url: '/products/premium-jersey-shoe',
           variants: [
             {
               id: 20021,
-              title: 'Premium Jersey Hijab',
+              title: 'Premium Jersey shoe',
               price: 2500,
               selectedOptions: [{ name: 'Color', value: 'Navy' }],
             },
@@ -1923,24 +1923,24 @@ export async function getHijabCollections() {
         },
         {
           id: 2003,
-          title: 'Sport Jersey Hijab',
-          handle: 'sport-jersey-hijab',
-          description: 'A breathable jersey hijab designed for active lifestyles.',
+          title: 'Sport Jersey shoe',
+          handle: 'sport-jersey-shoe',
+          description: 'A breathable jersey shoe designed for active lifestyles.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Sport'],
           price: 2000,
           price_min: 2000,
           price_max: 2000,
-          images: ['/images/hijab/hijab-mosaic-1.webp', '/images/hijab/hijab-mosaic-2.webp'],
-          featured_image: '/images/hijab/hijab-mosaic-1.webp',
-          url: '/products/sport-jersey-hijab',
+          images: ['/images/shoe/shoe-mosaic-1.webp', '/images/shoe/shoe-mosaic-2.webp'],
+          featured_image: '/images/shoe/shoe-mosaic-1.webp',
+          url: '/products/sport-jersey-shoe',
           variants: [
             {
               id: 20031,
-              title: 'Sport Jersey Hijab',
+              title: 'Sport Jersey shoe',
               price: 2000,
               selectedOptions: [{ name: 'Color', value: 'Grey' }],
             },
@@ -1948,24 +1948,24 @@ export async function getHijabCollections() {
         },
         {
           id: 2004,
-          title: 'Patterned Jersey Hijab',
-          handle: 'patterned-jersey-hijab',
-          description: 'A stylish patterned jersey hijab for a trendy look.',
+          title: 'Patterned Jersey shoe',
+          handle: 'patterned-jersey-shoe',
+          description: 'A stylish patterned jersey shoe for a trendy look.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Patterned'],
           price: 2200,
           price_min: 2200,
           price_max: 2200,
-          images: ['/images/hijab/hijab-white-2.webp', '/images/hijab/hijab-white-1.webp'],
-          featured_image: '/images/hijab/hijab-white-1.webp',
-          url: '/products/patterned-jersey-hijab',
+          images: ['/images/shoe/shoe-white-2.webp', '/images/shoe/shoe-white-1.webp'],
+          featured_image: '/images/shoe/shoe-white-1.webp',
+          url: '/products/patterned-jersey-shoe',
           variants: [
             {
               id: 20041,
-              title: 'Patterned Jersey Hijab',
+              title: 'Patterned Jersey shoe',
               price: 2200,
               selectedOptions: [{ name: 'Color', value: 'Geometric Blue' }],
             },
@@ -1973,24 +1973,24 @@ export async function getHijabCollections() {
         },
         {
           id: 2005,
-          title: 'Soft Jersey Hijab',
-          handle: 'soft-jersey-hijab',
-          description: 'An ultra-soft jersey hijab for maximum comfort and versatility.',
+          title: 'Soft Jersey shoe',
+          handle: 'soft-jersey-shoe',
+          description: 'An ultra-soft jersey shoe for maximum comfort and versatility.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Daily'],
           price: 1900,
           price_min: 1900,
           price_max: 1900,
-          images: ['/images/hijab/hijab-yellow-2.webp', '/images/hijab/hijab-yellow-1.webp'],
-          featured_image: '/images/hijab/hijab-yellow-2.webp',
-          url: '/products/soft-jersey-hijab',
+          images: ['/images/shoe/shoe-yellow-2.webp', '/images/shoe/shoe-yellow-1.webp'],
+          featured_image: '/images/shoe/shoe-yellow-2.webp',
+          url: '/products/soft-jersey-shoe',
           variants: [
             {
               id: 20051,
-              title: 'Soft Jersey Hijab',
+              title: 'Soft Jersey shoe',
               price: 1900,
               selectedOptions: [{ name: 'Color', value: 'Cream' }],
             },
@@ -2000,17 +2000,17 @@ export async function getHijabCollections() {
     },
     {
       id: '3',
-      title: 'Cotton Hijabs',
-      handle: 'cotton-hijabs',
-      description: 'Breathable and durable cotton hijabs for everyday wear.',
+      title: 'Cotton shoes',
+      handle: 'cotton-shoes',
+      description: 'Breathable and durable cotton shoes for everyday wear.',
       updatedAt: '2025-05-06T10:00:00-04:00',
-      image: '/images/hijab/c3.webp',
-      url: '/collections/cotton-hijabs',
+      image: '/images/shoe/c3.webp',
+      url: '/collections/cotton-shoes',
       products: [
         {
           id: 3005,
           title: 'נעל כותנה בצבע אחיד',
-          handle: 'solid-cotton-hijab',
+          handle: 'solid-cotton-shoe',
           description: 'נעל כותנה בצבע אחיד לעיצוב קלאסי ועל-זמני.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
@@ -2020,9 +2020,9 @@ export async function getHijabCollections() {
           price: 1700,
           price_min: 1700,
           price_max: 1700,
-          images: ['/images/hijab/premium-rayon-2.webp', '/images/hijab/printed-modal-5.webp'],
-          featured_image: '/images/hijab/premium-rayon-2.webp',
-          url: '/products/solid-cotton-hijab',
+          images: ['/images/shoe/premium-rayon-2.webp', '/images/shoe/printed-modal-5.webp'],
+          featured_image: '/images/shoe/premium-rayon-2.webp',
+          url: '/products/solid-cotton-shoe',
           variants: [
             {
               id: 30051,
@@ -2035,7 +2035,7 @@ export async function getHijabCollections() {
         {
           id: 3002,
           title: 'נעל כותנה בטקסטורה',
-          handle: 'classic-jersey-hijab',
+          handle: 'classic-jersey-shoe',
           description: 'נעל כותנה עם טקסטורה למראה ייחודי וסטייליסטי.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
@@ -2045,9 +2045,9 @@ export async function getHijabCollections() {
           price: 2000,
           price_min: 2000,
           price_max: 2000,
-          images: ['/images/hijab/rayon-hijab.webp', '/images/hijab/zahraa_3.webp'],
-          featured_image: '/images/hijab/zahraa_3.webp',
-          url: '/products/textured-cotton-hijab',
+          images: ['/images/shoe/rayon-shoe.webp', '/images/shoe/zahraa_3.webp'],
+          featured_image: '/images/shoe/zahraa_3.webp',
+          url: '/products/textured-cotton-shoe',
           variants: [
             {
               id: 30021,
@@ -2060,7 +2060,7 @@ export async function getHijabCollections() {
         {
           id: 3003,
           title: 'נעל כותנה עם הדפס',
-          handle: 'classic-jersey-hijab',
+          handle: 'classic-jersey-shoe',
           description: 'נעל כותנה עם הדפס צבעוני לסגנון שובב ומודרני.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
@@ -2070,8 +2070,8 @@ export async function getHijabCollections() {
           price: 1800,
           price_min: 1800,
           price_max: 1800,
-          images: ['/images/hijab/printed-modal-3.webp', '/images/hijab/printed-modal-4.webp'],
-          featured_image: '/images/hijab/printed-modal-3.webp',
+          images: ['/images/shoe/printed-modal-3.webp', '/images/shoe/printed-modal-4.webp'],
+          featured_image: '/images/shoe/printed-modal-3.webp',
           url: '/products/printed-cotton-hACON',
           variants: [
             {
@@ -2085,7 +2085,7 @@ export async function getHijabCollections() {
         {
           id: 3004,
           title: 'נעל כותנה אורגנית',
-          handle: 'organic-cotton-hijab',
+          handle: 'organic-cotton-shoe',
           description: 'נעל כותנה אורגנית ידידותי לסביבה לאופנה בת-קיימא.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
@@ -2095,9 +2095,9 @@ export async function getHijabCollections() {
           price: 2300,
           price_min: 2300,
           price_max: 2300,
-          images: ['/images/hijab/hijab-mosaic-1.webp', '/images/hijab/hijab-mosaic-2.webp'],
-          featured_image: '/images/hijab/hijab-mosaic-1.webp',
-          url: '/products/organic-cotton-hijab',
+          images: ['/images/shoe/shoe-mosaic-1.webp', '/images/shoe/shoe-mosaic-2.webp'],
+          featured_image: '/images/shoe/shoe-mosaic-1.webp',
+          url: '/products/organic-cotton-shoe',
           variants: [
             {
               id: 30041,
@@ -2110,7 +2110,7 @@ export async function getHijabCollections() {
         {
           id: 3001,
           title: 'נעל כותנה בסיסי',
-          handle: 'basic-cotton-hijab',
+          handle: 'basic-cotton-shoe',
           description: 'נעל כותנה פשוט ללבישה יומיומית נוחה.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
@@ -2120,9 +2120,9 @@ export async function getHijabCollections() {
           price: 1500,
           price_min: 1500,
           price_max: 1500,
-          images: ['/images/hijab/zahraa_2.webp', '/images/hijab/zahraa_1.webp'],
-          featured_image: '/images/hijab/zahraa_2.webp',
-          url: '/products/basic-cotton-hijab',
+          images: ['/images/shoe/zahraa_2.webp', '/images/shoe/zahraa_1.webp'],
+          featured_image: '/images/shoe/zahraa_2.webp',
+          url: '/products/basic-cotton-shoe',
           variants: [
             {
               id: 30011,
@@ -2136,33 +2136,33 @@ export async function getHijabCollections() {
     },
     {
       id: '4',
-      title: 'Silk Hijabs',
-      handle: 'silk-hijabs',
-      description: 'Luxurious silk hijabs for a smooth and sophisticated look.',
+      title: 'Silk shoes',
+      handle: 'silk-shoes',
+      description: 'Luxurious silk shoes for a smooth and sophisticated look.',
       updatedAt: '2025-05-06T10:00:00-04:00',
-      image: '/images/hijab/c4.webp',
-      url: '/collections/silk-hijabs',
+      image: '/images/shoe/c4.webp',
+      url: '/collections/silk-shoes',
       products: [
         {
           id: 4001,
-          title: 'Classic Jersey Hijab',
-          handle: 'classic-jersey-hijab',
-          description: 'A classic jersey hijab for all-day comfort and easy styling.',
+          title: 'Classic Jersey shoe',
+          handle: 'classic-jersey-shoe',
+          description: 'A classic jersey shoe for all-day comfort and easy styling.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Daily'],
           price: 1800,
           price_min: 1800,
           price_max: 1800,
-          images: ['/images/hijab/printed-modal-2.webp', '/images/hijab/printed-modal-2.png'],
-          featured_image: '/images/hijab/printed-modal-2.webp',
-          url: '/products/classic-jersey-hijab',
+          images: ['/images/shoe/printed-modal-2.webp', '/images/shoe/printed-modal-2.png'],
+          featured_image: '/images/shoe/printed-modal-2.webp',
+          url: '/products/classic-jersey-shoe',
           variants: [
             {
               id: 40011,
-              title: 'Classic Jersey Hijab',
+              title: 'Classic Jersey shoe',
               price: 1800,
               selectedOptions: [{ name: 'Color', value: 'Black' }],
             },
@@ -2170,24 +2170,24 @@ export async function getHijabCollections() {
         },
         {
           id: 4002,
-          title: 'Premium Jersey Hijab',
-          handle: 'heledoron-hijab',
-          description: 'A premium jersey hijab with a smooth, luxurious feel.',
+          title: 'Premium Jersey shoe',
+          handle: 'heledoron-shoe',
+          description: 'A premium jersey shoe with a smooth, luxurious feel.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Premium'],
           price: 2500,
           price_min: 2500,
           price_max: 2500,
-          images: ['/images/hijab/hijab-coral-2.webp', '/images/hijab/hijab-coral-1.webp'],
-          featured_image: '/images/hijab/hijab-coral-1.webp',
-          url: '/products/premium-jersey-hijab',
+          images: ['/images/shoe/shoe-coral-2.webp', '/images/shoe/shoe-coral-1.webp'],
+          featured_image: '/images/shoe/shoe-coral-1.webp',
+          url: '/products/premium-jersey-shoe',
           variants: [
             {
               id: 40021,
-              title: 'Premium Jersey Hijab',
+              title: 'Premium Jersey shoe',
               price: 2500,
               selectedOptions: [{ name: 'Color', value: 'Navy' }],
             },
@@ -2195,24 +2195,24 @@ export async function getHijabCollections() {
         },
         {
           id: 4003,
-          title: 'Sport Jersey Hijab',
-          handle: 'classic-jersey-hijab',
-          description: 'A breathable jersey hijab designed for active lifestyles.',
+          title: 'Sport Jersey shoe',
+          handle: 'classic-jersey-shoe',
+          description: 'A breathable jersey shoe designed for active lifestyles.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Sport'],
           price: 2000,
           price_min: 2000,
           price_max: 2000,
-          images: ['/images/hijab/hijab-mosaic-1.webp', '/images/hijab/hijab-mosaic-2.webp'],
-          featured_image: '/images/hijab/hijab-mosaic-1.webp',
-          url: '/products/sport-jersey-hijab',
+          images: ['/images/shoe/shoe-mosaic-1.webp', '/images/shoe/shoe-mosaic-2.webp'],
+          featured_image: '/images/shoe/shoe-mosaic-1.webp',
+          url: '/products/sport-jersey-shoe',
           variants: [
             {
               id: 40031,
-              title: 'Sport Jersey Hijab',
+              title: 'Sport Jersey shoe',
               price: 2000,
               selectedOptions: [{ name: 'Color', value: 'Grey' }],
             },
@@ -2220,24 +2220,24 @@ export async function getHijabCollections() {
         },
         {
           id: 4004,
-          title: 'Patterned Jersey Hijab',
-          handle: 'patterned-jersey-hijab',
-          description: 'A stylish patterned jersey hijab for a trendy look.',
+          title: 'Patterned Jersey shoe',
+          handle: 'patterned-jersey-shoe',
+          description: 'A stylish patterned jersey shoe for a trendy look.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Patterned'],
           price: 2200,
           price_min: 2200,
           price_max: 2200,
-          images: ['/images/hijab/hijab-white-2.webp', '/images/hijab/hijab-white-1.webp'],
-          featured_image: '/images/hijab/hijab-white-1.webp',
-          url: '/products/patterned-jersey-hijab',
+          images: ['/images/shoe/shoe-white-2.webp', '/images/shoe/shoe-white-1.webp'],
+          featured_image: '/images/shoe/shoe-white-1.webp',
+          url: '/products/patterned-jersey-shoe',
           variants: [
             {
               id: 40041,
-              title: 'Patterned Jersey Hijab',
+              title: 'Patterned Jersey shoe',
               price: 2200,
               selectedOptions: [{ name: 'Color', value: 'Geometric Blue' }],
             },
@@ -2245,24 +2245,24 @@ export async function getHijabCollections() {
         },
         {
           id: 4005,
-          title: 'Soft Jersey Hijab',
-          handle: 'soft-jersey-hijab',
-          description: 'An ultra-soft jersey hijab for maximum comfort and versatility.',
+          title: 'Soft Jersey shoe',
+          handle: 'soft-jersey-shoe',
+          description: 'An ultra-soft jersey shoe for maximum comfort and versatility.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Jersey', 'Daily'],
           price: 1900,
           price_min: 1900,
           price_max: 1900,
-          images: ['/images/hijab/hijab-yellow-2.webp', '/images/hijab/hijab-yellow-1.webp'],
-          featured_image: '/images/hijab/hijab-yellow-2.webp',
-          url: '/products/soft-jersey-hijab',
+          images: ['/images/shoe/shoe-yellow-2.webp', '/images/shoe/shoe-yellow-1.webp'],
+          featured_image: '/images/shoe/shoe-yellow-2.webp',
+          url: '/products/soft-jersey-shoe',
           variants: [
             {
               id: 40051,
-              title: 'Soft Jersey Hijab',
+              title: 'Soft Jersey shoe',
               price: 1900,
               selectedOptions: [{ name: 'Color', value: 'Cream' }],
             },
@@ -2272,33 +2272,33 @@ export async function getHijabCollections() {
     },
     {
       id: '5',
-      title: 'Instant Hijabs',
-      handle: 'instant-hijabs',
-      description: 'Convenient and ready-to-wear instant hijabs for quick, stylish coverage.',
+      title: 'Instant shoes',
+      handle: 'instant-shoes',
+      description: 'Convenient and ready-to-wear instant shoes for quick, stylish coverage.',
       updatedAt: '2025-05-06T10:00:00-04:00',
-      image: '/images/hijab/c5.webp',
-      url: '/collections/instant-hijabs',
+      image: '/images/shoe/c5.webp',
+      url: '/collections/instant-shoes',
       products: [
         {
           id: 5001,
-          title: 'Pastel Chiffon Hijab',
-          handle: 'classic-jersey-hijab',
-          description: 'A delicate pastel chiffon hijab, perfect for everyday elegance.',
+          title: 'Pastel Chiffon shoe',
+          handle: 'classic-jersey-shoe',
+          description: 'A delicate pastel chiffon shoe, perfect for everyday elegance.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Daily'],
           price: 2500,
           price_min: 2500,
           price_max: 2500,
-          images: ['/images/hijab/essential-modal-1.webp', '/images/hijab/keffiyeh-modal-1.webp'],
-          featured_image: '/images/hijab/essential-modal-1.webp',
-          url: '/products/pastel-chiffon-hijab',
+          images: ['/images/shoe/essential-modal-1.webp', '/images/shoe/keffiyeh-modal-1.webp'],
+          featured_image: '/images/shoe/essential-modal-1.webp',
+          url: '/products/pastel-chiffon-shoe',
           variants: [
             {
               id: 50011,
-              title: 'Pastel Chiffon Hijab',
+              title: 'Pastel Chiffon shoe',
               price: 2500,
               selectedOptions: [{ name: 'Color', value: 'Blush Pink' }],
             },
@@ -2306,24 +2306,24 @@ export async function getHijabCollections() {
         },
         {
           id: 5002,
-          title: 'Embroidered Chiffon Hijab',
-          handle: 'embroidered-chiffon-hijab',
-          description: 'A chiffon hijab with intricate embroidery for special occasions.',
+          title: 'Embroidered Chiffon shoe',
+          handle: 'embroidered-chiffon-shoe',
+          description: 'A chiffon shoe with intricate embroidery for special occasions.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Formal'],
           price: 3500,
           price_min: 3500,
           price_max: 3500,
-          images: ['/images/hijab/essential-modal-2.webp', '/images/hijab/essential-modal-1-1.webp'],
-          featured_image: '/images/hijab/essential-modal-2.webp',
-          url: '/products/embroidered-chiffon-hijab',
+          images: ['/images/shoe/essential-modal-2.webp', '/images/shoe/essential-modal-1-1.webp'],
+          featured_image: '/images/shoe/essential-modal-2.webp',
+          url: '/products/embroidered-chiffon-shoe',
           variants: [
             {
               id: 50021,
-              title: 'Embroidered Chiffon Hijab',
+              title: 'Embroidered Chiffon shoe',
               price: 3500,
               selectedOptions: [{ name: 'Color', value: 'Ivory' }],
             },
@@ -2331,24 +2331,24 @@ export async function getHijabCollections() {
         },
         {
           id: 5003,
-          title: 'Bold Chiffon Hijab',
-          handle: 'classic-jersey-hijab',
-          description: 'A vibrant chiffon hijab for a striking and confident look.',
+          title: 'Bold Chiffon shoe',
+          handle: 'classic-jersey-shoe',
+          description: 'A vibrant chiffon shoe for a striking and confident look.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Statement'],
           price: 2800,
           price_min: 2800,
           price_max: 2800,
-          images: ['/images/hijab/essential-modal-3.webp', '/images/hijab/hijab-haze-1.webp'],
-          featured_image: '/images/hijab/essential-modal-3.webp',
-          url: '/products/bold-chiffon-hijab',
+          images: ['/images/shoe/essential-modal-3.webp', '/images/shoe/shoe-haze-1.webp'],
+          featured_image: '/images/shoe/essential-modal-3.webp',
+          url: '/products/bold-chiffon-shoe',
           variants: [
             {
               id: 50031,
-              title: 'Bold Chiffon Hijab',
+              title: 'Bold Chiffon shoe',
               price: 2800,
               selectedOptions: [{ name: 'Color', value: 'Emerald Green' }],
             },
@@ -2356,24 +2356,24 @@ export async function getHijabCollections() {
         },
         {
           id: 5004,
-          title: 'Printed Chiffon Hijab',
-          handle: 'printed-chiffon-hijab',
-          description: 'A chic printed chiffon hijab for a modern and stylish appearance.',
+          title: 'Printed Chiffon shoe',
+          handle: 'printed-chiffon-shoe',
+          description: 'A chic printed chiffon shoe for a modern and stylish appearance.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Printed'],
           price: 3000,
           price_min: 3000,
           price_max: 3000,
-          images: ['/images/hijab/keffiyeh-modal-1.webp', '/images/hijab/essential-modal-1.webp'],
-          featured_image: '/images/hijab/keffiyeh-modal-1.webp',
-          url: '/products/printed-chiffon-hijab',
+          images: ['/images/shoe/keffiyeh-modal-1.webp', '/images/shoe/essential-modal-1.webp'],
+          featured_image: '/images/shoe/keffiyeh-modal-1.webp',
+          url: '/products/printed-chiffon-shoe',
           variants: [
             {
               id: 50041,
-              title: 'Printed Chiffon Hijab',
+              title: 'Printed Chiffon shoe',
               price: 3000,
               selectedOptions: [{ name: 'Color', value: 'Floral Blue' }],
             },
@@ -2381,24 +2381,24 @@ export async function getHijabCollections() {
         },
         {
           id: 5005,
-          title: 'Neutral Chiffon Hijab',
-          handle: 'neutral-chiffon-hijab',
-          description: 'A versatile neutral chiffon hijab for effortless styling.',
+          title: 'Neutral Chiffon shoe',
+          handle: 'neutral-chiffon-shoe',
+          description: 'A versatile neutral chiffon shoe for effortless styling.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'Hijab',
+          type: 'shoe',
           tags: ['Chiffon', 'Daily'],
           price: 2200,
           price_min: 2200,
           price_max: 2200,
-          images: ['/images/hijab/hijab-white-1.webp', '/images/hijab/premium-rayon-1.webp'],
-          featured_image: '/images/hijab/hijab-white-1.webp',
-          url: '/products/neutral-chiffon-hijab',
+          images: ['/images/shoe/shoe-white-1.webp', '/images/shoe/premium-rayon-1.webp'],
+          featured_image: '/images/shoe/shoe-white-1.webp',
+          url: '/products/neutral-chiffon-shoe',
           variants: [
             {
               id: 50051,
-              title: 'Neutral Chiffon Hijab',
+              title: 'Neutral Chiffon shoe',
               price: 2200,
               selectedOptions: [{ name: 'Color', value: 'Beige' }],
             },
@@ -2408,8 +2408,8 @@ export async function getHijabCollections() {
     },
   ]
 }
-export async function getHijabGroupCollections() {
-  const collections = await getHijabCollections()
+export async function getshoeGroupCollections() {
+  const collections = await getshoeCollections()
   return [
     {
       title: 'Spring Arrivals',
@@ -2430,8 +2430,8 @@ export async function getHijabGroupCollections() {
       collections,
     },
     {
-      title: 'Hijabs',
-      handle: 'hijabs',
+      title: 'shoes',
+      handle: 'shoes',
       description: 'lorem ipsum',
       collections,
     },
@@ -3175,23 +3175,23 @@ export async function getFashionGroupCollections() {
 
 // ------------------------ COMMON DEMO DATA ------------------------
 // ------------------------  COMMON DEMO DATA ------------------------
-export async function getGroupCollections(theme: 'fashion' | 'hijab' | 'skincare') {
+export async function getGroupCollections(theme: 'fashion' | 'shoe' | 'skincare') {
   if (theme === 'fashion') {
     return getFashionGroupCollections()
   }
-  if (theme === 'hijab') {
-    return getHijabGroupCollections()
+  if (theme === 'shoe') {
+    return getshoeGroupCollections()
   }
   if (theme === 'skincare') {
     return getSkincareGroupCollections()
   }
 }
-export async function getCollections(theme: 'fashion' | 'hijab' | 'skincare' | 'all') {
+export async function getCollections(theme: 'fashion' | 'shoe' | 'skincare' | 'all') {
   if (theme === 'fashion') {
     return await getFashionCollections()
   }
-  if (theme === 'hijab') {
-    return await getHijabCollections()
+  if (theme === 'shoe') {
+    return await getshoeCollections()
   }
   if (theme === 'skincare') {
     return await getSkincareCollections()
@@ -3199,11 +3199,11 @@ export async function getCollections(theme: 'fashion' | 'hijab' | 'skincare' | '
 
   if (theme === 'all') {
     const fashionCollections = getFashionCollections()
-    const hijabCollections = getHijabCollections()
+    const shoeCollections = getshoeCollections()
     const skincareCollections = getSkincareCollections()
 
     // use promises.all to get all collections
-    const collections = await Promise.all([fashionCollections, hijabCollections, skincareCollections])
+    const collections = await Promise.all([fashionCollections, shoeCollections, skincareCollections])
     return collections.flat()
   }
 }
