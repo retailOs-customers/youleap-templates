@@ -33,8 +33,8 @@ const ProductRelatedSection = ({
     <div className={className}>
       <div className="flex flex-wrap items-end justify-between gap-6">
         <Heading>
-          <span>Take </span> <br />
-          <span data-slot="italic">another look</span>
+          <span>תנו </span> <br />
+          <span data-slot="italic">מבט אחרון</span>
         </Heading>
 
         <NextPrevButtons

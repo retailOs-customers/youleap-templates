@@ -19,7 +19,7 @@ const data = [
   {
     id: 3,
     title: 'שירות 5 כוכבים',
-    description: 'אנחנו כאן בשבילך בכל עת, <span class="underline">contact@bitpan.com',
+    description: 'אנחנו כאן בשבילך בכל עת, <span class="underline">contact@konimbo.co.il',
     icon: Mailbox01Icon,
   },
   {

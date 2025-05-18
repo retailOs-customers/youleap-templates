@@ -61,7 +61,7 @@ export default async function Product({ params }: { params: Promise<{ handle: st
               {/* Combine Product */}
               {combineProduct ? (
                 <div className="mt-10 rounded-lg bg-zinc-100 p-5">
-                  <Text className="mb-3 font-semibold">PAIR IT WITH</Text>
+                  <Text className="mb-3 font-semibold">מוצרים נלווים</Text>
                   <ProductCardHorizontal product={combineProduct} />
                 </div>
               ) : null}
@@ -75,8 +75,8 @@ export default async function Product({ params }: { params: Promise<{ handle: st
 
         {/* THE CONTENT OF PRODUCT  */}
         <Heading bigger className="text-center">
-          <span data-slot="italic">all about the</span> <br />
-          <span>PRODUCT</span>
+          <span data-slot="italic">הכול על</span> <br />
+          <span>המוצר</span>
         </Heading>
 
         {/* MAIN TAB GROUP */}

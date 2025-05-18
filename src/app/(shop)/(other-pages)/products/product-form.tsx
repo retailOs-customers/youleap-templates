@@ -136,7 +136,7 @@ export function ProductForm({ product }: { product: TProductDetail }) {
             icon={<HugeiconsIcon icon={ShoppingBag03Icon} size={20} color="currentColor" strokeWidth={1.5} />}
             onClick={() => openAside('cart')}
           >
-            Add to cart
+            הוסף לעגלה
           </ButtonLargeWithIcon>
         </div>
       </form>

@@ -264,14 +264,13 @@ export async function getProductByHandle(handle: string) {
       ],
       handle: 'demo-product-2',
       descriptionHtml: `<div class="space-y-8">
-            <div>
-              <p>
-                Jersey shoes are unbelievably lightweight. We&lsquo;ve spent months designing the perfect fabric that
-                keeps you cool and comfortable with our all-season lightweight bamboo jersey shoe. Its breathable
-                fabric is perfect for any occasion from weddings to going to the gym - this is our must-have fabric that
-                will keep your shoe in place and looking chic all day.
-              </p>
-            </div>
+           <div>
+            <p>
+              נעלי ג׳רזי הן קלות בצורה בלתי רגילה. עבדנו חודשים על עיצוב הבד המושלם – כזה ששומר על רעננות ונוחות לאורך כל השנה,
+              עם בד ג׳רזי במבוק קליל. הבד הנושם מתאים לכל סיטואציה – מחתונות ועד לחדר כושר. זהו הבד שחייבים להכיר: שומר על הנעל יציבה
+              וסטיילית לאורך כל היום.
+            </p>
+          </div>
             <div>
               <p class="mb-3 text-sm text-zinc-500 uppercase">Product Details</p>
               <ul class="list-inside list-disc *:marker:text-zinc-300">
@@ -319,7 +318,7 @@ export async function getProductByHandle(handle: string) {
                 color: 'oklch(42.1% 0.095 57.708)',
                 image: null,
               },
-              name: 'Pink Yarrow',
+              name: 'ורוד יארו',
             },
             {
               swatch: {
@@ -369,7 +368,7 @@ export async function getProductByHandle(handle: string) {
         selectedOptions: [
           {
             name: 'Color',
-            value: 'Pink Yarrow',
+            value: 'ורוד יארו',
           },
           {
             name: 'Size',
@@ -446,10 +445,7 @@ export async function getProductByHandle(handle: string) {
       descriptionHtml: `<div class="space-y-8">
             <div>
               <p>
-                Jersey shoes are unbelievably lightweight. We&lsquo;ve spent months designing the perfect fabric that
-                keeps you cool and comfortable with our all-season lightweight bamboo jersey shoe. Its breathable
-                fabric is perfect for any occasion from weddings to going to the gym - this is our must-have fabric that
-                will keep your shoe in place and looking chic all day.
+                נעלי ג׳רזי קלות בצורה בלתי רגילה. השקענו חודשים בפיתוח הבד המושלם שמעניק תחושת רעננות ונוחות – עם בד ג׳רזי במבוק קל המתאים לכל עונה. הבד הנושם שלו אידיאלי לכל אירוע, מחתונות ועד חדר כושר. זהו הבד שחייבים להכיר – שומר על הנעל במקומה ומעניק מראה אלגנטי לאורך כל היום.
               </p>
             </div>
             <div>
@@ -499,7 +495,7 @@ export async function getProductByHandle(handle: string) {
                 color: 'oklch(42.1% 0.095 57.708)',
                 image: null,
               },
-              name: 'Pink Yarrow',
+              name: 'ורוד יארו',
             },
             {
               swatch: {
@@ -582,8 +578,8 @@ export async function getProductByHandle(handle: string) {
   // SKINCARE PRODUCT
   return {
     id: 'id://Product/2356',
-    title: 'Plumping serum spray',
-    vendor: 'The Ordinary',
+    title: 'תרסיס סרום למיצוק והזנה',
+    vendor: 'דה אורדינרי',
     featured_image: {
       id: '1',
       src: '/images/skincare/face-1.webp',
@@ -618,35 +614,31 @@ export async function getProductByHandle(handle: string) {
     descriptionHtml: `<div class="space-y-8">
           <div>
             <p>
-              Jersey shoes are unbelievably lightweight. We&lsquo;ve spent months designing the perfect fabric that
-              keeps you cool and comfortable with our all-season lightweight bamboo jersey shoe. Its breathable
-              fabric is perfect for any occasion from weddings to going to the gym - this is our must-have fabric that
-              will keep your shoe in place and looking chic all day.
+             נעלי ג׳רזי קלות בצורה בלתי רגילה. השקענו חודשים בפיתוח הבד המושלם שמעניק תחושת רעננות ונוחות – עם בד ג׳רזי במבוק קל המתאים לכל עונה. הבד הנושם שלו אידיאלי לכל אירוע, מחתונות ועד חדר כושר. זהו הבד שחייבים להכיר – שומר על הנעל במקומה ומעניק מראה אלגנטי לאורך כל היום.
             </p>
           </div>
           <div>
             <p class="mb-3 text-sm text-zinc-500 uppercase">Product Details</p>
             <ul class="list-inside list-disc *:marker:text-zinc-300">
-              <li>200x70 cm is our Regular Modal shoe Size.</li>
-              <li>Two-piece set includes a shoe and matching undercap.</li>
-              <li>Made from 100% TENCEL™ Modal fabric.</li>
-              <li>Perfect for layering or wearing alone.</li>
-              <li>Easy to care for and maintain.</li>
+              <li>מידת נעל ג׳רזי רגילה: 200x70 ס״מ.</li>
+              <li>הסט כולל שני חלקים – נעל וכובע תואם.</li>
+              <li>עשוי מבד Modal TENCEL™ 100%.</li>
+              <li>מתאים לשכבות או ללבישה בפני עצמה.</li>
+              <li>קל לתחזוקה וניקוי.</li>
             </ul>
           </div>
           <div>
             <p class="mb-3 text-sm text-zinc-500 uppercase">Product Features</p>
             <ul class="list-inside list-disc *:marker:text-zinc-300">
-              <li>The fabric allows air circulation, keeping you cool and comfortable.</li>
-              <li>Lightweight and breathable, perfect for all-day wear.</li>
-              <li>Soft and smooth texture, providing a luxurious feel against the skin.</li>
-              <li>Versatile design that can be styled in various ways to suit your look.</li>
-              <li>Available in a range of colors to match any outfit or occasion.</li>
+            <li>הבד מאפשר זרימת אוויר, לשמירה על תחושת רעננות ונוחות.</li>
+            <li>קליל ונושם – מושלם ללבישה לאורך כל היום.</li>
+            <li>מרקם רך וחלק המעניק תחושה יוקרתית על העור.</li>
+            <li>עיצוב רב-שימושי שניתן לעצב בדרכים שונות לפי הסגנון שלך.</li>
+            <li>זמין במגוון צבעים שמתאימים לכל הופעה או אירוע.</li>
             </ul>
           </div>
         </div>`,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra consequat diam. In metus risus, aliquam non massa tempus, gravida commodo orci.',
+    description: 'עיצוב מוקפד פוגש נוחות יומיומית. כל פריט נבחר בקפידה, עם דגש על איכות, התאמה אישית ומראה בלתי מתפשר.',
     publishedAt: '2019-03-27T17:43:25Z',
     collections: [
       {
@@ -671,7 +663,7 @@ export async function getProductByHandle(handle: string) {
               color: 'oklch(42.1% 0.095 57.708)',
               image: null,
             },
-            name: 'Pink Yarrow',
+            name: 'ורוד יארו',
           },
           {
             swatch: {
@@ -721,7 +713,7 @@ export async function getProductByHandle(handle: string) {
       selectedOptions: [
         {
           name: 'Color',
-          value: 'Pink Yarrow',
+          value: 'ורוד יארו',
         },
         {
           name: 'Size',

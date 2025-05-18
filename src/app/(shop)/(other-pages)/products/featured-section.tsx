@@ -5,23 +5,23 @@ import clsx from 'clsx'
 
 const data = [
   {
-    title: '30 Days Return',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'החזרה תוך 30 יום',
+    description: 'אפשרות להחזיר מוצרים עד 30 יום מרגע הקנייה – ללא דאגות.',
     icon: MoneyReceiveCircleIcon,
   },
   {
-    title: 'Free Shipping',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'משלוח חינם',
+    description: 'משלוחים חינם בקנייה מעל סכום מסוים – ישירות עד הבית.',
     icon: BoatIcon,
   },
   {
-    title: '100% Quality Guarantee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'אחריות מלאה לאיכות',
+    description: 'אנו מתחייבים למוצרים איכותיים בלבד – או שתקבלו את כספכם בחזרה.',
     icon: FavouriteIcon,
   },
   {
-    title: 'Vegan & Cruelty Free',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'טבעוני וללא ניסויים בבעלי חיים',
+    description: 'כל המוצרים מיוצרים באחריות – ללא רכיבים מן החי וללא ניסויים.',
     icon: Plant03Icon,
   },
 ]
