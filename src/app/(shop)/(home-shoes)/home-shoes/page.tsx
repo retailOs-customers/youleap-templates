@@ -27,7 +27,7 @@ export default async function Home() {
         .map((collection, index) => (
           <SectionProductCarousel
             key={index}
-            className={clsx('container', index === 0 ? 'mt-44' : 'mt-36')}
+            className={clsx('container', index === 0 ? 'mt-14 sm:mt-44' : 'mt-36')}
             products={collection?.products}
             collectionTitle={collection?.title}
             collectionHandle={collection?.handle}

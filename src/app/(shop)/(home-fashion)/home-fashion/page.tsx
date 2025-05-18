@@ -21,14 +21,14 @@ export default async function Home() {
     <div>
       <HeroSection3 />
 
-      <SectionCollectionCarousel className="container mt-20 sm:mt-28 lg:mt-28" groupCollections={groupCollections} />
+      <SectionCollectionCarousel className="container mt-14 sm:mt-28 lg:mt-28" groupCollections={groupCollections} />
 
       {collections
         ?.filter((_, i) => i < 3)
         .map((collection, index) => (
           <SectionProductCarousel
             key={index}
-            className={clsx('container', index === 0 ? 'mt-44' : 'mt-36')}
+            className={clsx('container', index === 0 ? 'mt-14 sm:mt-44' : 'mt-36')}
             products={collection?.products}
             collectionTitle={collection?.title}
             collectionHandle={collection?.handle}
@@ -37,7 +37,7 @@ export default async function Home() {
         ))}
 
       <FeatureSection2
-        className="container mt-20 sm:mt-28 lg:mt-32"
+        className="container mt-14 sm:mt-28 lg:mt-32"
         variant="up"
         heading={`תרבות היא <span data-slot="italic">יותר</span> ממערכת <span data-slot="italic">של</span> מסמכים`}
         faqs={[
@@ -72,7 +72,7 @@ export default async function Home() {
       </div>
 
       <FeatureSection3
-        className="mt-20 sm:mt-28 lg:mt-32"
+        className="mt-14 sm:mt-28 lg:mt-32"
         heading={`גלו את העיצובים האקסקלוסיביים שלנו, המשולבים עם <span data-slot="italic">אלגנטיות נצחית.</span>`}
         collection1={{
           title: 'אוסף ניו יורק <br /><span data-slot="italic">מהדורה.</span>',

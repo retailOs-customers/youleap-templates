@@ -36,25 +36,25 @@ const AsideSidebarCart = async ({ className = '' }: Props) => {
           className="mt-auto grid shrink-0 gap-4 border-t border-zinc-900/10 py-6"
         >
           <h2 id="summary-heading" className="sr-only">
-            Order summary
+            סיכום הזמנה
           </h2>
           <div className="">
             <div className="flex justify-between text-base font-medium text-gray-900">
-              <Text className="font-medium">Subtotal</Text>
+              <Text className="font-medium">סה״כ</Text>
               <Text className="font-medium">$154.00</Text>
             </div>
-            <Text className="mt-0.5 text-xs text-zinc-500">Shipping and taxes calculated at checkout.</Text>
+            <Text className="mt-0.5 text-xs text-zinc-500">משלוח ומס מחושבים בסוף הקניה.</Text>
             <div className="mt-5 grid grid-cols-2 gap-2">
               <Button outline href={'/cart'}>
-                View cart
+                צפה בעגלה
               </Button>
-              <Button href={'/checkout'}>Check out</Button>
+              <Button href={'/checkout'}>חשבון</Button>
             </div>
             <div className="mt-6 flex justify-center text-center text-sm text-zinc-500">
               <Text className="text-xs">
-                or{' '}
+                או{' '}
                 <TextLink href={'/collections/all'} className="text-xs font-medium text-zinc-900 uppercase">
-                  Continue Shopping<span aria-hidden="true"> →</span>
+                  המשך לקנות<span aria-hidden="true"> →</span>
                 </TextLink>
               </Text>
             </div>

@@ -21,7 +21,7 @@ export default async function Home() {
     <div>
       <HeroSection2 />
 
-      <SectionCollectionCarousel className="container mt-20 sm:mt-28 lg:mt-28" groupCollections={groupCollections} />
+      <SectionCollectionCarousel className="container mt-14 sm:mt-28 lg:mt-28" groupCollections={groupCollections} />
 
       <FeatureSection1
         className="container mt-24 sm:mt-28 lg:mt-40"
@@ -47,7 +47,7 @@ export default async function Home() {
         .map((collection, index) => (
           <SectionProductCarousel
             key={index}
-            className={clsx('container', index === 0 ? 'mt-44' : 'mt-36')}
+            className={clsx('container', index === 0 ? 'mt-14 sm:mt-44' : 'mt-36')}
             products={collection?.products}
             collectionTitle={collection?.title}
             collectionHandle={collection?.handle}
@@ -56,7 +56,7 @@ export default async function Home() {
         ))}
 
       <FeatureSection2
-        className="container mt-20 sm:mt-28 lg:mt-32"
+        className="container mt-14 sm:mt-28 lg:mt-32"
         variant="up"
         heading={`נקי, מודע, ביצועים <span data-slot="italic">טיפוח.</span>`}
         faqs={[

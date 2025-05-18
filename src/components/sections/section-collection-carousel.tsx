@@ -107,7 +107,7 @@ const SectionCollectionCarousel = ({
       </div>
 
       <div className="mt-20 flex flex-wrap items-center justify-between gap-5">
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap items-center justify-center gap-2">
           {groupCollections?.map((group) => (
             <Button
               key={group.handle}
