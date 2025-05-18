@@ -1,3 +1,5 @@
+'use client'
+
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import { Button } from '../button'
@@ -12,12 +14,12 @@ interface HeroSection2Props {
 const HeroSection2 = ({ className }: HeroSection2Props) => {
   return (
     <div className={className}>
-      <div className="flex min-h-[calc(100vh-5rem)] flex-col justify-between bg-primary sm:flex-row">
-        <div className="flex-3/5 self-end py-16 pr-container pl-6 xl:pb-20">
-          <div className="max-w-2xl">
+      <div className="flex min-h-[calc(100vh-5rem)] flex-col-reverse justify-between bg-primary sm:flex-row">
+        <div className="flex flex-3/5 justify-center self-end py-16 pr-container pl-6 xl:pb-20">
+          <div className="max-w-xl">
             <StarSvg width={48} height={48} />
             <Heading fontSize="text-5xl/none md:text-6xl/none lg:text-7xl/none font-semibold" className="mt-8">
-              <span data-slot="italic">יופי</span> אמיתי מתחיל <span data-slot="italic">בטבע.</span>
+              <span data-slot="italic">הטבע</span> יודע<span data-slot="italic"> מה הוא עושה </span>
             </Heading>
             <Text className="mt-8 max-w-sm">
               מוצרים טבעיים, אמינים ויעילים באמת – כי מגיע לעור שלך את הטוב ביותר, ולכדור הארץ גם.
