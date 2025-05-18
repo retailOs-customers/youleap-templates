@@ -9,21 +9,21 @@ const demo_faqs = [
   {
     question: 'Hand Wash Preferred',
     answer:
-      ' Maximize durability and maintain softness by hand washing our modal hijabs in warm water and light dish soap. <br /> <br /> Never add your hijabs to the washing machine or mix with other items. ',
+      ' Maximize durability and maintain softness by hand washing our modal shoes in warm water and light dish soap. <br /> <br /> Never add your shoes to the washing machine or mix with other items. ',
   },
   {
     question: 'Air-Dry for Longevity',
     answer:
-      'Preserve the integrity of our TENCEL™ Modal hijabs by air-drying; avoid tumble dryers to prevent shrinkage.',
+      'Preserve the integrity of our TENCEL™ Modal shoes by air-drying; avoid tumble dryers to prevent shrinkage.',
   },
   {
     question: 'Low-Temperature Ironing & Steaming',
-    answer: 'Maintain the pristine condition of our Modal hijabs with gentle ironing or steaming to remove wrinkles.',
+    answer: 'Maintain the pristine condition of our Modal shoes with gentle ironing or steaming to remove wrinkles.',
   },
   {
     question: 'Styling',
     answer:
-      'Use a hair straightening tool on medium heat to straighten the front seams of the hijab to frame the hijab nicely around your face , resulting in a gorgeous draping modal hijab style.',
+      'Use a hair straightening tool on medium heat to straighten the front seams of the shoe to frame the shoe nicely around your face , resulting in a gorgeous draping modal shoe style.',
   },
 ]
 
@@ -42,7 +42,7 @@ const ProductUsageSection = ({ className, imageAlt, imageSrc, faqs = demo_faqs }
     <div className={clsx('flex flex-col-reverse justify-between gap-8 lg:flex-row', className)}>
       <div className="relative flex-1/2 2xl:flex-3/7">
         <Image
-          src={imageSrc || '/images/hijab/product-detail-img.webp'}
+          src={imageSrc || '/images/shoe/product-detail-img.webp'}
           width={662}
           height={653}
           alt={imageAlt || 'product-faqs'}

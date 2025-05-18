@@ -11,14 +11,14 @@ import clsx from 'clsx'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hijab',
+  title: 'shoe',
   description:
     'Discover the latest trends in fashion and style with our curated collection of clothing, accessories, and more.',
 }
 
 export default async function Home() {
-  let collections = await getCollections('hijab')
-  let groupCollections = await getGroupCollections('hijab')
+  let collections = await getCollections('shoe')
+  let groupCollections = await getGroupCollections('shoe')
   return (
     <div>
       <HeroSection1 className="container mt-14" />
@@ -44,25 +44,25 @@ export default async function Home() {
         className="mt-20 sm:mt-28 lg:mt-32"
         heading={`Essentials for <span data-slot="italic">Muslim Women</span> , from Daily Scarves to Versatile Clothing.`}
         collection1={{
-          title: '<span data-slot="italic">Premium Rayon</span> Hijab',
+          title: '<span data-slot="italic">Premium Rayon</span> shoe',
           desciption: 'The fabric is soft and smooth, making it easy to wear and style, and it is comfortable to wear.',
           images: [
-            '/images/hijab/premium-rayon-1.webp',
-            '/images/hijab/premium-rayon-2.webp',
-            '/images/hijab/premium-rayon-3.webp',
-            '/images/hijab/premium-rayon-4.webp',
-            '/images/hijab/premium-rayon-1.webp',
+            '/images/shoe/premium-rayon-1.webp',
+            '/images/shoe/premium-rayon-2.webp',
+            '/images/shoe/premium-rayon-3.webp',
+            '/images/shoe/premium-rayon-4.webp',
+            '/images/shoe/premium-rayon-1.webp',
           ],
         }}
         collection2={{
-          title: '<span data-slot="italic">Premium Chiffon</span> Hijab',
-          desciption: 'Experience unparalleled comfort with our breathable hijabs, perfect for any season.',
+          title: '<span data-slot="italic">Premium Chiffon</span> shoe',
+          desciption: 'Experience unparalleled comfort with our breathable shoes, perfect for any season.',
           images: [
-            '/images/hijab/essential-modal-1-1.webp',
-            '/images/hijab/essential-modal-1-1.webp',
-            '/images/hijab/essential-modal-1.webp',
-            '/images/hijab/essential-modal-3.webp',
-            '/images/hijab/essential-modal-4.webp',
+            '/images/shoe/essential-modal-1-1.webp',
+            '/images/shoe/essential-modal-1-1.webp',
+            '/images/shoe/essential-modal-1.webp',
+            '/images/shoe/essential-modal-3.webp',
+            '/images/shoe/essential-modal-4.webp',
           ],
         }}
       />
