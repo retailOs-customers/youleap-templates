@@ -1,7 +1,6 @@
 'use client'
 
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
-import Image from 'next/image'
 import { Button } from '../button'
 import { Heading } from '../heading'
 import StarSvg from '../star-svg'
@@ -38,14 +37,15 @@ const HeroSection2 = ({ className }: HeroSection2Props) => {
         </div>
 
         <div className="relative flex-2/5">
-          <Image
-            src={'/images/skincare/hero.jpg'}
-            alt="hero"
+          <video
+            src="/vids/herovid.mp4"
             className="object-cover object-center sm:absolute sm:h-full sm:w-full"
             width={815}
             height={987}
-            priority
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 50vw"
+            autoPlay
+            loop
+            muted
+            playsInline
           />
         </div>
       </div>
