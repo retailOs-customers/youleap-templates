@@ -6,12 +6,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Bitpan',
-    default: 'Bitpan',
+    template: '%s - קונימבו',
+    default: 'קונימבו',
   },
   description:
-    'Bitpan is a modern and elegant template for Next.js, Tailwind CSS, and TypeScript. It is designed to be simple and easy to use, with a focus on performance and accessibility.',
-  keywords: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Bipan', 'Headless UI', 'Fashion', 'Skincare', 'E-commerce'],
+    'קונימבו היא פלטפורמה מתקדמת לבניית חנויות אינטרנט. המערכת מציעה פתרון מודרני, מהיר ונוח לעסקים המעוניינים למכור אונליין – עם דגש על ביצועים, נגישות, ועיצוב ייחודי.',
+  keywords: ['חנויות אינטרנט', 'קונימבו', 'E-commerce', 'מערכת חנות', 'עיצוב רספונסיבי', 'UX', 'מכירות אונליין'],
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
