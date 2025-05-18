@@ -1,28 +1,93 @@
 'use client'
 
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
+import gsap from 'gsap'
+import { useEffect, useRef } from 'react'
 import { Button } from '../button'
 import { Heading } from '../heading'
 import StarSvg from '../star-svg'
-import { Text } from '../text'
 
 interface HeroSection2Props {
   className?: string
 }
 
 const HeroSection2 = ({ className }: HeroSection2Props) => {
+  const starLineRef = useRef<HTMLDivElement>(null)
+  const headingLinesRef = useRef<(HTMLSpanElement | null)[]>([])
+  const textLineRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const tl = gsap.timeline()
+    tl.set(starLineRef.current, { opacity: 0, y: 40 })
+    tl.set(headingLinesRef.current, { opacity: 0, y: 40 })
+    tl.set(textLineRef.current, { opacity: 0, y: 40 })
+
+    tl.to(starLineRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: 'power3.out',
+    })
+      .to(headingLinesRef.current, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.18,
+        ease: 'power3.out',
+      })
+      .to(
+        textLineRef.current,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: 'power3.out',
+        },
+        '-=0.5'
+      )
+
+    return () => {
+      tl.kill()
+    }
+  }, [])
+
   return (
     <div className={className}>
       <div className="flex min-h-[calc(100vh-5rem)] flex-col-reverse justify-between bg-primary sm:flex-row">
         <div className="flex flex-3/5 justify-center self-end py-16 pr-container pl-6 xl:pb-20">
-          <div className="max-w-xl">
-            <StarSvg width={48} height={48} />
+          <div className="flex max-w-xl flex-col items-center justify-center">
+            <div className="masking-text">
+              <div className="line flex items-center justify-center" ref={starLineRef}>
+                <StarSvg width={48} height={48} />
+              </div>
+            </div>
             <Heading fontSize="text-5xl/none md:text-6xl/none lg:text-7xl/none font-semibold" className="mt-8">
-              <span data-slot="italic">הטבע</span> יודע<span data-slot="italic"> מה הוא עושה </span>
+              <span className="masking-text">
+                <span
+                  className="line text-center"
+                  ref={(el) => {
+                    headingLinesRef.current[0] = el
+                  }}
+                >
+                  <span data-slot="italic">הטבע</span> יודע
+                </span>
+              </span>
+              <span className="masking-text">
+                <span
+                  className="line text-center"
+                  ref={(el) => {
+                    headingLinesRef.current[1] = el
+                  }}
+                >
+                  <span data-slot="italic"> מה הוא עושה </span>
+                </span>
+              </span>
             </Heading>
-            <Text className="mt-8 max-w-sm">
-              מוצרים טבעיים, אמינים ויעילים באמת – כי מגיע לעור שלך את הטוב ביותר, ולכדור הארץ גם.
-            </Text>
+            <div className="masking-text mt-8 max-w-sm">
+              <div className="line text-center" ref={textLineRef}>
+                מוצרים טבעיים, אמינים ויעילים באמת – כי מגיע לעור שלך את הטוב ביותר, ולכדור הארץ גם.
+              </div>
+            </div>
             <Button
               href={'/collections/all'}
               color="white"
