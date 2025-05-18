@@ -21,7 +21,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             priority
           />
-          <Text className="mt-2.5 max-w-xs">Minimalist design, easy to coordinate, suitable for many body shapes.</Text>
+          <Text className="mt-2.5 max-w-xs">עיצוב מינימליסטי, משתלב בקלות ומתאים למבני גוף שונים.</Text>
         </div>
         <div className="w-full">
           <Image
@@ -35,9 +35,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
           />
         </div>
         <div className="flex w-full flex-col justify-end gap-2.5">
-          <Text className="max-w-xs self-end text-left">
-            The fabric is comfortable to wear in any season of the year.
-          </Text>
+          <Text className="max-w-xs self-end text-left">בד נעים שמתאים לכל עונות השנה.</Text>
           <Image
             src="/images/shoe/hero-1-3.png"
             alt="hero-1"
@@ -47,7 +45,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             priority
           />
-          <Text className="max-w-xs">sophisticated but timeless design.</Text>
+          <Text className="max-w-xs">עיצוב מתוחכם ועל-זמני.</Text>
         </div>
       </div>
       <ButtonLargeWithIcon href="/collections/all">גלו את כל המוצרים</ButtonLargeWithIcon>

@@ -10,20 +10,14 @@ import { Text } from '../text'
 
 const demo_collections = [
   {
-    title: '<span data-slot="italic">Premium Rayon</span> shoe',
-    desciption: 'The fabric is soft and smooth, making it easy to wear and style, and it is comfortable to wear.',
-    images: [
-      '/images/shoe/premium-rayon-1.webp',
-      //  more images ...
-    ],
+    title: '<span data-slot="italic">בד ריון פרימיום</span> לנעליים',
+    desciption: 'הבד רך וחלק, נעים על הרגליים, נוח לנעילה ומתאים לכל סגנון לבוש.',
+    images: ['/images/shoe/premium-rayon-1.webp'],
   },
   {
-    title: '<span data-slot="italic">Premium Chiffon</span> shoe',
-    desciption: 'Experience unparalleled comfort with our breathable shoes, perfect for any season.',
-    images: [
-      '/images/shoe/essential-modal-1-1.webp',
-      //  more images ...
-    ],
+    title: '<span data-slot="italic">שיפון פרימיום</span> לנעליים',
+    desciption: 'תחוו נוחות שאין כמותה עם הנעליים הנושמות שלנו – מושלמות לכל עונה.',
+    images: ['/images/shoe/essential-modal-1-1.webp'],
   },
 ]
 
@@ -46,7 +40,7 @@ interface FeatureSection3Props {
 const FeatureSection3 = ({
   className,
   containerClassName = 'container',
-  heading = `Essentials for <span data-slot="italic">Muslim Women</span> , from Daily Scarves to Versatile Clothing.`,
+  heading = `הנעליים שחייבים בכל ארון – מסטייל יומיומי לנוחות מרבית לאורך כל היום.`,
   collection1 = demo_collections[0],
   collection2 = demo_collections[1],
 }: FeatureSection3Props) => {
@@ -63,11 +57,10 @@ const FeatureSection3 = ({
   return (
     <div className={clsx('overflow-hidden', className)}>
       <div className={containerClassName}>
-        {/* Heading */}
         <div className="flex flex-col justify-between gap-4 lg:flex-row lg:items-end">
           <div className="flex-1/3">
             <Button href={'/collections/all'} outline>
-              Our products
+              לכל המוצרים
             </Button>
           </div>
           <Heading className="flex-2/3" bigger dangerouslySetInnerHTML={{ __html: heading }} />
@@ -88,15 +81,12 @@ const FeatureSection3 = ({
             </div>
           </div>
           <div className="flex flex-1/2 flex-col gap-8 lg:self-center lg:ps-10 xl:ps-16">
-            {/* Heading */}
             <div className="flex items-end justify-between gap-4">
-              <Heading dangerouslySetInnerHTML={{ __html: collection1.title }}></Heading>
+              <Heading dangerouslySetInnerHTML={{ __html: collection1.title }} />
               <ButtonCircle href={'/collections/all'}>
                 <ArrowUpRightIcon className="h-4 w-4 text-zinc-50" />
               </ButtonCircle>
             </div>
-
-            {/* SLIDER */}
             <div className="embla-overflow-unset" ref={emblaRef}>
               <div className="embla__container">
                 {collection1.images
@@ -119,12 +109,10 @@ const FeatureSection3 = ({
                   ))}
               </div>
             </div>
-
-            {/* DESCRIPTION */}
             <div className="flex items-end justify-between gap-4">
               <Text className="max-w-sm">{collection1.desciption}</Text>
               <Button outline href={'#'}>
-                SIZE GUIDE
+                מדריך מידות
               </Button>
             </div>
           </div>
@@ -133,15 +121,12 @@ const FeatureSection3 = ({
         {/* COLLECTION 2 */}
         <div className="mt-20 flex flex-col-reverse gap-10 lg:mt-0 lg:flex-row lg:gap-0">
           <div className="flex flex-1/2 flex-col gap-8 lg:self-center lg:pe-10 xl:pe-16">
-            {/* Heading */}
             <div className="flex items-end justify-between gap-4">
-              <Heading dangerouslySetInnerHTML={{ __html: collection2.title }}></Heading>
+              <Heading dangerouslySetInnerHTML={{ __html: collection2.title }} />
               <ButtonCircle href={'/collections/all'}>
                 <ArrowUpRightIcon className="h-4 w-4 text-zinc-50" />
               </ButtonCircle>
             </div>
-
-            {/* SLIDER */}
             <div className="embla-overflow-unset" ref={emblaRef2}>
               <div className="embla__container flex-row">
                 {collection2.images
@@ -164,12 +149,10 @@ const FeatureSection3 = ({
                   ))}
               </div>
             </div>
-
-            {/* DESCRIPTION */}
             <div className="flex items-end justify-between gap-4">
               <Text className="max-w-sm">{collection2.desciption}</Text>
               <Button outline href={'#'}>
-                SIZE GUIDE
+                מדריך מידות
               </Button>
             </div>
           </div>

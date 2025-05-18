@@ -11,9 +11,8 @@ import clsx from 'clsx'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'shoe',
-  description:
-    'Discover the latest trends in fashion and style with our curated collection of clothing, accessories, and more.',
+  title: 'נעליים',
+  description: 'גלו את הטרנדים החמים ביותר בעולם הנעליים עם הקולקציה הנבחרת שלנו של נעליים לנשים, גברים וילדים.',
 }
 
 export default async function Home() {
@@ -42,10 +41,10 @@ export default async function Home() {
       </div>
       <FeatureSection3
         className="mt-20 sm:mt-28 lg:mt-32"
-        heading={`Essentials for <span data-slot="italic">Muslim Women</span> , from Daily Scarves to Versatile Clothing.`}
+        heading={`הנעליים שחייבים בכל ארון – מסטייל יומיומי לנוחות מרבית לאורך כל היום.`}
         collection1={{
-          title: '<span data-slot="italic">Premium Rayon</span> shoe',
-          desciption: 'The fabric is soft and smooth, making it easy to wear and style, and it is comfortable to wear.',
+          title: '<span data-slot="italic">בד ריון פרימיום</span> לנעליים',
+          desciption: 'הבד רך וחלק, נעים על הרגליים, נוח לנעילה ומתאים לכל סגנון לבוש.',
           images: [
             '/images/shoe/premium-rayon-1.webp',
             '/images/shoe/premium-rayon-2.webp',
@@ -55,8 +54,8 @@ export default async function Home() {
           ],
         }}
         collection2={{
-          title: '<span data-slot="italic">Premium Chiffon</span> shoe',
-          desciption: 'Experience unparalleled comfort with our breathable shoes, perfect for any season.',
+          title: '<span data-slot="italic">שיפון פרימיום</span> לנעליים',
+          desciption: 'תחוו נוחות שאין כמותה עם הנעליים הנושמות שלנו – מושלמות לכל עונה.',
           images: [
             '/images/shoe/essential-modal-1-1.webp',
             '/images/shoe/essential-modal-1-1.webp',

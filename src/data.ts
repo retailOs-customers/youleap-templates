@@ -1728,18 +1728,18 @@ export async function getshoeCollections() {
   return [
     {
       id: '1',
-      title: 'Chiffon shoes',
+      title: 'נעליים בד שיפון',
       handle: 'chiffon-shoes',
-      description: 'Lightweight and elegant chiffon shoes for a soft, flowy look.',
+      description: 'נעליים בד שיפון נעימות ונוחות לנעילה.',
       updatedAt: '2025-05-06T10:00:00-04:00',
       image: '/images/shoe/c1.webp',
       url: '/collections/chiffon-shoes',
       products: [
         {
           id: 1001,
-          title: 'Pastel Chiffon shoe',
+          title: 'נעל בד שיפון פרימיום',
           handle: 'pastel-chiffon-shoe',
-          description: 'A delicate pastel chiffon shoe, perfect for everyday elegance.',
+          description: 'נעל בד שיפון פרימיום נעימות ונוחות לנעילה.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
@@ -1754,7 +1754,7 @@ export async function getshoeCollections() {
           variants: [
             {
               id: 10011,
-              title: 'נעל כותנה בצבע בורדו',
+              title: 'נעל בד שיפון פרימיום',
               price: 2500,
               selectedOptions: [{ name: 'Color', value: 'Blush Pink' }],
             },
