@@ -2,6 +2,7 @@
 
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect, useRef } from 'react'
 import { Button } from '../button'
 import { Heading } from '../heading'
@@ -15,13 +16,20 @@ const HeroSection2 = ({ className }: HeroSection2Props) => {
   const starLineRef = useRef<HTMLDivElement>(null)
   const headingLinesRef = useRef<(HTMLSpanElement | null)[]>([])
   const textLineRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const tl = gsap.timeline()
+    gsap.registerPlugin(ScrollTrigger)
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: 'top 80%',
+        toggleActions: 'play none none reset',
+      },
+    })
     tl.set(starLineRef.current, { opacity: 0, y: 40 })
     tl.set(headingLinesRef.current, { opacity: 0, y: 40 })
     tl.set(textLineRef.current, { opacity: 0, y: 40 })
-
     tl.to(starLineRef.current, {
       opacity: 1,
       y: 0,
@@ -45,7 +53,6 @@ const HeroSection2 = ({ className }: HeroSection2Props) => {
         },
         '-=0.5'
       )
-
     return () => {
       tl.kill()
     }
@@ -55,7 +62,7 @@ const HeroSection2 = ({ className }: HeroSection2Props) => {
     <div className={className}>
       <div className="flex min-h-[calc(100vh-5rem)] flex-col-reverse justify-between bg-primary sm:flex-row">
         <div className="flex flex-3/5 justify-center self-end py-16 pr-container pl-6 xl:pb-20">
-          <div className="flex max-w-xl flex-col items-center justify-center">
+          <div ref={containerRef} className="flex max-w-xl flex-col items-center justify-center">
             <div className="masking-text">
               <div className="line flex items-center justify-center" ref={starLineRef}>
                 <StarSvg width={48} height={48} />

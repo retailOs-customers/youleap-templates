@@ -50,12 +50,15 @@ const Page = () => {
         </div>
 
         <div className="flex flex-1/3">
-          <Image
-            src={'/images/skincare/hero.jpg'}
+          <video
+            src="/vids/shoe-hero.mp4"
             width={494}
             height={529}
-            alt={'תכונה-1-2'}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="w-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
           />
         </div>
       </div>

@@ -5,7 +5,9 @@ import { getGroupCollections } from '@/data'
 import { useCarouselArrowButtons } from '@/hooks/use-carousel-arrow-buttons'
 import type { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
-import { useState } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useEffect, useRef, useState } from 'react'
 import { Button } from '../button'
 import CarouselCollections from '../carousel-collections'
 import { Divider } from '../divider'
@@ -47,11 +49,51 @@ const SectionCollectionCarousel = ({
   const [groupSelected, setGroupSelected] = useState<string>(groupCollections?.[0].handle || '')
   const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } = useCarouselArrowButtons(emblaApi)
 
+  // Add refs for animated heading lines
+  const headingLinesRef = useRef<(HTMLSpanElement | null)[]>([])
+  const headingContainerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.set(headingLinesRef.current, { opacity: 0, y: 40 })
+    gsap.to(headingLinesRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.18,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: headingContainerRef.current,
+        start: 'top 80%',
+        toggleActions: 'play none none none',
+      },
+    })
+  }, [])
+
   return (
     <div className={className}>
       <div className="flex flex-col justify-between gap-8 lg:flex-row">
-        <div className="flex-2/3">
-          <Heading className="max-w-2xl" bigger dangerouslySetInnerHTML={{ __html: sectonTitle || '' }} />
+        <div className="flex-2/3" ref={headingContainerRef}>
+          <Heading className="max-w-2xl" bigger level={2}>
+            <span className="masking-text">
+              <span
+                className="line"
+                ref={(el) => {
+                  headingLinesRef.current[0] = el
+                }}
+                dangerouslySetInnerHTML={{ __html: 'מצאו את <span data-slot="italic">הסגנון הייחודי</span>' }}
+              />
+            </span>
+            <span className="masking-text">
+              <span
+                className="line"
+                ref={(el) => {
+                  headingLinesRef.current[1] = el
+                }}
+                dangerouslySetInnerHTML={{ __html: 'שלכם, ואלפי <br /> מותגים.' }}
+              />
+            </span>
+          </Heading>
         </div>
 
         <div className="flex-1/3">

@@ -1,28 +1,113 @@
+'use client'
+
 import { Button } from '@/components/button'
 import { Heading } from '@/components/heading'
 import StarSvg from '@/components/star-svg'
 import { Text } from '@/components/text'
 import { ArrowUpRightIcon } from '@heroicons/react/24/outline'
-import Image from 'next/image'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useEffect, useRef } from 'react'
 
 interface HeroSection3Props {
   className?: string
 }
 
 const HeroSection3 = ({ className }: HeroSection3Props) => {
+  const starLineRef = useRef<HTMLDivElement>(null)
+  const headingLinesRef = useRef<(HTMLSpanElement | null)[]>([])
+  const textLineRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: 'top 80%',
+        toggleActions: 'play none none reset',
+      },
+    })
+    tl.set(starLineRef.current, { opacity: 0, y: 40 })
+    tl.set(headingLinesRef.current, { opacity: 0, y: 40 })
+    tl.set(textLineRef.current, { opacity: 0, y: 40 })
+    tl.to(starLineRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: 'power3.out',
+    })
+      .to(headingLinesRef.current, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.18,
+        ease: 'power3.out',
+      })
+      .to(
+        textLineRef.current,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: 'power3.out',
+        },
+        '-=0.5'
+      )
+    return () => {
+      tl.kill()
+    }
+  }, [])
+
   return (
     <div className="relative flex min-h-dvh w-full">
-      <Image src={'/images/fashion/hero-1.png'} alt="גיבור" className="object-cover object-center" fill priority />
-      <div className="absolute inset-0 bg-black/30" />
+      <video
+        src="/vids/clothes.mp4"
+        className="absolute inset-0 h-full w-full object-cover object-center"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <div className="absolute inset-0 bg-black/40" />
 
       <div className="relative container flex flex-1 pt-20 pb-36">
-        <div className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center gap-y-7 self-center text-center text-white">
-          <StarSvg width={48} height={48} color="white" />
+        <div
+          ref={containerRef}
+          className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center gap-y-7 self-center text-center text-white"
+        >
+          <div className="masking-text">
+            <div className="line flex items-center justify-center" ref={starLineRef}>
+              <StarSvg width={48} height={48} color="white" />
+            </div>
+          </div>
           <Heading fontSize="text-5xl/none md:text-6xl/none lg:text-7xl/none 2xl:text-8xl/none font-semibold">
-            <span data-slot="italic">איפה</span> יוקרה <br /> מוצאת את <span data-slot="italic">משמעותה.</span>
+            <span className="masking-text">
+              <span
+                className="line text-center"
+                data-slot="italic"
+                ref={(el) => {
+                  headingLinesRef.current[0] = el
+                }}
+              >
+                עיצוב מוקפד
+              </span>
+            </span>
+            <span className="masking-text">
+              <span
+                className="line text-center"
+                ref={(el) => {
+                  headingLinesRef.current[1] = el
+                }}
+              >
+                עם מחויבות לערכים.
+              </span>
+            </span>
           </Heading>
-          <Text className="max-w-sm">
-            מוצרים כנים לחלוטין שבאמת עובדים, טובים לעור ולכדור הארץ – בלי יוצאים מן הכלל!
+          <Text className="masking-text max-w-sm">
+            <span className="line text-center" ref={textLineRef}>
+              מוצרים כנים לחלוטין שבאמת עובדים, טובים לעור ולכדור הארץ – בלי יוצאים מן הכלל!
+            </span>
           </Text>
         </div>
       </div>

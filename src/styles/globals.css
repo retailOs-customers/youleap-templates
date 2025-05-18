@@ -15,3 +15,11 @@ html {
   opacity: 0;
   transform: translateY(40px);
 }
+
+.hero-img-anim {
+  opacity: 0 !important;
+  transition: opacity 0.2s;
+}
+.hero-img-anim.loaded {
+  opacity: 1 !important;
+}
