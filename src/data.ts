@@ -276,7 +276,7 @@ export async function getProductByHandle(handle: string) {
               <p class="mb-3 text-sm text-zinc-500 uppercase">Product Details</p>
               <ul class="list-inside list-disc *:marker:text-zinc-300">
                 <li>200x70 ס"מ הוא הגודל הרגיל של כיסוי הראש מודל שלנו.</li>
-                <li>הסט כולל שני חלקים: כיסוי ראש וכובע תחתון תואם.</li>
+                <li>הסט כולל שני חלקים: נעל וכובע תחתון תואם.</li>
                 <li>עשוי 100% בד TENCEL™ Modal.</li>
                 <li>מושלם לשכבות או ללבישה בפני עצמה.</li>
                 <li>קל לניקוי ולתחזוקה.</li>
@@ -1754,7 +1754,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 10011,
-              title: 'כיסוי ראש כותנה בצבע בורדו',
+              title: 'נעל כותנה בצבע בורדו',
               price: 2500,
               selectedOptions: [{ name: 'Color', value: 'Blush Pink' }],
             },
@@ -2009,13 +2009,13 @@ export async function getHijabCollections() {
       products: [
         {
           id: 3005,
-          title: 'כיסוי ראש כותנה בצבע אחיד',
+          title: 'נעל כותנה בצבע אחיד',
           handle: 'solid-cotton-hijab',
-          description: 'כיסוי ראש כותנה בצבע אחיד לעיצוב קלאסי ועל-זמני.',
+          description: 'נעל כותנה בצבע אחיד לעיצוב קלאסי ועל-זמני.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'כיסוי ראש',
+          type: 'נעל',
           tags: ['כותנה', 'יומיומי'],
           price: 1700,
           price_min: 1700,
@@ -2026,7 +2026,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30051,
-              title: 'כיסוי ראש כותנה בצבע אחיד',
+              title: 'נעל כותנה בצבע אחיד',
               price: 1700,
               selectedOptions: [{ name: 'Color', value: 'Charcoal' }],
             },
@@ -2034,13 +2034,13 @@ export async function getHijabCollections() {
         },
         {
           id: 3002,
-          title: 'כיסוי ראש כותנה בטקסטורה',
+          title: 'נעל כותנה בטקסטורה',
           handle: 'classic-jersey-hijab',
-          description: 'כיסוי ראש כותנה עם טקסטורה למראה ייחודי וסטייליסטי.',
+          description: 'נעל כותנה עם טקסטורה למראה ייחודי וסטייליסטי.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'כיסוי ראש',
+          type: 'נעל',
           tags: ['כותנה', 'מרקם'],
           price: 2000,
           price_min: 2000,
@@ -2051,7 +2051,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30021,
-              title: 'כיסוי ראש כותנה בטקסטורה',
+              title: 'נעל כותנה בטקסטורה',
               price: 2000,
               selectedOptions: [{ name: 'Color', value: 'Taupe' }],
             },
@@ -2059,13 +2059,13 @@ export async function getHijabCollections() {
         },
         {
           id: 3003,
-          title: 'כיסוי ראש כותנה עם הדפס',
+          title: 'נעל כותנה עם הדפס',
           handle: 'classic-jersey-hijab',
-          description: 'כיסוי ראש כותנה עם הדפס צבעוני לסגנון שובב ומודרני.',
+          description: 'נעל כותנה עם הדפס צבעוני לסגנון שובב ומודרני.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'כיסוי ראש',
+          type: 'נעל',
           tags: ['כותנה', 'מודפס'],
           price: 1800,
           price_min: 1800,
@@ -2076,7 +2076,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30031,
-              title: 'כיסוי ראש כותנה עם הדפס',
+              title: 'נעל כותנה עם הדפס',
               price: 1800,
               selectedOptions: [{ name: 'Color', value: 'Floral Red' }],
             },
@@ -2084,13 +2084,13 @@ export async function getHijabCollections() {
         },
         {
           id: 3004,
-          title: 'כיסוי ראש כותנה אורגנית',
+          title: 'נעל כותנה אורגנית',
           handle: 'organic-cotton-hijab',
-          description: 'כיסוי ראש כותנה אורגנית ידידותי לסביבה לאופנה בת-קיימא.',
+          description: 'נעל כותנה אורגנית ידידותי לסביבה לאופנה בת-קיימא.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'כיסוי ראש',
+          type: 'נעל',
           tags: ['כותנה', 'אורגני'],
           price: 2300,
           price_min: 2300,
@@ -2101,7 +2101,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30041,
-              title: 'כיסוי ראש כותנה אורגנית',
+              title: 'נעל כותנה אורגנית',
               price: 2300,
               selectedOptions: [{ name: 'Color', value: 'Sage Green' }],
             },
@@ -2109,13 +2109,13 @@ export async function getHijabCollections() {
         },
         {
           id: 3001,
-          title: 'כיסוי ראש כותנה בסיסי',
+          title: 'נעל כותנה בסיסי',
           handle: 'basic-cotton-hijab',
-          description: 'כיסוי ראש כותנה פשוט ללבישה יומיומית נוחה.',
+          description: 'נעל כותנה פשוט ללבישה יומיומית נוחה.',
           published_at: '2025-05-06T10:00:00-04:00',
           created_at: '2025-05-06T10:00:00-04:00',
           vendor: 'ModestTrend',
-          type: 'כיסוי ראש',
+          type: 'נעל',
           tags: ['כותנה', 'יומיומי'],
           price: 1500,
           price_min: 1500,
@@ -2126,7 +2126,7 @@ export async function getHijabCollections() {
           variants: [
             {
               id: 30011,
-              title: 'כיסוי ראש כותנה בסיסי',
+              title: 'נעל כותנה בסיסי',
               price: 1500,
               selectedOptions: [{ name: 'Color', value: 'White' }],
             },

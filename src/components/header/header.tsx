@@ -13,7 +13,7 @@ import UserIconPopover from './user-icon-popover'
 const demo_pages_menu = [
   { name: 'דף הבית טיפוח', href: '/' },
   { name: 'דף הבית אופנה', href: '/home-fashion' },
-  { name: 'דף הבית כיסויי ראש', href: '/home-hjiab' },
+  { name: 'דף הבית נעליים', href: '/home-hjiab' },
   { name: 'בקרוב', href: '#' },
 ]
 const mega_menus = [
