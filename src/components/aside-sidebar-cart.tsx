@@ -1,25 +1,25 @@
+'use client'
+
 import { getCartProducts } from '@/data'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Delete02Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import clsx from 'clsx'
 import Image from 'next/image'
+import { useState } from 'react'
 import { Aside } from './aside/aside'
 import { Button } from './button'
 import { Text, TextLink } from './text'
 
 interface Props {
   className?: string
+  products: Awaited<ReturnType<typeof getCartProducts>>
 }
 
-const AsideSidebarCart = async ({ className = '' }: Props) => {
-  const products = await getCartProducts()
-
+const AsideSidebarCart = ({ className = '', products }: Props) => {
   return (
     <Aside openFrom="right" type="cart" heading="Shopping Cart">
       <div className={clsx('flex h-full flex-col', className)}>
         {/* CONTENT */}
-
         <div className="flex-1 overflow-x-hidden overflow-y-auto py-6 hidden-scrollbar">
           <div className="flow-root">
             <ul role="list" className="-my-6 divide-y divide-zinc-900/10">
@@ -29,7 +29,6 @@ const AsideSidebarCart = async ({ className = '' }: Props) => {
             </ul>
           </div>
         </div>
-
         {/* FOOTER  */}
         <section
           aria-labelledby="summary-heading"
@@ -72,6 +71,12 @@ export const CartProductItem = ({
   className?: string
   product: Awaited<ReturnType<typeof getCartProducts>>[number]
 }) => {
+  const [quantity, setQuantity] = useState(1)
+  const min = 1
+  const max = 8
+  const handleDecrement = () => setQuantity((q) => Math.max(min, q - 1))
+  const handleIncrement = () => setQuantity((q) => Math.min(max, q + 1))
+
   return (
     <li key={product.id} className={clsx(className, 'flex py-6')}>
       <div className="relative h-32 w-24 shrink-0 overflow-hidden rounded-md">
@@ -92,25 +97,26 @@ export const CartProductItem = ({
         </div>
         <Text className="mt-1 text-xs text-zinc-500">{product.price}</Text>
         <div className="mt-auto flex items-center justify-between pt-2 text-sm">
-          <div className="inline-grid w-full max-w-16 grid-cols-1">
-            <select
-              name={`quantity-${product.id}`}
-              aria-label={`Quantity, ${product.name}`}
-              className="col-start-1 row-start-1 appearance-none rounded-md bg-white py-0.5 ps-3 pe-8 text-xs/6 outline-1 -outline-offset-1 outline-zinc-900/10 focus:outline-1"
+          <div className="inline-flex w-full max-w-16 items-center gap-1">
+            <button
+              type="button"
+              aria-label="Increase quantity"
+              onClick={handleIncrement}
+              className="flex h-7 w-7 items-center justify-center rounded-md border border-zinc-300 p-0 text-base text-gray-500 hover:bg-zinc-100 disabled:opacity-40"
+              disabled={quantity >= max}
             >
-              <option value={1}>1</option>
-              <option value={2}>2</option>
-              <option value={3}>3</option>
-              <option value={4}>4</option>
-              <option value={5}>5</option>
-              <option value={6}>6</option>
-              <option value={7}>7</option>
-              <option value={8}>8</option>
-            </select>
-            <ChevronDownIcon
-              aria-hidden="true"
-              className="pointer-events-none col-start-1 row-start-1 me-2 size-4 self-center justify-self-end text-zinc-500"
-            />
+              +
+            </button>
+            <span className="w-6 text-center text-sm font-medium text-gray-500">{quantity}</span>
+            <button
+              type="button"
+              aria-label="Decrease quantity"
+              onClick={handleDecrement}
+              className="flex h-7 w-7 items-center justify-center rounded-md border border-zinc-300 p-0 text-base text-gray-500 hover:bg-zinc-100 disabled:opacity-40"
+              disabled={quantity <= min}
+            >
+              -
+            </button>
           </div>
 
           <button type="button" className="-m-2 cursor-pointer p-2 font-medium" title="Remove item from cart">

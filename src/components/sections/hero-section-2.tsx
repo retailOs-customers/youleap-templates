@@ -61,8 +61,8 @@ const HeroSection2 = ({ className }: HeroSection2Props) => {
   return (
     <div className={className}>
       <div className="flex min-h-[calc(100vh-5rem)] flex-col-reverse justify-between bg-primary sm:flex-row">
-        <div className="flex-3/5 py-16 pr-container pl-6 xl:pb-20">
-          <div ref={containerRef} className="flex max-w-xl flex-col items-center justify-center">
+        <div className="align-center flex flex-3/5 justify-center py-16 pl-6 xl:pb-20">
+          <div ref={containerRef} className="flex max-w-xl flex-col items-center justify-center sm:min-w-[60%]">
             <div className="masking-text">
               <div className="line flex items-center justify-center" ref={starLineRef}>
                 <StarSvg width={48} height={48} />

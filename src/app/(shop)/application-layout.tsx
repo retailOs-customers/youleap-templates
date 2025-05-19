@@ -4,14 +4,17 @@ import Footer from '@/components/footer'
 import Header from '@/components/header/header'
 import FeatureSection4 from '@/components/sections/feature-section-4'
 import NewsletterSection from '@/components/sections/newsletter-section-1'
+import { getCartProducts } from '@/data'
 import React, { ReactNode } from 'react'
+
 interface ComponentProps {
   children: ReactNode
   header?: ReactNode
   footer?: ReactNode
 }
 
-const ApplicationLayout: React.FC<ComponentProps> = ({ children, header, footer }) => {
+const ApplicationLayout: React.FC<ComponentProps> = async ({ children, header, footer }) => {
+  const products = await getCartProducts()
   return (
     <div>
       {/* HEADER */}
@@ -27,7 +30,7 @@ const ApplicationLayout: React.FC<ComponentProps> = ({ children, header, footer 
 
       {/* ASIDES */}
       <AsideSidebarNavigation />
-      <AsideSidebarCart />
+      <AsideSidebarCart products={products} />
     </div>
   )
 }
