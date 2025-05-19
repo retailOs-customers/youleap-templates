@@ -32,17 +32,31 @@ const AsideSidebarCart = ({ className = '', products }: Props) => {
         {/* FOOTER  */}
         <section
           aria-labelledby="summary-heading"
-          className="mt-auto grid shrink-0 gap-4 border-t border-zinc-900/10 py-6"
+          className="mt-auto grid shrink-0 gap-4 border-t border-zinc-900/10 py-4"
         >
           <h2 id="summary-heading" className="sr-only">
             סיכום הזמנה
           </h2>
           <div className="">
-            <div className="flex justify-between text-base font-medium text-gray-900">
-              <Text className="font-medium">סה״כ</Text>
-              <Text className="font-medium">$154.00</Text>
-            </div>
-            <Text className="mt-0.5 text-xs text-zinc-500">משלוח ומס מחושבים בסוף הקניה.</Text>
+            <dl className="space-y-6 px-4 py-4 sm:px-6">
+              <div className="mb-2 flex items-center justify-between">
+                <dt className="text-sm font-medium">סך ביניים</dt>
+                <dd className="text-sm font-medium text-zinc-900">$64.00</dd>
+              </div>
+              <div className="mb-2 flex items-center justify-between">
+                <dt className="text-sm font-medium">משלוח</dt>
+                <dd className="text-sm font-medium text-zinc-900">$5.00</dd>
+              </div>
+              <div className="flex items-center justify-between">
+                <dt className="text-sm font-medium">מיסים</dt>
+                <dd className="text-sm font-medium text-zinc-900">$5.52</dd>
+              </div>
+              <div className="flex items-center justify-between border-t border-zinc-200 pt-4">
+                <dt className="text-base font-medium">סה"כ</dt>
+                <dd className="text-base font-medium text-zinc-900">$75.52</dd>
+              </div>
+            </dl>
+            {/* <Text className="mt-0.5 text-xs text-zinc-500">משלוח ומס מחושבים בסוף הקניה.</Text> */}
             <div className="mt-5 grid grid-cols-2 gap-2">
               <Button outline href={'/cart'}>
                 צפה בעגלה
