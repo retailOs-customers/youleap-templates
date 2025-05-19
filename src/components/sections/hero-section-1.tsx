@@ -20,8 +20,6 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
-    // Hide images initially
-    gsap.set([img1Ref.current, img2Ref.current, img3Ref.current], { opacity: 0 })
 
     const onLoad = () => {
       // Random directions for each image
@@ -31,21 +29,30 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
         { x: gsap.utils.random(-150, 150), y: gsap.utils.random(-100, 100) },
       ]
       const images = [img1Ref.current, img2Ref.current, img3Ref.current]
+
+      // Create a timeline for initial animations
+      const tl = gsap.timeline()
+
       images.forEach((img, i) => {
         if (img) {
           gsap.set(img, { x: randoms[i].x, y: randoms[i].y })
-          gsap.to(img, {
-            opacity: 1,
-            x: 0,
-            y: 0,
-            duration: 1.2,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: img,
-              start: 'top 90%',
-              toggleActions: 'play none none reset',
+          tl.to(
+            img,
+            {
+              opacity: 1,
+              x: 0,
+              y: 0,
+              duration: 1.2,
+              ease: 'power3.out',
+              scrollTrigger: {
+                trigger: img,
+                start: 'top 90%',
+                toggleActions: 'play none none reset',
+                once: true, // Ensure the animation only plays once
+              },
             },
-          })
+            0
+          ) // Start all animations at the same time
         }
       })
 
@@ -91,7 +98,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
             alt="hero-1"
             width={450}
             height={340}
-            className="hero-img-anim w-full"
+            className="hero-img-anim w-full opacity-0"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             priority
             ref={img1Ref}
@@ -103,7 +110,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
             src="/images/shoe/hero-1-2.png"
             alt="hero-1"
             width={450}
-            className="hero-img-anim w-full"
+            className="hero-img-anim w-full opacity-0"
             height={440}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             priority
@@ -115,7 +122,7 @@ const HeroSection1 = ({ className }: HeroSection1Props) => {
           <Image
             src="/images/shoe/hero-1-3.png"
             alt="hero-1"
-            className="hero-img-anim w-full"
+            className="hero-img-anim w-full opacity-0"
             width={450}
             height={280}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
