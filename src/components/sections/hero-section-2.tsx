@@ -61,7 +61,7 @@ const HeroSection2 = ({ className }: HeroSection2Props) => {
   return (
     <div className={className}>
       <div className="flex min-h-[calc(100vh-5rem)] flex-col-reverse justify-between bg-primary sm:flex-row">
-        <div className="flex flex-3/5 justify-center self-end py-16 pr-container pl-6 xl:pb-20">
+        <div className="flex-3/5 py-16 pr-container pl-6 xl:pb-20">
           <div ref={containerRef} className="flex max-w-xl flex-col items-center justify-center">
             <div className="masking-text">
               <div className="line flex items-center justify-center" ref={starLineRef}>
@@ -90,8 +90,8 @@ const HeroSection2 = ({ className }: HeroSection2Props) => {
                 </span>
               </span>
             </Heading>
-            <div className="masking-text mt-8 max-w-sm">
-              <div className="line text-center" ref={textLineRef}>
+            <div className="masking-text mt-8 w-full max-w-sm">
+              <div className="line w-full text-center" ref={textLineRef}>
                 מוצרים טבעיים, אמינים ויעילים באמת – כי מגיע לעור שלך את הטוב ביותר, ולכדור הארץ גם.
               </div>
             </div>
