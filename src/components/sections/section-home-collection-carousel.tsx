@@ -8,7 +8,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect, useRef, useState } from 'react'
 import { Button } from '../button'
-import CarouselCollections from '../carousel-collections'
+import CarouselCollectionsFull from '../carousel-collections-full'
 import { Heading } from '../heading'
 
 interface SectionHomeCollectionCarouselProps {
@@ -74,7 +74,7 @@ const SectionHomeCollectionCarousel = ({
           <Heading bigger level={2}>
             <span className="masking-text">
               <span
-                className="line text-3xl sm:text-4xl xl:text-5xl/none"
+                className="line"
                 ref={(el) => {
                   headingLinesRef.current[0] = el
                 }}
@@ -83,7 +83,7 @@ const SectionHomeCollectionCarousel = ({
             </span>
             <span className="masking-text">
               <span
-                className="line text-4xl font-bold sm:text-5xl xl:text-6xl/none"
+                className="line font-bold"
                 ref={(el) => {
                   headingLinesRef.current[1] = el
                 }}
@@ -116,12 +116,13 @@ const SectionHomeCollectionCarousel = ({
           prevBtnDisabled={prevBtnDisabled}
         /> */}
       </div>
-
-      <CarouselCollections
-        className="mt-8"
-        emblaRef={emblaRef}
-        collections={groupCollections?.find((group) => group.handle === groupSelected)?.collections || []}
-      />
+      <div className="overflow-x-hidden">
+        <CarouselCollectionsFull
+          className="mt-8"
+          emblaRef={emblaRef}
+          collections={groupCollections?.find((group) => group.handle === groupSelected)?.collections || []}
+        />
+      </div>
     </div>
   )
 }
