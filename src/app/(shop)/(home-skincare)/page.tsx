@@ -21,7 +21,10 @@ export default async function Home() {
     <div>
       <HeroSection2 />
 
-      <SectionCollectionCarousel className="container mt-14 sm:mt-28 lg:mt-28" groupCollections={groupCollections} />
+      <SectionCollectionCarousel
+        className="mt-14 overflow-x-hidden sm:mt-28 lg:mt-28"
+        groupCollections={groupCollections}
+      />
 
       <FeatureSection1
         className="container mt-24 sm:mt-28 lg:mt-40"

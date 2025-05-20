@@ -9,11 +9,11 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect, useRef } from 'react'
 
-interface HeroSection3Props {
+interface HeroHomeProps {
   className?: string
 }
 
-const HeroSection3 = ({ className }: HeroSection3Props) => {
+const HeroHome = ({ className }: HeroHomeProps) => {
   const starLineRef = useRef<HTMLDivElement>(null)
   const headingLinesRef = useRef<(HTMLSpanElement | null)[]>([])
   const textLineRef = useRef<HTMLDivElement>(null)
@@ -60,25 +60,22 @@ const HeroSection3 = ({ className }: HeroSection3Props) => {
   }, [])
 
   return (
-    <div className="relative flex min-h-dvh w-full">
-      <video
-        src="/vids/clothes.mp4"
+    <div className="relative flex w-full">
+      <img
+        src="/images/cream/hero.jpg"
+        alt="Hero background"
         className="absolute inset-0 h-full w-full object-cover object-center"
-        autoPlay
-        loop
-        muted
-        playsInline
       />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-white/10" />
 
-      <div className="relative container flex flex-1 pt-20 pb-36">
+      <div className="relative container flex flex-1 pt-16 pb-16">
         <div
           ref={containerRef}
-          className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center gap-y-7 self-center text-center text-white"
+          className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center gap-y-4 self-center text-center text-black"
         >
           <div className="masking-text">
             <div className="line flex items-center justify-center" ref={starLineRef}>
-              <StarSvg width={48} height={48} color="white" />
+              <StarSvg width={48} height={48} color="black" />
             </div>
           </div>
           <Heading fontSize="text-5xl/none md:text-6xl/none lg:text-7xl/none 2xl:text-8xl/none font-semibold">
@@ -104,28 +101,27 @@ const HeroSection3 = ({ className }: HeroSection3Props) => {
               </span>
             </span>
           </Heading>
-          <Text className="masking-text max-w-sm">
+          <Text className="masking-text max-w-lg text-xl">
             <span className="line text-center" ref={textLineRef}>
               מוצרים טבעיים, אמינים ויעילים באמת – כי מגיע לעור שלך את הטוב ביותר, ולכדור הארץ גם.
             </span>
           </Text>
-        </div>
-      </div>
-
-      <div className="absolute bottom-14 left-1/2 container max-w-3xl -translate-x-1/2 sm:bottom-20">
-        <Button
-          href={'/collections/all'}
-          color="white"
-          className="mt-10 w-full cursor-pointer !border-white py-5 font-medium tracking-wide underline sm:py-6"
-        >
-          לכל המוצרים
-          <div className="absolute right-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-white sm:h-12 sm:w-12">
-            <ArrowUpRightIcon className="h-4 w-4" />
+          <div className="container max-w-3xl">
+            <Button
+              href={'/collections/all'}
+              color="white"
+              className="mt-10 w-full cursor-pointer !border-white py-5 font-medium tracking-wide underline sm:py-6"
+            >
+              לכל המוצרים
+              <div className="absolute right-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-white sm:h-12 sm:w-12">
+                <ArrowUpRightIcon className="h-4 w-4" />
+              </div>
+            </Button>
           </div>
-        </Button>
+        </div>
       </div>
     </div>
   )
 }
 
-export default HeroSection3
+export default HeroHome

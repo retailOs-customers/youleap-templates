@@ -12,6 +12,7 @@ import UserIconPopover from './user-icon-popover'
 
 const demo_pages_menu = [
   { name: 'דף הבית טיפוח', href: '/' },
+  { name: 'דף הבית קרם', href: '/home-cream' },
   { name: 'דף הבית אופנה', href: '/home-fashion' },
   { name: 'דף הבית נעליים', href: '/home-shoes' },
   { name: 'בקרוב', href: '#' },
