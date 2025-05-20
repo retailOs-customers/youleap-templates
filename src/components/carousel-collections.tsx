@@ -13,12 +13,12 @@ interface CarouselCollectionsProps {
 
 const CarouselCollections = ({ className, collections, emblaRef }: CarouselCollectionsProps) => {
   return (
-    <div className={clsx('embla', className)} ref={emblaRef}>
-      <div className="-ms-5 embla__container">
+    <div className={clsx('embla embla-overflow-unset', className)} ref={emblaRef}>
+      <div className="-mx-8 embla__container">
         {collections.map((collection) => (
           <div
             key={collection.id}
-            className="embla__slide basis-[86%] ps-5 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/4"
+            className="embla__slide basis-[80%] px-4 sm:basis-[40%] md:basis-[32%] lg:basis-[28%] xl:basis-[28%]"
           >
             <CollectionCard collection={collection} />
           </div>

@@ -8,6 +8,7 @@ import { Text, TextLink } from './text'
 
 const demo_pages_menu = [
   { name: 'Home skincare', href: '/' },
+  { name: 'Home Cream', href: '/home-cream' },
   { name: 'Home fashion', href: '/home-fashion' },
   { name: 'Home hjiab', href: '/home-shoes' },
   { name: 'Coming soon', href: '#' },

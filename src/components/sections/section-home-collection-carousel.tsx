@@ -1,6 +1,5 @@
 'use client'
 
-import NextPrevButtons from '@/components/next-prev-btns'
 import { getGroupCollections } from '@/data'
 import { useCarouselArrowButtons } from '@/hooks/use-carousel-arrow-buttons'
 import type { EmblaOptionsType } from 'embla-carousel'
@@ -10,11 +9,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect, useRef, useState } from 'react'
 import { Button } from '../button'
 import CarouselCollections from '../carousel-collections'
-import { Divider } from '../divider'
 import { Heading } from '../heading'
-import { Text } from '../text'
 
-interface SectionCollectionCarouselProps {
+interface SectionHomeCollectionCarouselProps {
   emblaOptions?: EmblaOptionsType
   className?: string
   sectonTitle?: string
@@ -33,15 +30,14 @@ const ex_group_collections = [
   // ...
 ]
 
-const SectionCollectionCarousel = ({
+const SectionHomeCollectionCarousel = ({
   emblaOptions = {
     slidesToScroll: 'auto',
   },
   className,
   sectonTitle = 'מצאו את <span data-slot="italic">הסגנון הייחודי</span> שלכם, ואלפי <br /> מותגים.',
   groupCollections,
-}: SectionCollectionCarouselProps) => {
-  // Tạo ref để truy cập các phương thức của carousel
+}: SectionHomeCollectionCarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     ...emblaOptions,
     direction: 'rtl',
@@ -55,13 +51,14 @@ const SectionCollectionCarousel = ({
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
-    gsap.set(headingLinesRef.current, { opacity: 0, y: 40 })
+    gsap.set(headingLinesRef.current, { opacity: 0, y: 40, scale: 0.9 })
     gsap.to(headingLinesRef.current, {
       opacity: 1,
       y: 0,
-      duration: 1,
-      stagger: 0.18,
-      ease: 'power3.out',
+      scale: 1,
+      duration: 1.2,
+      stagger: 0.25,
+      ease: 'back.out(1.7)',
       scrollTrigger: {
         trigger: headingContainerRef.current,
         start: 'top 80%',
@@ -72,41 +69,32 @@ const SectionCollectionCarousel = ({
 
   return (
     <div className={className}>
-      <div className="container flex flex-col justify-between gap-8 lg:flex-row">
-        <div className="flex-2/3" ref={headingContainerRef}>
-          <Heading className="max-w-2xl" bigger level={2}>
+      <div className="flex flex-col justify-between gap-8 lg:flex-row">
+        <div className="w-full text-center" ref={headingContainerRef}>
+          <Heading bigger level={2}>
             <span className="masking-text">
               <span
-                className="line"
+                className="line text-3xl sm:text-4xl xl:text-5xl/none"
                 ref={(el) => {
                   headingLinesRef.current[0] = el
                 }}
-                dangerouslySetInnerHTML={{ __html: 'מצאו את <span data-slot="italic">הסגנון הייחודי</span>' }}
+                dangerouslySetInnerHTML={{ __html: 'מצאו את הסגנון הייחודי שלכם' }}
               />
             </span>
             <span className="masking-text">
               <span
-                className="line"
+                className="line text-4xl font-bold sm:text-5xl xl:text-6xl/none"
                 ref={(el) => {
                   headingLinesRef.current[1] = el
                 }}
-                dangerouslySetInnerHTML={{ __html: 'שלכם, ואלפי <br /> מותגים.' }}
+                dangerouslySetInnerHTML={{ __html: 'מתוך אלפי מותגים' }}
               />
             </span>
           </Heading>
         </div>
-
-        <div className="flex-1/3">
-          <Text>קבלו 15% הנחה על ההזמנה הראשונה שלכם!</Text>
-          <Button outline href={'/collections/all'} className="mt-4">
-            לקנייה עכשיו
-          </Button>
-        </div>
-
-        <Divider className="block lg:hidden" />
       </div>
 
-      <div className="container mt-20 flex flex-wrap items-center justify-between gap-5">
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-5">
         <div className="flex flex-wrap items-center justify-center gap-2">
           {groupCollections?.map((group) => (
             <Button
@@ -120,17 +108,17 @@ const SectionCollectionCarousel = ({
           ))}
         </div>
 
-        <NextPrevButtons
+        {/* <NextPrevButtons
           className="ms-auto xl:ms-0"
           onNextClick={onNextButtonClick}
           onPrevClick={onPrevButtonClick}
           nextBtnDisabled={nextBtnDisabled}
           prevBtnDisabled={prevBtnDisabled}
-        />
+        /> */}
       </div>
 
       <CarouselCollections
-        className="mt-10"
+        className="mt-8"
         emblaRef={emblaRef}
         collections={groupCollections?.find((group) => group.handle === groupSelected)?.collections || []}
       />
@@ -138,4 +126,4 @@ const SectionCollectionCarousel = ({
   )
 }
 
-export default SectionCollectionCarousel
+export default SectionHomeCollectionCarousel
