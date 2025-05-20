@@ -2,7 +2,6 @@
 
 import { Button } from '@/components/button'
 import { Heading } from '@/components/heading'
-import StarSvg from '@/components/star-svg'
 import { Text } from '@/components/text'
 import { ArrowUpRightIcon } from '@heroicons/react/24/outline'
 import gsap from 'gsap'
@@ -14,7 +13,6 @@ interface HeroHomeProps {
 }
 
 const HeroHome = ({ className }: HeroHomeProps) => {
-  const starLineRef = useRef<HTMLDivElement>(null)
   const headingLinesRef = useRef<(HTMLSpanElement | null)[]>([])
   const textLineRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -28,32 +26,24 @@ const HeroHome = ({ className }: HeroHomeProps) => {
         toggleActions: 'play none none reset',
       },
     })
-    tl.set(starLineRef.current, { opacity: 0, y: 40 })
     tl.set(headingLinesRef.current, { opacity: 0, y: 40 })
     tl.set(textLineRef.current, { opacity: 0, y: 40 })
-    tl.to(starLineRef.current, {
+    tl.to(headingLinesRef.current, {
       opacity: 1,
       y: 0,
       duration: 1,
+      stagger: 0.18,
       ease: 'power3.out',
-    })
-      .to(headingLinesRef.current, {
+    }).to(
+      textLineRef.current,
+      {
         opacity: 1,
         y: 0,
         duration: 1,
-        stagger: 0.18,
         ease: 'power3.out',
-      })
-      .to(
-        textLineRef.current,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: 'power3.out',
-        },
-        '-=0.5'
-      )
+      },
+      '-=0.5'
+    )
     return () => {
       tl.kill()
     }
@@ -73,11 +63,6 @@ const HeroHome = ({ className }: HeroHomeProps) => {
           ref={containerRef}
           className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center gap-y-4 self-center text-center text-black"
         >
-          <div className="masking-text">
-            <div className="line flex items-center justify-center" ref={starLineRef}>
-              <StarSvg width={48} height={48} color="black" />
-            </div>
-          </div>
           <Heading fontSize="text-5xl/none md:text-6xl/none lg:text-7xl/none 2xl:text-8xl/none font-semibold">
             <span className="masking-text">
               <span
