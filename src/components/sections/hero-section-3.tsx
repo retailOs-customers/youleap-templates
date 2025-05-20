@@ -21,30 +21,57 @@ const HeroSection3 = ({ className }: HeroSection3Props) => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: 'top 80%',
-        toggleActions: 'play none none reset',
-      },
-    })
-    tl.set(starLineRef.current, { opacity: 0, y: 40 })
-    tl.set(headingLinesRef.current, { opacity: 0, y: 40 })
-    tl.set(textLineRef.current, { opacity: 0, y: 40 })
-    tl.to(starLineRef.current, {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      ease: 'power3.out',
-    })
-      .to(headingLinesRef.current, {
+
+    // Split text into characters for more dramatic effect
+    const splitText = (text: string) => {
+      return text
+        .split('')
+        .map((char, i) => `<span class="char">${char}</span>`)
+        .join('')
+    }
+
+    let tl: gsap.core.Timeline | null = null
+    let scrollTrigger: ScrollTrigger | null = null
+
+    const animate = () => {
+      // Reset and split text
+      headingLinesRef.current.forEach((line) => {
+        if (line) {
+          line.innerHTML = splitText(line.textContent?.replace(/<[^>]+>/g, '') || '')
+        }
+      })
+      // Initial state
+      gsap.set(starLineRef.current, { opacity: 0, y: 40 })
+      gsap.set(headingLinesRef.current, { opacity: 0 })
+      gsap.set(textLineRef.current, { opacity: 0, y: 40 })
+
+      tl = gsap.timeline()
+      // Animate star
+      tl.to(starLineRef.current, {
         opacity: 1,
         y: 0,
-        duration: 1,
-        stagger: 0.18,
+        duration: 1.2,
         ease: 'power3.out',
       })
-      .to(
+      // Animate heading characters
+      headingLinesRef.current.forEach((line) => {
+        if (line) {
+          const chars = line.querySelectorAll('.char')
+          tl!.to(
+            chars,
+            {
+              opacity: 1,
+              y: 0,
+              duration: 0.8,
+              stagger: 0.03,
+              ease: 'back.out(1.7)',
+            },
+            '-=0.4'
+          )
+        }
+      })
+      // Animate text with a slight delay
+      tl.to(
         textLineRef.current,
         {
           opacity: 1,
@@ -52,10 +79,43 @@ const HeroSection3 = ({ className }: HeroSection3Props) => {
           duration: 1,
           ease: 'power3.out',
         },
-        '-=0.5'
+        '-=0.2'
       )
+    }
+
+    scrollTrigger = ScrollTrigger.create({
+      trigger: containerRef.current,
+      start: 'top 80%',
+      toggleActions: 'play reverse play reverse',
+      onEnter: animate,
+      onEnterBack: animate,
+      onLeave: () => {
+        // Reset state when leaving
+        headingLinesRef.current.forEach((line) => {
+          if (line) {
+            line.innerHTML = splitText(line.textContent?.replace(/<[^>]+>/g, '') || '')
+            gsap.set(line.querySelectorAll('.char'), { opacity: 0, y: 16 })
+          }
+        })
+        gsap.set(starLineRef.current, { opacity: 0, y: 40 })
+        gsap.set(textLineRef.current, { opacity: 0, y: 40 })
+      },
+      onLeaveBack: () => {
+        // Reset state when scrolling back up
+        headingLinesRef.current.forEach((line) => {
+          if (line) {
+            line.innerHTML = splitText(line.textContent?.replace(/<[^>]+>/g, '') || '')
+            gsap.set(line.querySelectorAll('.char'), { opacity: 0, y: 16 })
+          }
+        })
+        gsap.set(starLineRef.current, { opacity: 0, y: 40 })
+        gsap.set(textLineRef.current, { opacity: 0, y: 40 })
+      },
+    })
+
     return () => {
-      tl.kill()
+      if (tl) tl.kill()
+      if (scrollTrigger) scrollTrigger.kill()
     }
   }, [])
 
@@ -84,7 +144,7 @@ const HeroSection3 = ({ className }: HeroSection3Props) => {
           <Heading fontSize="text-5xl/none md:text-6xl/none lg:text-7xl/none 2xl:text-8xl/none font-semibold">
             <span className="masking-text">
               <span
-                className="line text-center"
+                className="line text-center [&_.char]:inline-block [&_.char]:translate-y-4 [&_.char]:opacity-0"
                 data-slot="italic"
                 ref={(el) => {
                   headingLinesRef.current[0] = el
@@ -95,7 +155,7 @@ const HeroSection3 = ({ className }: HeroSection3Props) => {
             </span>
             <span className="masking-text">
               <span
-                className="line text-center"
+                className="line text-center [&_.char]:inline-block [&_.char]:translate-y-4 [&_.char]:opacity-0"
                 ref={(el) => {
                   headingLinesRef.current[1] = el
                 }}

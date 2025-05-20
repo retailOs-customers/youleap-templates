@@ -1,3 +1,9 @@
+:root {
+  --color-scrollbar-thumb: #d1d5db; /* Tailwind zinc-300 */
+  --color-scrollbar-thumb-hover: #a1a1aa; /* Tailwind zinc-400 */
+  --color-scrollbar-track: #f4f4f5; /* Tailwind zinc-100 */
+}
+
 html {
   direction: rtl;
 }
@@ -22,4 +28,25 @@ html {
 }
 .hero-img-anim.loaded {
   opacity: 1 !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  background: transparent;
+}
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb, #d1d5db);
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.no-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb-hover, #a1a1aa);
+}
+.no-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track, #f4f4f5);
+  border-radius: 6px;
+}
+.no-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scrollbar-thumb, #d1d5db) var(--color-scrollbar-track, #f4f4f5);
 }

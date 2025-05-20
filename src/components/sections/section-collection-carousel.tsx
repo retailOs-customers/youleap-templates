@@ -38,10 +38,9 @@ const SectionCollectionCarousel = ({
     slidesToScroll: 'auto',
   },
   className,
-  sectonTitle = 'מצאו את <span data-slot="italic">הסגנון הייחודי</span> שלכם, ואלפי <br /> מותגים.',
+  sectonTitle = 'מצאו את הסגנון הייחודי שלכם, ואלפי <br /> מותגים.',
   groupCollections,
 }: SectionCollectionCarouselProps) => {
-  // Tạo ref để truy cập các phương thức của carousel
   const [emblaRef, emblaApi] = useEmblaCarousel({
     ...emblaOptions,
     direction: 'rtl',
@@ -52,9 +51,12 @@ const SectionCollectionCarousel = ({
   // Add refs for animated heading lines
   const headingLinesRef = useRef<(HTMLSpanElement | null)[]>([])
   const headingContainerRef = useRef<HTMLDivElement>(null)
+  const buttonsContainerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
+
+    // Heading animation
     gsap.set(headingLinesRef.current, { opacity: 0, y: 40 })
     gsap.to(headingLinesRef.current, {
       opacity: 1,
@@ -65,9 +67,65 @@ const SectionCollectionCarousel = ({
       scrollTrigger: {
         trigger: headingContainerRef.current,
         start: 'top 80%',
-        toggleActions: 'play none none none',
+        toggleActions: 'play none none reset',
       },
     })
+
+    // Buttons animation
+    const buttons = buttonsContainerRef.current?.querySelectorAll('button')
+    if (buttons) {
+      gsap.set(buttons, { opacity: 0, y: 20 })
+      gsap.to(buttons, {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: buttonsContainerRef.current,
+          start: 'top 85%',
+          toggleActions: 'play none none reset',
+        },
+      })
+    }
+
+    // Drag-to-scroll for mobile
+    const container = buttonsContainerRef.current
+    let isDown = false
+    let startX = 0
+    let scrollLeft = 0
+
+    function handlePointerDown(e: PointerEvent) {
+      // Only enable on mobile (max-width: 767px)
+      if (window.innerWidth >= 768) return
+      isDown = true
+      container?.classList.add('dragging')
+      startX = e.pageX - (container?.offsetLeft || 0)
+      scrollLeft = container?.scrollLeft || 0
+      container?.setPointerCapture(e.pointerId)
+    }
+    function handlePointerMove(e: PointerEvent) {
+      if (!isDown || !container) return
+      const x = e.pageX - container.offsetLeft
+      const walk = (x - startX) * -1 // reverse direction for RTL
+      container.scrollLeft = scrollLeft + walk
+    }
+    function handlePointerUp(e: PointerEvent) {
+      isDown = false
+      container?.classList.remove('dragging')
+      container?.releasePointerCapture(e.pointerId)
+    }
+    container?.addEventListener('pointerdown', handlePointerDown)
+    container?.addEventListener('pointermove', handlePointerMove)
+    container?.addEventListener('pointerup', handlePointerUp)
+    container?.addEventListener('pointerleave', handlePointerUp)
+
+    return () => {
+      container?.removeEventListener('pointerdown', handlePointerDown)
+      container?.removeEventListener('pointermove', handlePointerMove)
+      container?.removeEventListener('pointerup', handlePointerUp)
+      container?.removeEventListener('pointerleave', handlePointerUp)
+    }
   }, [])
 
   return (
@@ -81,7 +139,7 @@ const SectionCollectionCarousel = ({
                 ref={(el) => {
                   headingLinesRef.current[0] = el
                 }}
-                dangerouslySetInnerHTML={{ __html: 'מצאו את <span data-slot="italic">הסגנון הייחודי</span>' }}
+                dangerouslySetInnerHTML={{ __html: 'מצאו את הסגנון הייחודי' }}
               />
             </span>
             <span className="masking-text">
@@ -107,13 +165,17 @@ const SectionCollectionCarousel = ({
       </div>
 
       <div className="mt-20 flex flex-wrap items-center justify-between gap-5">
-        <div className="flex flex-wrap items-center justify-center gap-2">
+        <div
+          ref={buttonsContainerRef}
+          className="no-scrollbar flex gap-2 overflow-x-auto px-2 pb-4 sm:px-0 sm:pb-2 md:flex-wrap md:overflow-x-visible md:pb-0"
+        >
           {groupCollections?.map((group) => (
             <Button
               key={group.handle}
               onClick={() => setGroupSelected(group.handle)}
               // @ts-ignore
               outline={groupSelected !== group.handle}
+              className="shrink-0"
             >
               {group.title}
             </Button>
