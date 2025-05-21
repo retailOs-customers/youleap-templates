@@ -1,3 +1,4 @@
+import { Button } from '@/components/button'
 import { Heading } from '@/components/heading'
 import { Text } from '@/components/text'
 import Image from 'next/image'
@@ -11,22 +12,30 @@ const FeatureSection5 = ({ className }: FeatureSection5Props) => {
     <div className={className}>
       <div className="grid grid-cols-12">
         <div className="col-span-12 flex flex-col justify-between bg-primary sm:col-span-6 xl:col-span-4">
-          <div className="max-w-md p-6 pb-0 lg:p-10 lg:pb-0">
-            <Heading fontSize="text-4xl/none sm:text-5xl/none xl:text-6xl/none 2xl:text-7xl/none">
-              נקי, מודע, ביצועים
-            </Heading>
+          <div className="flex max-w-md flex-col items-start gap-6 p-6 pb-0 lg:p-10 lg:pb-0">
+            <div className="flex flex-col">
+              <Heading bigger level={2}>
+                פשוט וואוו
+              </Heading>
+
+              <Text className="max-w-lg text-xl">
+                <span className="line text-center">
+                  מוצרים כנים לחלוטין שבאמת עובדים, טובים לעור ולכדור הארץ – בלי יוצאים מן הכלל!
+                </span>
+              </Text>
+            </div>
+            <Button outline href="#">
+              גלה את הקולקציה
+            </Button>
           </div>
           <Image
             src={'/images/circle-line.png'}
             alt="קו-מעגל"
             width={643}
             height={494}
-            className="h-auto w-full"
+            className="h-auto w-full pb-4"
             priority
           />
-          <div className="max-w-md p-6 pt-0 lg:p-10 lg:pt-0">
-            <Text>מוצרים כנים לחלוטין שבאמת עובדים, טובים לעור ולכדור הארץ – בלי יוצאים מן הכלל!</Text>
-          </div>
         </div>
         <div className="relative col-span-12 aspect-square sm:col-span-6 sm:aspect-[unset] xl:col-span-4">
           <Image

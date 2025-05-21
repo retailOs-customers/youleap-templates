@@ -6,7 +6,7 @@ import FeatureSection5 from '@/components/sections/feature-section-5'
 import HeroHome from '@/components/sections/hero-home'
 import SectionCollectionCarousel from '@/components/sections/section-collection-carousel'
 import SectionHomeCollectionCarousel from '@/components/sections/section-home-collection-carousel'
-import SectionProductCarousel from '@/components/sections/section-product-carousel'
+import SectionProductCarouselHome from '@/components/sections/section-product-carousel-home'
 import { getCollections, getGroupCollections } from '@/data'
 import clsx from 'clsx'
 import { Metadata } from 'next'
@@ -27,7 +27,7 @@ export default async function Home() {
       {collections
         ?.filter((_, i) => i < 1)
         .map((collection, index) => (
-          <SectionProductCarousel
+          <SectionProductCarouselHome
             key={index}
             className={clsx('container', index === 0 ? 'mt-14 sm:mt-44' : 'mt-36')}
             products={collection?.products}
