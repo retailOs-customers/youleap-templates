@@ -3,6 +3,7 @@ import FeatureSection1 from '@/components/sections/feature-section-1'
 import FeatureSection2 from '@/components/sections/feature-section-2'
 import FeatureSection3 from '@/components/sections/feature-section-3'
 import FeatureSection5 from '@/components/sections/feature-section-5'
+import FeatureSectionHome from '@/components/sections/feature-section-home'
 import HeroHome from '@/components/sections/hero-home'
 import SectionCollectionCarousel from '@/components/sections/section-collection-carousel'
 import SectionHomeCollectionCarousel from '@/components/sections/section-home-collection-carousel'
@@ -23,7 +24,8 @@ export default async function Home() {
     <div>
       <HeroHome />
       <SectionHomeCollectionCarousel className="mt-16" groupCollections={groupCollections} />
-      <FeatureSection5 className="container mt-14 sm:mt-28 lg:mt-28" />
+      <FeatureSectionHome className="container mt-14 sm:mt-36" />
+      <FeatureSection5 className="container mt-14 sm:mt-36" />
       {collections
         ?.filter((_, i) => i < 1)
         .map((collection, index) => (
