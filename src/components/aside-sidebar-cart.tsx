@@ -32,7 +32,7 @@ const AsideSidebarCart = ({ className = '', products }: Props) => {
         {/* FOOTER  */}
         <section
           aria-labelledby="summary-heading"
-          className="mt-auto grid shrink-0 gap-4 border-t border-zinc-900/10 py-4"
+          className="mt-auto grid shrink-0 gap-4 border-t border-zinc-900/10 px-4 py-4 md:px-8"
         >
           <h2 id="summary-heading" className="sr-only">
             סיכום הזמנה
@@ -97,7 +97,7 @@ export const CartProductItem = ({
       key={product.id}
       className={clsx(
         className,
-        'flex py-6 transition-opacity',
+        'flex px-4 py-6 transition-opacity md:px-8',
         isOutOfStock && 'rounded-lg bg-zinc-50 opacity-60 grayscale'
       )}
     >

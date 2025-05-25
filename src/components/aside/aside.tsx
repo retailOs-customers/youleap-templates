@@ -56,9 +56,9 @@ export function Aside({
                 openFrom === 'right' && 'data-enter:duration-100 data-enter:data-closed:translate-x-full'
               )}
             >
-              <div className="flex h-full flex-col px-4 md:px-8">
+              <div className="flex h-full flex-col">
                 <header
-                  className={`flex h-16 flex-shrink-0 items-center border-b border-zinc-900/10 md:h-20 ${
+                  className={`flex h-16 flex-shrink-0 items-center border-b border-zinc-900/10 px-4 md:h-20 md:px-8 ${
                     hasHeading ? 'justify-between' : 'justify-end'
                   }`}
                 >
