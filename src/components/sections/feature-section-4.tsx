@@ -51,7 +51,7 @@ const FeatureSection4 = ({ className }: FeatureSection4Props) => {
             index === arr.length - 1 ? 'sm:border-r-transparent' : 'bg-white'
           )}
         >
-          <Text className="text-zinc-500">({index + 1})</Text>
+          <Text className="text-[130px] leading-none text-zinc-500">{index + 1}</Text>
           <Text className="mt-2 font-medium">{item.title}</Text>
           <HugeiconsIcon icon={item.icon} size={40} className="mt-10 text-zinc-700 sm:mt-14" strokeWidth={1} />
           <Text

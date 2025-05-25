@@ -1,4 +1,3 @@
-import { VectorArrowDown3, VectorArrowDown4 } from '@/components/vector-arrow-down'
 import { TImage } from '@/type'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
@@ -65,12 +64,6 @@ const FeatureSection2 = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           priority
         />
-        {variant === 'down' ? (
-          <VectorArrowDown3 className="absolute start-full top-full hidden -translate-x-1/5 -translate-y-full lg:block xl:top-[96%]" />
-        ) : null}
-        {variant === 'up' ? (
-          <VectorArrowDown4 className="absolute start-full top-0 hidden translate-x-1/5 lg:block" />
-        ) : null}
       </div>
 
       <div className="relative flex flex-1/2 lg:justify-center 2xl:flex-4/7">
