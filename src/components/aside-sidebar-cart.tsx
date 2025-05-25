@@ -17,7 +17,7 @@ interface Props {
 
 const AsideSidebarCart = ({ className = '', products }: Props) => {
   return (
-    <Aside openFrom="right" type="cart" heading="Shopping Cart">
+    <Aside openFrom="right" type="cart" heading="עגלת הקניות">
       <div className={clsx('flex h-full flex-col', className)}>
         {/* CONTENT */}
         <div className="flex-1 overflow-x-hidden overflow-y-auto py-6 hidden-scrollbar">
@@ -90,14 +90,27 @@ export const CartProductItem = ({
   const max = 8
   const handleDecrement = () => setQuantity((q) => Math.max(min, q - 1))
   const handleIncrement = () => setQuantity((q) => Math.min(max, q + 1))
+  const isOutOfStock = product.inStock === false
 
   return (
-    <li key={product.id} className={clsx(className, 'flex py-6')}>
+    <li
+      key={product.id}
+      className={clsx(
+        className,
+        'flex py-6 transition-opacity',
+        isOutOfStock && 'rounded-lg bg-zinc-50 opacity-60 grayscale'
+      )}
+    >
       <div className="relative h-32 w-24 shrink-0 overflow-hidden rounded-md">
         <Image fill alt={product.imageAlt} src={product.imageSrc} className="size-full object-cover" />
+        {isOutOfStock && (
+          <span className="absolute top-2 left-2 z-10 rounded bg-red-500 px-2 py-1 text-xs font-semibold text-white shadow">
+            אזל מהמלאי
+          </span>
+        )}
       </div>
 
-      <div className="ms-4 flex flex-1 flex-col">
+      <div className={clsx('ms-4 flex flex-1 flex-col', isOutOfStock && 'pointer-events-none')}>
         <div className="flex justify-between font-medium">
           <h3 className="leading-tight">
             <TextLink href={'/products/' + product.handle}>{product.name}</TextLink>
@@ -110,6 +123,9 @@ export const CartProductItem = ({
           {product.size ? <Text className="text-xs">{product.size}</Text> : null}
         </div>
         <Text className="mt-1 text-xs text-zinc-500">{product.price}</Text>
+        {isOutOfStock && (
+          <Text className="mt-1 text-xs font-semibold text-red-500">{product.leadTime || 'Currently unavailable'}</Text>
+        )}
         <div className="mt-auto flex items-center justify-between pt-2 text-sm">
           <div className="inline-flex w-full max-w-16 items-center gap-1">
             <button
@@ -117,7 +133,7 @@ export const CartProductItem = ({
               aria-label="Increase quantity"
               onClick={handleIncrement}
               className="flex h-7 w-7 items-center justify-center rounded-md border border-zinc-300 p-0 text-base text-gray-500 hover:bg-zinc-100 disabled:opacity-40"
-              disabled={quantity >= max}
+              disabled={quantity >= max || isOutOfStock}
             >
               +
             </button>
@@ -127,13 +143,18 @@ export const CartProductItem = ({
               aria-label="Decrease quantity"
               onClick={handleDecrement}
               className="flex h-7 w-7 items-center justify-center rounded-md border border-zinc-300 p-0 text-base text-gray-500 hover:bg-zinc-100 disabled:opacity-40"
-              disabled={quantity <= min}
+              disabled={quantity <= min || isOutOfStock}
             >
               -
             </button>
           </div>
 
-          <button type="button" className="-m-2 cursor-pointer p-2 font-medium" title="Remove item from cart">
+          <button
+            type="button"
+            className={clsx('-m-2 cursor-pointer p-2 font-medium', isOutOfStock && 'pointer-events-auto z-50')}
+            title="Remove item from cart"
+            disabled={isOutOfStock}
+          >
             <span className="sr-only">Remove</span>
             <HugeiconsIcon icon={Delete02Icon} size={16} color="currentColor" strokeWidth={1} />
           </button>

@@ -940,7 +940,7 @@ export function getCartProducts() {
   return [
     {
       id: 1,
-      name: 'Basic Tee',
+      name: 'מוצר מנצח',
       handle: 'basic-tee',
       price: '$32.00',
       color: 'Sienna',
@@ -952,7 +952,7 @@ export function getCartProducts() {
     },
     {
       id: 2,
-      name: 'Basic Tee',
+      name: 'נעל מגניבה',
       handle: 'basic-tee',
       price: '$32.00',
       color: 'Black',
@@ -965,7 +965,7 @@ export function getCartProducts() {
     },
     {
       id: 3,
-      name: 'Nomad Tumbler',
+      name: 'נעל שחורה',
       handle: 'nomad-tumbler',
       price: '$35.00',
       color: 'White',
