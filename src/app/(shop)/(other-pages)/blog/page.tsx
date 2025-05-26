@@ -19,10 +19,8 @@ export default async function Page() {
     <div className="container">
       <div className="flex flex-col items-center py-14 text-center lg:py-20">
         <Heading bigger level={1} className="mt-5">
-          <span>נקי</span>
-          <br />
-          <span data-slot="italic" className="underline">
-            יומן.
+          <span>
+            כתבות ומאמרים
           </span>
         </Heading>
         <Text className="mt-5 max-w-xl">

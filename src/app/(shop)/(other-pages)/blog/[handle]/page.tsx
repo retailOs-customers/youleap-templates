@@ -84,9 +84,7 @@ export default async function Page({ params }: { params: Promise<{ handle: strin
 
       <div>
         <Heading>
-          <span>More</span>
-          {` `}
-          <span data-slot="italic">articles</span>
+          <span>מאמרים נוספים</span>
         </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:mx-0 xl:grid-cols-3">

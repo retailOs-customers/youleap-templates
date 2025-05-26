@@ -823,10 +823,10 @@ export function getBlogPosts() {
   return [
     {
       id: 1,
-      title: 'Graduation Dresses: A Style Guide',
+      title: 'פתרונות יופי טבעיים מרחבי העולם',
       handle: 'graduation-dresses-style-guide',
       description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        'במשך מאות שנים נשים שיתפו זו עם זו את סודות היופי שלהן, והעבירו מתכונים וטקסים מדור לדור. סודות אלה מושרשים לעיתים קרובות בתרבות המקומית, באקלים ובחומרי הגלם הזמינים. חקירת סודות היופי הללו מעניקה לנו הבנה עמוקה יותר של מסורות היופי המגוונות הקיימות בעולם.',
       imageUrl: '/images/blog1.jpg',
       date: 'Mar 16, 2020',
       datetime: '2020-03-16',
@@ -835,10 +835,10 @@ export function getBlogPosts() {
     },
     {
       id: 2,
-      title: 'How to Wear Your Eid Pieces All Year Long',
+      title: 'פתרונות יופי טבעיים מרחבי העולם',
       handle: 'how-to-wear-your-eid-pieces-all-year-long',
       description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        'במשך מאות שנים נשים שיתפו זו עם זו את סודות היופי שלהן, והעבירו מתכונים וטקסים מדור לדור. סודות אלה מושרשים לעיתים קרובות בתרבות המקומית, באקלים ובחומרי הגלם הזמינים. חקירת סודות היופי הללו מעניקה לנו הבנה עמוקה יותר של מסורות היופי המגוונות הקיימות בעולם.',
       imageUrl: '/images/blog2.jpg',
       date: 'Mar 16, 2020',
       datetime: '2020-03-16',
@@ -847,10 +847,10 @@ export function getBlogPosts() {
     },
     {
       id: 3,
-      title: 'The Must-Have shoei Friendly Fabrics for 2024',
+      title: 'פתרונות יופי טבעיים מרחבי העולם',
       handle: 'the-must-have-shoei-friendly-fabrics-for-2024',
       description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        'במשך מאות שנים נשים שיתפו זו עם זו את סודות היופי שלהן, והעבירו מתכונים וטקסים מדור לדור. סודות אלה מושרשים לעיתים קרובות בתרבות המקומית, באקלים ובחומרי הגלם הזמינים. חקירת סודות היופי הללו מעניקה לנו הבנה עמוקה יותר של מסורות היופי המגוונות הקיימות בעולם.',
       imageUrl: '/images/blog3.jpg',
       date: 'Mar 16, 2020',
       datetime: '2020-03-16',
@@ -883,10 +883,10 @@ export function getBlogPosts() {
     },
     {
       id: 6,
-      title: 'Graduation Dresses: A Style Guide',
+      title: 'פתרונות יופי טבעיים מרחבי העולם',
       handle: 'graduation-dresses-style-guide',
       description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        'במשך מאות שנים נשים שיתפו זו עם זו את סודות היופי שלהן, והעבירו מתכונים וטקסים מדור לדור. סודות אלה מושרשים לעיתים קרובות בתרבות המקומית, באקלים ובחומרי הגלם הזמינים. חקירת סודות היופי הללו מעניקה לנו הבנה עמוקה יותר של מסורות היופי המגוונות הקיימות בעולם.',
       imageUrl: '/images/blog6.jpg',
       date: 'Mar 16, 2020',
       datetime: '2020-03-16',
@@ -899,12 +899,12 @@ export function getBlogPosts() {
 export function getBlogPostsByHandle(handle: string) {
   return {
     id: 1,
-    title: 'Graduation Dresses: A Style Guide',
+    title: 'יופי בעיני המתבונן',
     handle: 'graduation-dresses-style-guide',
     excerpt:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.',
+      'במשך מאות שנים נשים שיתפו זו עם זו את סודות היופי שלהן, והעבירו מתכונים וטקסים מדור לדור. סודות אלה מושרשים לעיתים קרובות בתרבות המקומית, באקלים ובחומרי הגלם הזמינים. חקירת סודות היופי הללו מעניקה לנו הבנה עמוקה יותר של מסורות היופי המגוונות הקיימות בעולם.',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+      'במשך מאות שנים נשים שיתפו זו עם זו את סודות היופי שלהן, והעבירו מתכונים וטקסים מדור לדור. סודות אלה מושרשים לעיתים קרובות בתרבות המקומית, באקלים ובחומרי הגלם הזמינים. חקירת סודות היופי הללו מעניקה לנו הבנה עמוקה יותר של מסורות היופי המגוונות הקיימות בעולם.',
     featuredImage: {
       src: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: 'Graduation Dresses: A Style Guide',
@@ -917,7 +917,38 @@ export function getBlogPostsByHandle(handle: string) {
     category: { title: 'Marketing', href: '#' },
     timeToRead: '2 min read',
     content: `
-      <p>Beauty is a universal language, but its dialects vary greatly across cultures. From the intricate rituals of Japan to the natural ingredients of Brazil, each country has its unique beauty secrets. In this article, we'll embark on a journey to explore the diverse beauty traditions from around the world.</p><p></p><p>For centuries, women have been sharing their beauty secrets with each other, passing down recipes and rituals from generation to generation. These secrets are often rooted in the local culture, climate, and available ingredients. By exploring these beauty secrets, we can gain a deeper understanding of the diverse beauty traditions that exist globally.</p><p></p><p>In today's world, where beauty standards are often dictated by social media, it's refreshing to discover beauty secrets that are rooted in tradition and natural ingredients. Whether you're looking for a new skincare routine, a hair treatment, or a makeup tip, there's something to learn from the beauty secrets of other cultures.</p><p></p><p class="block-img"><img src="https://images.unsplash.com/photo-1746240922260-efbea47dc532?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"  alt="Spa"></p><p></p><h2>7 Time-Tested Beauty Secrets from <em>Around the World</em></h2><h3>1. Japan: Rice Bran Baths for Soft Skin</h3><p>Rice bran is revered for its moisturizing properties. Women have been using rice bran baths for centuries to soften and whiten their skin. Simply soak in a warm bath infused with rice bran oil and milk to experience the benefits.</p><p></p><h3>2. India: Turmeric Face Masks for Glowing Complexion</h3><p>Turmeric has been a staple in Indian beauty rituals for thousands of years. Mix turmeric powder with yogurt and honey to create a face mask that will leave your skin glowing.</p><p></p><h3>3. Morocco: Argan Oil for Luxurious Hair and Skin</h3><p>Argan oil is rich in antioxidants and essential fatty acids, nourishing and protecting hair and skin. Use it as a hair mask, moisturizer, or makeup remover to experience its benefits.</p><p></p><h3>4. Korea: Snail Mucin for Hydrated Skin</h3><p>Snail mucin is packed with hyaluronic acid, glycoproteins, and glycolic acid, making it a potent hydrator. Apply snail mucin creams or serums to lock in moisture and soothe dry skin.</p><p></p><h3>5. Brazil: Coconut Oil for Healthy Hair and Skin</h3><p>Coconut oil nourishes and moisturizes hair and skin, leaving them healthy and radiant. Use coconut oil as a hair mask, moisturizer, or makeup remover to experience its benefits.</p><p></p><h3>6. Egypt: Milk and Honey Baths for Soft Skin</h3><p>Milk and honey baths have been used for centuries to soften and whiten skin. The lactic acid in milk gently exfoliates, while honey provides antibacterial properties.</p><p></p><h3>7. China: Green Tea for Anti-Aging</h3><p>Green tea has potent anti-aging properties, reducing fine lines and wrinkles. Drink green tea regularly or apply green tea-infused creams and serums to experience its benefits.</p><p></p><p>By incorporating these beauty secrets into your routine, you'll not only enhance your natural beauty but also connect with the rich cultural heritage of these countries. Whether you're looking for a new skincare routine or a hair treatment, there's something to learn from the beauty secrets of other cultures.</p> 
+      <p>יופי הוא שפה אוניברסלית, אך הניבים שלה משתנים מאוד בין תרבויות שונות. מהטקסים המורכבים של יפן ועד לרכיבים הטבעיים של ברזיל – לכל מדינה יש את סודות היופי הייחודיים שלה. במאמר זה נצא למסע לחקור את מסורות היופי המגוונות מרחבי העולם.</p>
+<p></p>
+<p>במשך מאות שנים נשים שיתפו זו עם זו את סודות היופי שלהן, והעבירו מתכונים וטקסים מדור לדור. סודות אלה מושרשים לעיתים קרובות בתרבות המקומית, באקלים ובחומרי הגלם הזמינים. חקירת סודות היופי הללו מעניקה לנו הבנה עמוקה יותר של מסורות היופי המגוונות הקיימות בעולם.</p>
+<p></p>
+<p>בעולם של היום, שבו סטנדרטים של יופי מוכתבים לעיתים קרובות על ידי הרשתות החברתיות, זה מרענן לגלות סודות יופי שמבוססים על מסורת ורכיבים טבעיים. בין אם אתם מחפשים שגרת טיפוח חדשה לעור הפנים, טיפול לשיער או טיפ לאיפור – תמיד יש מה ללמוד מסודות היופי של תרבויות אחרות.</p>
+<p></p>
+<p class="block-img"><img src="https://images.unsplash.com/photo-1746240922260-efbea47dc532?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8" alt="Spa"></p>
+<p></p>
+<h2>7 סודות יופי עתיקים מכל רחבי העולם</h2>
+<h3>1. יפן: אמבטיות סובין אורז לעור רך</h3>
+<p>סובין אורז ידוע בתכונות הלחות שלו. נשים השתמשו באמבטיות סובין במשך מאות שנים כדי לרכך ולהבהיר את עורן. פשוט השרו את עצמכן באמבט חם עם שמן סובין אורז וחלב כדי ליהנות מהיתרונות.</p>
+<p></p>
+<h3>2. הודו: מסכות כורכום לפנים זוהרות</h3>
+<p>כורכום הוא מרכיב יסוד בטקסי היופי ההודיים במשך אלפי שנים. ערבבו אבקת כורכום עם יוגורט ודבש כדי ליצור מסכה שתשאיר את העור זוהר ובריא.</p>
+<p></p>
+<h3>3. מרוקו: שמן ארגן לשיער ולעור מפנקים</h3>
+<p>שמן ארגן עשיר בנוגדי חמצון וחומצות שומן חיוניות, ומזין ומגן על העור והשיער. השתמשו בו כמסכה לשיער, קרם לחות או מסיר איפור כדי ליהנות מהיתרונות שלו.</p>
+<p></p>
+<h3>4. קוריאה: ריר חלזונות לעור לח</h3>
+<p>ריר חלזונות מכיל חומצה היאלורונית, גליקופרוטאינים וחומצה גליקולית – מה שהופך אותו למרכיב לחות עוצמתי. מרחו קרמים או סרומים עם ריר חלזונות כדי לנעול לחות ולהרגיע עור יבש.</p>
+<p></p>
+<h3>5. ברזיל: שמן קוקוס לשיער ולעור בריאים</h3>
+<p>שמן קוקוס מזין ומלחח את העור והשיער ומשאיר אותם בריאים וזוהרים. השתמשו בו כמסכת שיער, קרם לחות או מסיר איפור.</p>
+<p></p>
+<h3>6. מצרים: אמבטיות חלב ודבש לעור רך</h3>
+<p>אמבטיות חלב ודבש שימשו במשך מאות שנים לריכוך והבהרת העור. חומצה לקטית שבחלב מסייעת בקילוף עדין, והדבש מוסיף תכונות אנטי-בקטריאליות.</p>
+<p></p>
+<h3>7. סין: תה ירוק נגד הזדקנות</h3>
+<p>תה ירוק מכיל תכונות אנטי-אייג'ינג חזקות, שעוזרות להפחית קמטים וקווים עדינים. שתו תה ירוק באופן קבוע או השתמשו בקרמים וסרומים עם תמצית תה ירוק.</p>
+<p></p>
+<p>על ידי שילוב סודות היופי הללו בשגרת הטיפוח שלכם, תוכלו לא רק לשפר את המראה הטבעי שלכם אלא גם להתחבר למורשת התרבותית העשירה של מדינות אלו. בין אם אתם מחפשים טיפול חדש לעור הפנים או לשיער – תמיד אפשר ללמוד משהו מהתרבויות השונות.</p>
+
     `,
     author: {
       name: 'S. Walkinshaw',
