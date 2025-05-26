@@ -7,12 +7,12 @@ import Aside from './aside'
 import { Text, TextLink } from './text'
 
 const demo_pages_menu = [
-  { name: 'Home skincare', href: '/' },
-  { name: 'Home Cream', href: '/home-cream' },
-  { name: 'Home Drink', href: '/home-drink' },
-  { name: 'Home fashion', href: '/home-fashion' },
-  { name: 'Home hjiab', href: '/home-shoes' },
-  { name: 'Coming soon', href: '#' },
+  { name: 'דף הבית טיפוח', href: '/' },
+  { name: 'דף הבית קרם', href: '/home-cream' },
+  { name: 'דף הבית דרינק', href: '/home-drink' },
+  { name: 'דף הבית אופנה', href: '/home-fashion' },
+  { name: 'דף הבית נעליים', href: '/home-shoes' },
+  { name: 'בקרוב', href: '#' },
 ]
 
 interface Props {
@@ -26,10 +26,10 @@ const AsideSidebarNavigation = ({ className }: Props) => {
         {/* Content */}
         <div className="mt-6 flow-root">
           <div className="-my-6 divide-y divide-zinc-900/10">
-            <div className="space-y-2 py-6">
+            <div className="space-y-2 px-4 py-6">
               <Disclosure as="div" className="-mx-3">
                 <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 ps-3 pe-3.5 text-base/7 font-medium hover:bg-zinc-50">
-                  <Text>Home pages</Text>
+                  <Text>עמודי דמו</Text>
                   <HugeiconsIcon
                     className="group-data-open:rotate-180"
                     icon={ArrowDown01Icon}
@@ -55,25 +55,25 @@ const AsideSidebarNavigation = ({ className }: Props) => {
                 href="/collections/all"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium hover:bg-zinc-50"
               >
-                Shop
+                חנות
               </TextLink>
               <TextLink
                 href="/cart"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium hover:bg-zinc-50"
               >
-                Cart
+                עגלה
               </TextLink>
               <TextLink
                 href="/orders"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium hover:bg-zinc-50"
               >
-                Orders
+                הזמנות
               </TextLink>
               <TextLink
                 href="/contact"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-medium hover:bg-zinc-50"
               >
-                Contact
+                צור קשר
               </TextLink>
             </div>
             <div className="py-6">
@@ -81,13 +81,13 @@ const AsideSidebarNavigation = ({ className }: Props) => {
                 href="/login"
                 className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-medium hover:bg-zinc-50"
               >
-                Sign in
+                התחברות
               </TextLink>
               <TextLink
                 href="/register"
                 className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-medium hover:bg-zinc-50"
               >
-                Register
+                הרשמה
               </TextLink>
             </div>
           </div>
