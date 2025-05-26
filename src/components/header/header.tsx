@@ -105,7 +105,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
             <MegaMenuPopover
               megamenu={mega_menus}
               rightImage={{
-                src: '/images/shoe/feature-1-2.png',
+                src: '/images/shoe/feature-1-2.jpg',
                 alt: 'Featured product',
               }}
               featuredCollections={featuredCollections}

@@ -1,6 +1,7 @@
 import { Divider } from '@/components/divider'
 import FeatureSection2 from '@/components/sections/feature-section-2'
 import FeatureSection3 from '@/components/sections/feature-section-3'
+import FeatureSectionHome from '@/components/sections/feature-section-home'
 import HeroSection3 from '@/components/sections/hero-section-3'
 import SectionCollectionCarousel from '@/components/sections/section-collection-carousel'
 import SectionProductCarousel from '@/components/sections/section-product-carousel'
@@ -20,6 +21,15 @@ export default async function Home() {
   return (
     <div>
       <HeroSection3 />
+
+      <FeatureSectionHome
+        className="container mt-14 sm:mt-28 lg:mt-32"
+        heading="אוסף האביב החדש"
+        description="גלו את האוסף החדש שלנו של בגדי אביב, מעוצבים עם תשומת לב לפרטים הקטנים ביותר."
+        images={['/images/fashion/newyork.jpg', '/images/fashion/newyork-1.jpg']}
+        buttonText="לצפייה באוסף"
+        buttonLink="/collections/spring"
+      />
 
       <SectionCollectionCarousel className="container mt-14 sm:mt-28 lg:mt-28" groupCollections={groupCollections} />
 

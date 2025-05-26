@@ -13,12 +13,12 @@ interface TImage {
   height: number
   alt: string
 }
+
 interface FeatureSectionHomeProps {
   className?: string
   heading?: string
   description?: string
-  image1?: TImage
-  image2?: TImage
+  images?: string[]
   buttonText?: string
   buttonLink?: string
 }
@@ -29,18 +29,7 @@ const FeatureSectionHome = ({
   heading = `<span>
   נקי, מעבר לכל ספק 
   </span>`,
-  image1 = {
-    src: '/images/shoe/feature-1-1.png',
-    width: 325,
-    height: 325,
-    alt: 'feature-1-1',
-  },
-  image2 = {
-    src: '/images/shoe/feature-1-2.png',
-    width: 494,
-    height: 529,
-    alt: 'feature-1-2',
-  },
+  images = ['/images/shoe/feature-1-1.png', '/images/shoe/feature-1-2.jpg'],
   buttonText = 'לכל המוצרים',
   buttonLink = '/collections/all',
 }: FeatureSectionHomeProps) => {
@@ -70,7 +59,16 @@ const FeatureSectionHome = ({
     <div ref={containerRef} className={clsx('flex flex-col justify-between gap-8 lg:flex-row', className)}>
       {/* Left (small) image */}
       <div className="flex w-full">
-        <Image {...image1} alt={image1.alt} sizes="100%" className="h-auto w-full" priority ref={leftImgRef} />
+        <Image
+          src={images[0]}
+          alt="Left feature image"
+          width={325}
+          height={325}
+          sizes="100%"
+          className="h-auto w-full"
+          priority
+          ref={leftImgRef}
+        />
       </div>
 
       <div className="flex w-full items-center text-center sm:justify-center">
@@ -92,8 +90,10 @@ const FeatureSectionHome = ({
       {/* Right (large) image */}
       <div className="flex w-full items-center justify-center">
         <Image
-          {...image2}
-          alt={image2.alt}
+          src={images[1]}
+          alt="Right feature image"
+          width={494}
+          height={529}
           sizes="100%"
           className="h-auto max-w-[271px] object-contain"
           priority

@@ -20,7 +20,14 @@ export default async function Home() {
     <div>
       <HeroFHeightVideo />
       <SectionHomeCollectionCarousel className="mt-16" groupCollections={groupCollections} />
-      <FeatureSectionHome className="container mt-14 sm:mt-36" />
+      <FeatureSectionHome
+        className="container mt-14 sm:mt-28 lg:mt-32"
+        heading="אוסף המשקאות החדש"
+        description="גלו את האוסף החדש שלנו של משקאות מעוצבים."
+        images={['/images/drink/product-20.jpg', '/images/drink/product-2.jpg']}
+        buttonText="לצפייה במשקאות"
+        buttonLink="/collections/drinks"
+      />
       {collections
         ?.filter((_, i) => i < 1)
         .map((collection, index) => (

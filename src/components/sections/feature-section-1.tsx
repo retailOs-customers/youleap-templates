@@ -32,7 +32,7 @@ const FeatureSection1 = ({
     alt: 'feature-1-1',
   },
   image2 = {
-    src: '/images/shoe/feature-1-2.png',
+    src: '/images/shoe/feature-1-2.jpg',
     width: 494,
     height: 529,
     alt: 'feature-1-2',
