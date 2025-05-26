@@ -19,9 +19,7 @@ export default async function Page() {
     <div className="container">
       <div className="flex flex-col items-center py-14 text-center lg:py-20">
         <Heading bigger level={1} className="mt-5">
-          <span>
-            כתבות ומאמרים
-          </span>
+          <span>כתבות ומאמרים</span>
         </Heading>
         <Text className="mt-5 max-w-xl">
           הישארו מעודכנים עם החדשות האחרונות בתעשייה כשצוותי השיווק שלנו מוצאים דרכים חדשות למחזר טריקי CSS ישנים.

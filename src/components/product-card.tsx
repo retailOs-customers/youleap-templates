@@ -67,10 +67,10 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
       <div className="absolute top-3 right-3">
         <div className="flex gap-2">
           <div className="rounded-full bg-white p-1.5 text-zinc-500">
-            <HeartIcon className="h-4 w-4" />
+            <ShoppingBagIcon className="h-4 w-4" />
           </div>
           <div className="rounded-full bg-white p-1.5 text-zinc-500">
-            <ShoppingBagIcon className="h-4 w-4" />
+            <HeartIcon className="h-4 w-4" />
           </div>
         </div>
       </div>
