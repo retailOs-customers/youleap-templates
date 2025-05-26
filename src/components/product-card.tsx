@@ -1,5 +1,5 @@
 import { TProductItem } from '@/data'
-import { ShoppingBagIcon } from '@heroicons/react/24/outline'
+import { HeartIcon, ShoppingBagIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { Text, TextLink } from './text'
@@ -38,12 +38,12 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
   return (
     <div className={clsx('group/prd relative w-full', className)}>
       {/* Product Image */}
-      <div className={clsx('relative w-full', imageRatio)}>
+      <div className={clsx('relative w-full overflow-hidden', imageRatio)}>
         <Image
           src={images[0] || '/placeholder.webp'}
           alt={title}
           fill
-          className="z-0 rounded-lg object-cover"
+          className="z-0 rounded-lg object-cover transition-transform duration-700 group-hover/prd:scale-110"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 30vw"
           priority
         />
@@ -52,7 +52,7 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
             src={images[1] || '/placeholder.webp'}
             alt={title}
             fill
-            className="z-0 rounded-lg object-cover opacity-0 transition-opacity duration-300 group-hover/prd:opacity-100"
+            className="z-0 rounded-lg object-cover opacity-0 transition-all duration-700 group-hover/prd:scale-110 group-hover/prd:opacity-100"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 30vw"
           />
         ) : null}
@@ -65,8 +65,13 @@ export default function ProductCard({ product, className, imageRatio = 'aspect-3
 
       {/* Shopping Bag Icon */}
       <div className="absolute top-3 right-3">
-        <div className="rounded-full bg-white p-1.5 text-zinc-500">
-          <ShoppingBagIcon className="h-4 w-4" />
+        <div className="flex gap-2">
+          <div className="rounded-full bg-white p-1.5 text-zinc-500">
+            <HeartIcon className="h-4 w-4" />
+          </div>
+          <div className="rounded-full bg-white p-1.5 text-zinc-500">
+            <ShoppingBagIcon className="h-4 w-4" />
+          </div>
         </div>
       </div>
 

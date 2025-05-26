@@ -41,7 +41,10 @@ export default async function Collection({ params }: { params: Promise<{ handle:
         <Divider />
 
         <main className="">
-          <div className="flex flex-col items-center py-14 text-center lg:py-20">
+          <div
+            className="flex flex-col items-center py-14 text-center lg:py-20"
+            style={{ backgroundImage: `url(${collection.image})` }}
+          >
             <StarSvg />
             <Heading bigger level={1} className="mt-5">
               <span data-slot="dim">Collection</span>

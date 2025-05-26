@@ -3295,7 +3295,7 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
           price: 120,
           price_min: 120,
           price_max: 120,
-          images: ['/images/drink/product-1.jpg'],
+          images: ['/images/drink/product-1.jpg', '/images/drink/product-2.jpg'],
           featured_image: '/images/drink/product-1.jpg',
           url: '/products/red-wine-product-1',
           variants: [
@@ -3320,7 +3320,7 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
           price: 110,
           price_min: 110,
           price_max: 110,
-          images: ['/images/drink/product-2.jpg'],
+          images: ['/images/drink/product-2.jpg', '/images/drink/product-3.jpg'],
           featured_image: '/images/drink/product-2.jpg',
           url: '/products/red-wine-product-2',
           variants: [
@@ -3345,7 +3345,7 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
           price: 115,
           price_min: 115,
           price_max: 115,
-          images: ['/images/drink/product-3.jpg'],
+          images: ['/images/drink/product-3.jpg', '/images/drink/product-4.jpg'],
           featured_image: '/images/drink/product-3.jpg',
           url: '/products/red-wine-product-3',
           variants: [
@@ -3370,9 +3370,34 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
           price: 130,
           price_min: 130,
           price_max: 130,
-          images: ['/images/drink/product-4.jpg'],
+          images: ['/images/drink/product-4.jpg', '/images/drink/product-5.jpg'],
           featured_image: '/images/drink/product-4.jpg',
           url: '/products/red-wine-product-4',
+          variants: [
+            {
+              id: 10014,
+              title: 'בקבוק 750 מ"ל',
+              price: 130,
+              selectedOptions: [{ name: 'נפח', value: '750 מ"ל' }],
+            },
+          ],
+        },
+        {
+          id: 1005,
+          title: 'מוצר 5',
+          handle: 'red-wine-product-5',
+          description: 'יין אדום מתוק.',
+          published_at: '2025-05-06T10:00:00-04:00',
+          created_at: '2025-05-06T10:00:00-04:00',
+          vendor: 'יקב הגפן',
+          type: 'יין אדום',
+          tags: ['יין', 'אדום'],
+          price: 130,
+          price_min: 130,
+          price_max: 130,
+          images: ['/images/drink/product-5.jpg', '/images/drink/product-6.jpg'],
+          featured_image: '/images/drink/product-5.jpg',
+          url: '/products/red-wine-product-5',
           variants: [
             {
               id: 10014,
@@ -3406,8 +3431,8 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
           price: 100,
           price_min: 100,
           price_max: 100,
-          images: ['/images/drink/product-3.jpg'],
-          featured_image: '/images/drink/product-3.jpg',
+          images: ['/images/drink/product-4.jpg', '/images/drink/product-5.jpg'],
+          featured_image: '/images/drink/product-4.jpg',
           url: '/products/white-wine-product-1',
           variants: [
             {
@@ -3431,8 +3456,8 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
           price: 95,
           price_min: 95,
           price_max: 95,
-          images: ['/images/drink/product-4.jpg'],
-          featured_image: '/images/drink/product-4.jpg',
+          images: ['/images/drink/product-5.jpg', '/images/drink/product-6.jpg'],
+          featured_image: '/images/drink/product-5.jpg',
           url: '/products/white-wine-product-2',
           variants: [
             {
@@ -3467,7 +3492,7 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
           price: 30,
           price_min: 30,
           price_max: 30,
-          images: ['/images/drink/product-5.jpg'],
+          images: ['/images/drink/product-5.jpg', '/images/drink/product-4.jpg'],
           featured_image: '/images/drink/product-5.jpg',
           url: '/products/beer-product-1',
           variants: [

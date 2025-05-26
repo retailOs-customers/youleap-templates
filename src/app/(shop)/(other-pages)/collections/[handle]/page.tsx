@@ -9,7 +9,6 @@ import { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 import CategoryFilters2 from '../category-filters-2'
 import ProductSortDropdown from '../product-sort-dropdown'
-import StarSvg from '../star-svg'
 
 export async function generateMetadata({ params }: { params: Promise<{ handle: string }> }): Promise<Metadata> {
   const { handle } = await params
@@ -41,16 +40,20 @@ export default async function Collection({ params }: { params: Promise<{ handle:
         <Divider />
 
         <main className="">
-          <div className="flex flex-col items-center py-14 text-center lg:py-20">
-            <StarSvg />
-            <Heading bigger level={1} className="mt-5">
-              <span data-slot="dim">Collection</span>
-              <br />
+          <div
+            className="relative mb-4 flex flex-col items-center py-14 text-center lg:py-24"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${collection.image})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <Heading bigger level={1} className="mt-5 text-white">
               <span data-slot="italic" className="underline">
                 {collection.title}
               </span>
             </Heading>
-            <Text className="mt-5 max-w-xl">{collection.description}</Text>
+            <Text className="mt-5 max-w-xl text-white">{collection.description}</Text>
           </div>
 
           <div className="flex flex-wrap justify-between gap-4">

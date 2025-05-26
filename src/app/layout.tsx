@@ -1,4 +1,5 @@
 import Aside from '@/components/aside'
+import SmoothScroll from '@/components/smooth-scroll'
 import '@/styles/globals.css'
 import '@/styles/tailwind.css'
 import clsx from 'clsx'
@@ -22,7 +23,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       className={clsx('text-zinc-950 antialiased dark:bg-zinc-900 dark:text-white dark:lg:bg-zinc-950', 'font-asimon')}
     >
       <body>
-        <Aside.Provider>{children}</Aside.Provider>
+        <Aside.Provider>
+          <SmoothScroll>{children}</SmoothScroll>
+        </Aside.Provider>
       </body>
     </html>
   )
