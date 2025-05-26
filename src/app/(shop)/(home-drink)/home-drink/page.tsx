@@ -1,9 +1,6 @@
-import FeatureSection2 from '@/components/sections/feature-section-2'
 import FeatureSection3 from '@/components/sections/feature-section-3'
-import FeatureSection5 from '@/components/sections/feature-section-5'
 import FeatureSectionHome from '@/components/sections/feature-section-home'
-import FeatureSectionHome2 from '@/components/sections/feature-section-home2'
-import HeroSection3 from '@/components/sections/hero-section-3'
+import HeroFHeightVideo from '@/components/sections/hero-f-height-video'
 import SectionHomeCollectionCarousel from '@/components/sections/section-home-collection-carousel'
 import SectionProductCarouselHome from '@/components/sections/section-product-carousel-home'
 import { getDrinkCollections, getDrinkGroupCollections, TDrinkCollection, TDrinkGroupCollection } from '@/data'
@@ -21,10 +18,9 @@ export default async function Home() {
 
   return (
     <div>
-      <HeroSection3 />
+      <HeroFHeightVideo />
       <SectionHomeCollectionCarousel className="mt-16" groupCollections={groupCollections} />
       <FeatureSectionHome className="container mt-14 sm:mt-36" />
-      <FeatureSection5 className="container mt-14 sm:mt-36" />
       {collections
         ?.filter((_, i) => i < 1)
         .map((collection, index) => (
@@ -54,10 +50,10 @@ export default async function Home() {
           title: 'משקאות חריפים <br /><span data-slot="italic">ובירות איכותיות.</span>',
           desciption: 'הכירו את מגוון המשקאות החריפים והבירות שלנו, לאירועים מיוחדים ולכל ערב.',
           images: [
-            '/images/drink/product-1.jpg',
-            '/images/drink/product-2.jpg',
-            '/images/drink/product-3.jpg',
-            '/images/drink/product-4.jpg',
+            '/images/drink/product-5.jpg',
+            '/images/drink/product-6.jpg',
+            '/images/drink/product-7.jpg',
+            '/images/drink/product-8.jpg',
           ],
         }}
       />

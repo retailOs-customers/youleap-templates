@@ -62,7 +62,7 @@ const HeroFHeightVideo = ({ className }: HeroFHeightVideoProps) => {
   return (
     <div className="relative flex min-h-dvh w-full">
       <video
-        src="/vids/clothes.mp4"
+        src="/vids/drink.mp4"
         className="absolute inset-0 h-full w-full object-cover object-center"
         autoPlay
         loop
@@ -90,7 +90,7 @@ const HeroFHeightVideo = ({ className }: HeroFHeightVideoProps) => {
                   headingLinesRef.current[0] = el
                 }}
               >
-                הטבע יודע
+                חנות משקאות
               </span>
             </span>
             <span className="masking-text">
@@ -100,13 +100,13 @@ const HeroFHeightVideo = ({ className }: HeroFHeightVideoProps) => {
                   headingLinesRef.current[1] = el
                 }}
               >
-                מה הוא עושה
+                למביני עניין
               </span>
             </span>
           </Heading>
           <Text className="masking-text max-w-sm">
             <span className="line text-center" ref={textLineRef}>
-              מוצרים טבעיים, אמינים ויעילים באמת – כי מגיע לעור שלך את הטוב ביותר, ולכדור הארץ גם.
+              מי שיודע יודע, שאצלנו המשקאות האיכותיים ביותר במחיר המשתלם ביותר בארץ!
             </span>
           </Text>
         </div>

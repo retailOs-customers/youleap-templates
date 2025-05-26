@@ -366,7 +366,7 @@ export async function getProductByHandle(handle: string) {
         id: 'variant-1',
         selectedOptions: [
           { name: 'Color', value: 'Black' },
-          { name: 'Size', value: 'M' }
+          { name: 'Size', value: 'M' },
         ],
         price: '$158.00',
         compareAtPrice: null,
@@ -378,7 +378,7 @@ export async function getProductByHandle(handle: string) {
           altText: null,
           width: 517,
           height: 600,
-        }
+        },
       },
       price: '$158.00',
       compareAtPrice: null,
@@ -539,7 +539,7 @@ export async function getProductByHandle(handle: string) {
         id: 'variant-2',
         selectedOptions: [
           { name: 'Color', value: 'White' },
-          { name: 'Size', value: 'L' }
+          { name: 'Size', value: 'L' },
         ],
         price: '$168.00',
         compareAtPrice: null,
@@ -551,7 +551,7 @@ export async function getProductByHandle(handle: string) {
           altText: null,
           width: 517,
           height: 600,
-        }
+        },
       },
       price: '$168.00',
       compareAtPrice: null,
@@ -703,7 +703,7 @@ export async function getProductByHandle(handle: string) {
       id: 'variant-3',
       selectedOptions: [
         { name: 'Color', value: 'Blue' },
-        { name: 'Size', value: 'XL' }
+        { name: 'Size', value: 'XL' },
       ],
       price: '$178.00',
       compareAtPrice: null,
@@ -715,7 +715,7 @@ export async function getProductByHandle(handle: string) {
         altText: null,
         width: 517,
         height: 600,
-      }
+      },
     },
     price: '$178.00',
     compareAtPrice: null,
@@ -3381,8 +3381,8 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
               selectedOptions: [{ name: 'נפח', value: '750 מ"ל' }],
             },
           ],
-        }
-      ]
+        },
+      ],
     },
     {
       id: '2',
@@ -3442,8 +3442,8 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
               selectedOptions: [{ name: 'נפח', value: '750 מ"ל' }],
             },
           ],
-        }
-      ]
+        },
+      ],
     },
     {
       id: '3',
@@ -3503,8 +3503,8 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
               selectedOptions: [{ name: 'נפח', value: '500 מ"ל' }],
             },
           ],
-        }
-      ]
+        },
+      ],
     },
     {
       id: '4',
@@ -3564,9 +3564,9 @@ export async function getDrinkCollections(): Promise<TDrinkCollection[]> {
               selectedOptions: [{ name: 'נפח', value: '700 מ"ל' }],
             },
           ],
-        }
-      ]
-    }
+        },
+      ],
+    },
   ]
 }
 
@@ -3577,32 +3577,32 @@ export async function getDrinkGroupCollections(): Promise<TDrinkGroupCollection[
       title: 'חדש בחנות',
       handle: 'new-arrivals',
       description: 'המשקאות החדשים שהגיעו לחנות',
-      collections
+      collections,
     },
     {
       title: 'הנמכרים ביותר',
       handle: 'best-selling',
       description: 'המשקאות הנמכרים ביותר',
-      collections
+      collections,
     },
     {
       title: 'יין',
       handle: 'wine',
       description: 'מגוון יינות איכותיים',
-      collections
+      collections,
     },
     {
       title: 'משקאות חריפים',
       handle: 'spirits',
       description: 'מגוון משקאות חריפים איכותיים',
-      collections
+      collections,
     },
     {
       title: 'בירה',
       handle: 'beer',
       description: 'מגוון בירות איכותיות',
-      collections
-    }
+      collections,
+    },
   ]
 }
 
