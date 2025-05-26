@@ -111,9 +111,9 @@ const FeatureSection3 = ({
             </div>
             <div className="flex items-end justify-between gap-4">
               <Text className="max-w-sm">{collection1.desciption}</Text>
-              <Button outline href={'#'}>
+              {/* <Button outline href={'#'}>
                 מדריך מידות
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -151,9 +151,9 @@ const FeatureSection3 = ({
             </div>
             <div className="flex items-end justify-between gap-4">
               <Text className="max-w-sm">{collection2.desciption}</Text>
-              <Button outline href={'#'}>
+              {/* <Button outline href={'#'}>
                 מדריך מידות
-              </Button>
+              </Button> */}
             </div>
           </div>
           <div className="flex-1/2">
