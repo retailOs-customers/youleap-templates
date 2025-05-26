@@ -23,17 +23,16 @@ export default async function Page() {
               <span className="text-xs uppercase">Thanks for ordering</span>
             </div>
             <Heading bigger className="mt-4">
-              Payment {` `}
-              <span data-slot="italic">successful!</span>
+              התשלום {` `}
+              <span data-slot="italic">עבר בהצלחה!</span>
             </Heading>
 
             <Text className="mt-2.5 text-sm text-zinc-500">
-              We appreciate your order, we’re currently processing it. So hang tight and we’ll send you confirmation
-              very soon!
+              התשלום עבר בהצלחה, אנחנו מודים לך על הסכמתך ואנחנו מעבירים את הפריטים בהקדם האפשרי.
             </Text>
 
             <dl className="mt-16 text-sm">
-              <dt className="text-zinc-500 uppercase">Tracking number</dt>
+              <dt className="text-zinc-500 uppercase">מספר מעקב</dt>
               <dd className="mt-2 font-medium text-zinc-950"># 551548931</dd>
             </dl>
 
@@ -70,29 +69,29 @@ export default async function Page() {
 
             <dl className="space-y-6 border-t border-zinc-200 pt-6 text-sm font-medium text-zinc-500">
               <div className="flex justify-between">
-                <dt className="uppercase">Subtotal</dt>
+                <dt className="uppercase">סך ביניים</dt>
                 <dd className="text-zinc-900">$72.00</dd>
               </div>
 
               <div className="flex justify-between">
-                <dt className="uppercase">Shipping</dt>
+                <dt className="uppercase">משלוח</dt>
                 <dd className="text-zinc-900">$8.00</dd>
               </div>
 
               <div className="flex justify-between">
-                <dt className="uppercase">Taxes</dt>
+                <dt className="uppercase">מיסים</dt>
                 <dd className="text-zinc-900">$6.40</dd>
               </div>
 
               <div className="flex items-center justify-between border-t border-zinc-200 pt-6 text-zinc-900">
-                <dt className="text-base uppercase">Total</dt>
+                <dt className="text-base uppercase">סה"כ</dt>
                 <dd className="text-base">$86.40</dd>
               </div>
             </dl>
 
             <dl className="mt-16 grid grid-cols-2 gap-x-4 text-sm text-zinc-600">
               <div>
-                <dt className="font-medium text-zinc-900 uppercase">Shipping Address</dt>
+                <dt className="font-medium text-zinc-900 uppercase">כתובת משלוח</dt>
                 <dd className="mt-2">
                   <address className="uppercase not-italic">
                     <span className="block">Kristin Watson</span>
@@ -102,7 +101,7 @@ export default async function Page() {
                 </dd>
               </div>
               <div>
-                <dt className="font-medium text-zinc-900 uppercase">Payment Information</dt>
+                <dt className="font-medium text-zinc-900 uppercase">פרטי התשלום</dt>
                 <dd className="mt-2 space-y-2 sm:flex sm:space-y-0 sm:space-x-4">
                   <div className="flex-none">
                     <svg width={36} height={24} viewBox="0 0 36 24" aria-hidden="true" className="h-6 w-auto">
@@ -124,7 +123,7 @@ export default async function Page() {
 
             <div className="mt-16 border-t border-zinc-200 py-6 text-left">
               <Link href="/collections/all" className="text-sm font-medium text-zinc-950 uppercase">
-                Continue Shopping
+                למוצרים נוספים
                 <span aria-hidden="true"> &rarr;</span>
               </Link>
             </div>
