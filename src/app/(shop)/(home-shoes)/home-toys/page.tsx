@@ -2,7 +2,7 @@ import { Divider } from '@/components/divider'
 import FeatureSection1 from '@/components/sections/feature-section-1'
 import FeatureSection2 from '@/components/sections/feature-section-2'
 import FeatureSection3 from '@/components/sections/feature-section-3'
-import HeroSection1 from '@/components/sections/hero-section-1'
+import HeroMovement from '@/components/sections/hero-movement'
 import SectionBiggestHeading from '@/components/sections/section-biggest-heading'
 import SectionCollectionCarousel from '@/components/sections/section-collection-carousel'
 import SectionProductCarousel from '@/components/sections/section-product-carousel'
@@ -20,7 +20,7 @@ export default async function Home() {
   let groupCollections = await getGroupCollections('shoe')
   return (
     <div>
-      <HeroSection1 className="container mt-14" />
+      <HeroMovement />
       <SectionBiggestHeading className="container mt-20 sm:mt-28 lg:mt-32 2xl:mt-20" />
       {collections
         ?.filter((_, i) => i < 3)
