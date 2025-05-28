@@ -19,7 +19,7 @@ const ButtonLargeWithIcon = ({ className = '', children, icon, ...props }: Butto
       {...props}
     >
       {children}
-      <div className="absolute right-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-white sm:h-12 sm:w-12">
+      <div className="absolute right-1.5 flex h-10 w-10 items-center justify-center rounded-full text-white sm:h-12 sm:w-12">
         {icon ? icon : <ArrowUpRightIcon className="h-4 w-4" />}
       </div>
     </Button>

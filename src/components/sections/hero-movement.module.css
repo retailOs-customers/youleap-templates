@@ -1,0 +1,14 @@
+.hero-fade-in-init {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: none !important;
+}
+
+.title-char {
+  display: inline-block;
+  will-change: opacity, transform;
+}
+
+.title-hidden .title-char {
+  opacity: 0;
+}
