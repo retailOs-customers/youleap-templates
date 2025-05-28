@@ -209,7 +209,7 @@ const HeroMovement = ({ className }: { className?: string }) => {
             </div>
           ))
         })()}
-        <div className="absolute top-16 left-1/2 z-10 mt-8 flex -translate-x-1/2 flex-col items-center text-center">
+        <div className="absolute top-16 left-1/2 z-1 mt-8 flex -translate-x-1/2 flex-col items-center text-center">
           <div className="flex max-w-[30rem] flex-col items-center justify-center">
             <h1 ref={titleRef} className="mb-4 text-center text-7xl font-bold text-[#22384c]">
               לגלות. לשחק. להתפתח.
@@ -258,7 +258,7 @@ const HeroMovement = ({ className }: { className?: string }) => {
           </div>
           {/* Center Image */}
           <div className="col-start-2 row-start-2 flex items-center justify-center">
-            <Image src="/images/toys/center-img.png" alt="toy" width={120} height={120} />
+            <Image src="/images/toys/center-img.png" alt="toy" width={475} height={475} />
           </div>
           {/* Bottom Left Box */}
           <div className="col-start-1 row-start-3 flex flex-col items-center rounded-xl bg-white p-4 shadow-md">
