@@ -362,15 +362,21 @@ const HeroMovement = ({ className }: { className?: string }) => {
             <h1
               ref={titleRef}
               className={clsx(
-                'mb-4 text-center text-7xl font-bold wrap-anywhere text-[#22384c]',
+                'mb-4 text-center text-4xl font-bold wrap-anywhere text-[#22384c] md:text-5xl lg:text-6xl xl:text-7xl',
                 styles['title-hidden']
               )}
             >
-              {`לגלות. לשחק. להתפתח.`.split('').map((char, i) => (
-                <span key={i} className="title-char">
-                  {char === ' ' ? '\u00A0' : char}
-                </span>
-              ))}
+              {isMobile
+                ? `לגלות. לשחק. להתפתח.`.split(' ').map((word, i) => (
+                    <span key={i} className="title-char" style={{ display: 'inline-block', marginLeft: 4 }}>
+                      {word}
+                    </span>
+                  ))
+                : `לגלות. לשחק. להתפתח.`.split('').map((char, i) => (
+                    <span key={i} className="title-char">
+                      {char === ' ' ? '\u00A0' : char}
+                    </span>
+                  ))}
             </h1>
             <p ref={subtitleRef} className={clsx('mb-8 text-xl text-[#22384c]', styles['hero-fade-in-init'])}>
               ב-Toyland תמצאו צעצועים שמתאימים בדיוק לגיל, לשלב ההתפתחות ולתחומי העניין של כל ילד.
@@ -416,11 +422,11 @@ const HeroMovement = ({ className }: { className?: string }) => {
         </div>
         {/* Parallax cards and center image */}
         <div
-          className="relative mx-auto mt-10 grid h-[600px] w-full max-w-5xl place-items-center gap-6"
+          className="mx-auto mt-10 flex w-full max-w-5xl flex-col items-center gap-6 md:relative md:block md:h-[600px]"
           ref={cardsContainerRef}
         >
           {/* Top Left */}
-          <div className="absolute top-0 left-24 z-10">
+          <div className="static z-10 flex w-full justify-center md:absolute md:top-0 md:left-24 md:w-auto">
             <HeroCard
               image="/images/toys/product2.png"
               alt="box2"
@@ -432,7 +438,7 @@ const HeroMovement = ({ className }: { className?: string }) => {
             />
           </div>
           {/* Top Right */}
-          <div className="absolute top-[-10%] right-[10%] z-10">
+          <div className="static z-10 flex w-full justify-center md:absolute md:top-[-10%] md:right-[10%] md:w-auto">
             <HeroCard
               image="/images/toys/product3.png"
               alt="box3"
@@ -444,7 +450,7 @@ const HeroMovement = ({ className }: { className?: string }) => {
             />
           </div>
           {/* Bottom Left */}
-          <div className="absolute top-[70%] left-[14%] z-10">
+          <div className="static z-10 flex w-full justify-center md:absolute md:top-[70%] md:left-[14%] md:w-auto">
             <HeroCard
               image="/images/toys/product4.png"
               alt="box4"
@@ -456,7 +462,7 @@ const HeroMovement = ({ className }: { className?: string }) => {
             />
           </div>
           {/* Bottom Right */}
-          <div className="absolute top-[70%] right-[15%] z-10">
+          <div className="static z-10 flex w-full justify-center md:absolute md:top-[70%] md:right-[15%] md:w-auto">
             <HeroCard
               image="/images/toys/product5.png"
               alt="box5"
@@ -468,7 +474,7 @@ const HeroMovement = ({ className }: { className?: string }) => {
             />
           </div>
           {/* Center Illustration */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="hidden md:absolute md:top-1/2 md:left-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2">
             <Image
               src="/images/toys/center-img.png"
               alt="toy"
