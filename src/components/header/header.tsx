@@ -1,5 +1,6 @@
 import { Logo } from '@/app/logo'
 import { getSkincareCollections } from '@/data'
+import { cn } from '@/utils/cn'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { TextLink } from '../text'
@@ -90,7 +91,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
           )}
         >
           {/* LEFT LOGO */}
-          <div className="flex md:!flex-1">
+          <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">החברה שלך</span>
               <Logo />
@@ -98,7 +99,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
           </div>
 
           {/* MAIN CENTER MENUS */}
-          <div className="hidden md:!flex md:!gap-x-8">
+          <div className={cn('hidden', 'lg:flex', 'lg:gap-x-8')}>
             {/* DROPDOWN */}
             <DropdownMenuPopover dropdownMenu={demo_pages_menu}>עמודי דמו</DropdownMenuPopover>
 
@@ -121,7 +122,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
           </div>
 
           {/* RIGHT ICON BUTTONS */}
-          <div className="flex flex-1 justify-end gap-x-2.5 md:!gap-x-4 xl:!gap-x-5">
+          <div className="flex flex-1 justify-end gap-x-2.5 md:gap-x-4 xl:gap-x-5">
             {/* HAMBURGER MENU */}
             <HamburgerIconMenu />
 
