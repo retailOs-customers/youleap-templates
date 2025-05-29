@@ -1,6 +1,5 @@
 'use client'
 
-import { cn } from '@/utils/cn'
 import clsx from 'clsx'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -475,17 +474,7 @@ const HeroMovement = ({ className }: { className?: string }) => {
             />
           </div>
           {/* Center Illustration */}
-          <div
-            className={cn(
-              'hidden',
-              'md:absolute',
-              'md:top-1/2',
-              'md:left-1/2',
-              'md:block',
-              'md:-translate-x-1/2',
-              'md:-translate-y-1/2'
-            )}
-          >
+          <div className="hide-mobile md:absolute md:top-1/2 md:left-1/2 md:block md:-translate-x-1/2 md:-translate-y-1/2">
             <Image
               src="/images/toys/center-img.png"
               alt="toy"

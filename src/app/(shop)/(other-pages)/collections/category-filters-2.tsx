@@ -81,7 +81,7 @@ export default function CategoryFilters2({ className }: Props) {
         />
       </button>
 
-      <PopoverGroup className="hidden sm:flex sm:items-baseline sm:space-x-8">
+      <PopoverGroup className="hide-mobile sm:flex sm:items-baseline sm:space-x-8">
         {filters.map((section, sectionIdx) => {
           const bage = section.options.filter((option) => option.checked).length
           return (

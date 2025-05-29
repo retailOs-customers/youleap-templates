@@ -1,6 +1,5 @@
 import { Logo } from '@/app/logo'
 import { getSkincareCollections } from '@/data'
-import { cn } from '@/utils/cn'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { TextLink } from '../text'
@@ -99,7 +98,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
           </div>
 
           {/* MAIN CENTER MENUS */}
-          <div className={cn('hidden', 'lg:flex', 'lg:gap-x-8')}>
+          <div className="hide-mobile lg:flex lg:gap-x-8">
             {/* DROPDOWN */}
             <DropdownMenuPopover dropdownMenu={demo_pages_menu}>עמודי דמו</DropdownMenuPopover>
 
