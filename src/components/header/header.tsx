@@ -90,7 +90,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
           )}
         >
           {/* LEFT LOGO */}
-          <div className="flex lg:flex-1">
+          <div className="flex md:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">החברה שלך</span>
               <Logo />
@@ -98,7 +98,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
           </div>
 
           {/* MAIN CENTER MENUS */}
-          <div className="hidden lg:flex lg:gap-x-8">
+          <div className="hidden md:flex md:gap-x-8">
             {/* DROPDOWN */}
             <DropdownMenuPopover dropdownMenu={demo_pages_menu}>עמודי דמו</DropdownMenuPopover>
 
