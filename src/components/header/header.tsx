@@ -98,7 +98,7 @@ const Header = async ({ className, hasBottomBorder = true, variant = 'default', 
           </div>
 
           {/* MAIN CENTER MENUS */}
-          <div className="hide-mobile md:gap-x-8">
+          <div className="hidden md:flex md:gap-x-8">
             {/* DROPDOWN */}
             <DropdownMenuPopover dropdownMenu={demo_pages_menu}>עמודי דמו</DropdownMenuPopover>
 
