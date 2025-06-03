@@ -16,7 +16,7 @@ const userMenu = [
   { name: 'החשבון שלי', href: '/orders', icon: UserListIcon },
   { name: 'הגדרות חשבון', href: '/settings', icon: Settings03Icon },
   { name: 'ההזמנות שלי', href: '/orders/4657', icon: ShoppingBasket01Icon },
-  { name: 'רשימת המשאלות', href: '/collections/all', icon: FavouriteIcon },
+  { name: 'רשימת המשאלות', href: '/wishlist', icon: FavouriteIcon },
   { name: 'התנתקות', href: '#', icon: Logout01Icon },
 ]
 
