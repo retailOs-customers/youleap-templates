@@ -21,9 +21,28 @@ export default async function Page() {
           <Heading level={1} id="your-orders-heading" bigger>
             ההזמנות שלי
           </Heading>
-          <Text className="mt-2 text-zinc-500">
-            צפה בסטטוס ההזמנות שלך, ניהול חזרות וגילוי מוצרים דומים.
-          </Text>
+          <Text className="mt-2 text-zinc-500">צפה בסטטוס ההזמנות שלך, ניהול חזרות וגילוי מוצרים דומים.</Text>
+        </div>
+        <div className="my-4 flex w-full max-w-xl flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-2 sm:gap-4">
+            <label className="flex flex-col items-start text-xs text-zinc-500">
+              מתאריך
+              <input
+                type="date"
+                className="mt-1 rounded border border-zinc-300 px-2 py-1 text-sm focus:ring-2 focus:ring-zinc-400 focus:outline-none"
+              />
+            </label>
+            <label className="flex flex-col items-start text-xs text-zinc-500">
+              לתאריך
+              <input
+                type="date"
+                className="mt-1 rounded border border-zinc-300 px-2 py-1 text-sm focus:ring-2 focus:ring-zinc-400 focus:outline-none"
+              />
+            </label>
+            <button className="mt-5 rounded bg-zinc-800 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-700 sm:mt-6">
+              חפש
+            </button>
+          </div>
         </div>
 
         <div className="mt-12 space-y-20 sm:mt-16">
