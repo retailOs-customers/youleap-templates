@@ -38,7 +38,7 @@ const Page = async ({ params }: { params: Promise<{ number: string }> }) => {
             </Heading>
           </div>
 
-          <div className="hide-mobile sm:block">
+          <div className="hidden sm:block">
             <Button outline href="#">
               View invoice
               <span aria-hidden="true"> &rarr;</span>

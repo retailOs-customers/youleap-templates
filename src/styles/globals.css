@@ -23,12 +23,3 @@ html {
 .hero-img-anim.loaded {
   opacity: 1 !important;
 }
-
-.hide-mobile {
-  display: flex;
-}
-@media (max-width: 1024px) {
-  .hide-mobile {
-    display: none;
-  }
-}
