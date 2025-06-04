@@ -19,10 +19,10 @@ export default async function Page() {
       <div className="mx-auto max-w-3xl py-16 sm:py-24">
         <div className="max-w-xl">
           <Heading level={1} id="your-orders-heading" bigger>
-            Your <span data-slot="italic">Orders</span>
+            ההזמנות שלי
           </Heading>
           <Text className="mt-2 text-zinc-500">
-            Check the status of recent orders, manage returns, and discover similar products.
+            צפה בסטטוס ההזמנות שלך, ניהול חזרות וגילוי מוצרים דומים.
           </Text>
         </div>
 
@@ -31,7 +31,7 @@ export default async function Page() {
             <section key={order.number} aria-labelledby={`${order.number}-heading`}>
               <div className="space-y-1 md:flex md:items-baseline md:space-y-0 md:space-x-4">
                 <h2 id={`${order.number}-heading`} className="text-lg font-medium text-zinc-900 md:shrink-0">
-                  Order #{order.number}
+                  הזמנה #{order.number}
                 </h2>
                 <div className="space-y-5 sm:flex sm:items-baseline sm:justify-between sm:space-y-0 md:min-w-0 md:flex-1">
                   <Text className="text-xs text-zinc-500">{order.status}</Text>
@@ -71,10 +71,10 @@ export default async function Page() {
                     </div>
                     <div className="mt-6 max-w-48 space-y-2 sm:mt-0 sm:mr-6 sm:w-40 sm:flex-none">
                       <Button type="button" className="w-full" outline>
-                        Shop similar
+                        צפה במוצרים דומים
                       </Button>
                       <Button className="w-full" type="button">
-                        Buy again
+                        רכישה מחדש
                       </Button>
                     </div>
                   </div>

@@ -11,7 +11,7 @@ export async function getOrders() {
       products: [
         {
           id: 1,
-          name: 'Nomad Tumbler',
+          name: 'מוצר לדוגמא 1',
           handle: 'nomad-tumbler',
           description:
             'This durable and portable insulated tumbler will keep your beverage at the perfect temperature during your next adventure.',
@@ -39,7 +39,7 @@ export async function getOrders() {
       products: [
         {
           id: 1,
-          name: 'Nomad Tumbler',
+          name: 'מוצר לדוגמא 2',
           handle: 'nomad-tumbler',
           description:
             'This durable and portable insulated tumbler will keep your beverage at the perfect temperature during your next adventure.',
@@ -60,7 +60,7 @@ export async function getOrders() {
         },
         {
           id: 2,
-          name: 'Minimalist Wristwatch',
+          name: 'מוצר לדוגמא 3',
           handle: 'minimalist-wristwatch',
           description: 'This contemporary wristwatch has a clean, minimalist look and high quality components.',
           href: '#',
