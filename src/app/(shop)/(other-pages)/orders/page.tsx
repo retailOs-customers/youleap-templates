@@ -7,8 +7,8 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Your Orders',
-  description: 'Check the status of recent orders, manage returns, and discover similar products.',
+  title: 'ההזמנות שלי',
+  description: 'צפה בסטטוס ההזמנות שלך, ניהול חזרות וגילוי מוצרים דומים.',
 }
 
 export default async function Page() {
@@ -37,7 +37,7 @@ export default async function Page() {
                   <Text className="text-xs text-zinc-500">{order.status}</Text>
                   <div className="flex items-center text-sm font-medium">
                     <TextLink href={'/orders/' + order.number} className="text-zinc-950 underline">
-                      Order details
+                      פרטי הזמנה
                       <span aria-hidden="true" className="font-light">
                         {' '}
                         &rarr;

@@ -15,7 +15,8 @@ import { Text, TextLink } from '../text'
 const userMenu = [
   { name: 'החשבון שלי', href: '/orders', icon: UserListIcon },
   { name: 'הגדרות חשבון', href: '/settings', icon: Settings03Icon },
-  { name: 'ההזמנות שלי', href: '/orders/4657', icon: ShoppingBasket01Icon },
+  { name: 'ההזמנות שלי', href: '/orders/', icon: ShoppingBasket01Icon },
+  { name: 'סטטוס הזמנה', href: '/orders/4657', icon: ShoppingBasket01Icon },
   { name: 'רשימת המשאלות', href: '/wishlist', icon: FavouriteIcon },
   { name: 'התנתקות', href: '#', icon: Logout01Icon },
 ]

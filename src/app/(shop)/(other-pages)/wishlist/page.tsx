@@ -31,7 +31,9 @@ export default async function Page() {
             המשאלות.
           </span>
         </Heading>
-        <Text className="mt-5 max-w-xl">המוצרים ששמרת ברשימת המשאלות שלך. הוסף מוצרים לרשימה כדי לעקוב אחריהם.</Text>
+        <Text className="mt-5 max-w-xl">
+          המוצרים ששמרת ברשימת המשאלות שלך. הוסף מוצרים לרשימה כדי לעקוב אחריהם.
+        </Text>
       </div>
 
       {sampleProducts.length === 0 ? (
