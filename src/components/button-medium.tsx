@@ -22,7 +22,7 @@ const ButtonMedium = ({ className = '', children, icon, ...props }: ButtonMedium
       {...props}
     >
       {children}
-      <div className="absolute right-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-white sm:h-12 sm:w-12">
+      <div className="absolute right-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-[#C3B2E7] sm:h-12 sm:w-12">
         {icon ? icon : <ArrowCircleRightIcon className="h-full w-full" />}
       </div>
     </Button>

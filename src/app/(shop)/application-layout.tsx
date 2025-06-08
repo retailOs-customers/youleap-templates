@@ -22,11 +22,11 @@ const ApplicationLayout: React.FC<ComponentProps> = async ({ children, header, f
 
       {/* MAIN CONTENT */}
       {children}
-      <NewsletterSection className="container mt-16 pt-5 sm:mt-28 lg:mt-32" />
-      <FeatureSection4 className="container mt-16 sm:mt-28 lg:mt-40" />
+      <NewsletterSection className="container mt-16 pt-5" />
+      <FeatureSection4 className="container mt-16" />
 
       {/* FOOTER */}
-      {footer ? footer : <Footer className="container mt-16 sm:mt-28 lg:mt-32" />}
+      {footer ? footer : <Footer className="container mt-16" />}
 
       {/* ASIDES */}
       <AsideSidebarNavigation />

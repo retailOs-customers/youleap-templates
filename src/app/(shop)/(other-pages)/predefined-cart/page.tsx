@@ -5,6 +5,7 @@ import { Heading } from '@/components/heading'
 import { Text } from '@/components/text'
 import { getCollectionByHandle } from '@/data'
 // import { TProductItem } from '@/data'
+import { Button } from '@/components/button'
 import PredefinedCartClient from '@/components/predefined-cart-client'
 import { HeartIcon } from '@heroicons/react/24/outline'
 import { Metadata } from 'next'
@@ -38,6 +39,11 @@ export default async function Page() {
             <span>סל קבוע</span>
           </Heading>
           <Text className="mt-5 max-w-xl">כל המוצרים שבחרת לסל הקבוע שלך. תוכל להוסיף, להסיר ולסנן מוצרים בקלות.</Text>
+          <div className="mt-6 flex justify-center">
+            <Button outline className="max-h-13">
+              הזמנת כלל המוצרים הקבועים שלי
+            </Button>
+          </div>
         </div>
         <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
           {/* Sidebar */}
