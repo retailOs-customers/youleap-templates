@@ -1,7 +1,7 @@
 import { Divider } from '@/components/divider'
 import { Heading } from '@/components/heading'
 // import { Pagination, PaginationList, PaginationNext, PaginationPage, PaginationPrevious } from '@/components/pagination'
-import ProductCard from '@/components/product-card'
+import ProductCardQuickView from '@/components/product-card-quick-view'
 import { Text } from '@/components/text'
 import { getCollectionByHandle } from '@/data'
 // import { TProductItem } from '@/data'
@@ -31,9 +31,7 @@ export default async function Page() {
             המשאלות.
           </span>
         </Heading>
-        <Text className="mt-5 max-w-xl">
-          המוצרים ששמרת ברשימת המשאלות שלך. הוסף מוצרים לרשימה כדי לעקוב אחריהם.
-        </Text>
+        <Text className="mt-5 max-w-xl">המוצרים ששמרת ברשימת המשאלות שלך. הוסף מוצרים לרשימה כדי לעקוב אחריהם.</Text>
       </div>
 
       {sampleProducts.length === 0 ? (
@@ -45,9 +43,13 @@ export default async function Page() {
         </div>
       ) : (
         <>
-          <div className="mt-5 grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:mx-0 xl:grid-cols-3">
-            {sampleProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+          <div className="mt-5 grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:mx-0 xl:grid-cols-4">
+            {sampleProducts.map((product, i) => (
+              <ProductCardQuickView
+                key={product.id}
+                product={product}
+                badge={i === 0 ? 'מארז' : i === 1 ? 'חדש!' : undefined}
+              />
             ))}
           </div>
           {/* 

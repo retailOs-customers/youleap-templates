@@ -25,8 +25,8 @@ const ProductSortDropdown = ({ className, align = 'left' }: ProductSortDropdownP
       <Menu as="div" className="relative inline-block text-right">
         <div>
           <MenuButton className="group inline-flex justify-center focus-visible:outline-none">
-            <Text>Sort by</Text>
-            <span className="sr-only">Sort products</span>
+            <Text>מיון</Text>
+            <span className="sr-only">מיון</span>
             <HugeiconsIcon
               icon={ArrowDown01Icon}
               className="-mr-1 ml-1 size-5 shrink-0 text-zinc-400 group-hover:text-zinc-500"
