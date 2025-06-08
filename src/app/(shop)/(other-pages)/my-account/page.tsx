@@ -17,31 +17,31 @@ export default function MyAccountPage() {
         <div className="grid flex-1 grid-cols-2 gap-6 text-center text-base md:grid-cols-7">
           <div>
             <div className="text-neutral-500">שם</div>
-            <div className="font-bold text-zinc-900">תאי מרקט (2008) בע"מ</div>
+            <div className="font-bold break-words text-zinc-900">תאי מרקט (2008) בע"מ</div>
           </div>
           <div>
             <div className="text-neutral-500">איש קשר</div>
-            <div className="font-bold text-zinc-900">משה בן יוסף</div>
+            <div className="font-bold break-words text-zinc-900">משה בן יוסף</div>
           </div>
           <div>
             <div className="text-neutral-500">מייל</div>
-            <div className="font-bold text-zinc-900">Sales@thaimarket.co.il</div>
+            <div className="font-bold break-words text-zinc-900">Sales@thaimarket.co.il</div>
           </div>
           <div>
             <div className="text-neutral-500">טלפון</div>
-            <div className="font-bold text-zinc-900">052-3289599</div>
+            <div className="font-bold break-words text-zinc-900">052-3289599</div>
           </div>
           <div>
             <div className="text-neutral-500">עיר</div>
-            <div className="font-bold text-zinc-900">תל מונד</div>
+            <div className="font-bold break-words text-zinc-900">תל מונד</div>
           </div>
           <div>
             <div className="text-neutral-500">יתרת חוב</div>
-            <div className="font-bold text-zinc-900">4,229</div>
+            <div className="font-bold break-words text-zinc-900">4,229</div>
           </div>
           <div>
             <div className="text-neutral-500">אובליגו</div>
-            <div className="font-bold text-zinc-900">40,000</div>
+            <div className="font-bold break-words text-zinc-900">40,000</div>
           </div>
         </div>
       </div>
