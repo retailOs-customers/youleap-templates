@@ -13,7 +13,7 @@ import { HugeiconsIcon } from '@hugeicons/react'
 import { Text, TextLink } from '../text'
 
 const userMenu = [
-  { name: 'החשבון שלי', href: '/orders', icon: UserListIcon },
+  { name: 'החשבון שלי', href: '/my-account', icon: UserListIcon },
   { name: 'הגדרות חשבון', href: '/settings', icon: Settings03Icon },
   { name: 'ההזמנות שלי', href: '/orders/', icon: ShoppingBasket01Icon },
   { name: 'סטטוס הזמנה', href: '/orders/4657', icon: ShoppingBasket01Icon },
