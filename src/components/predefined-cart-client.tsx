@@ -20,7 +20,7 @@ export default function PredefinedCartClient({ products }: { products: any[] }) 
 
   return (
     <>
-      <div className="mb-6 flex w-full min-w-0 flex-row-reverse items-center gap-x-2 border-b border-zinc-200 pb-4">
+      <div className="mb-6 flex w-full min-w-0 flex-col items-center gap-2 border-b border-zinc-200 pb-4 md:flex-row-reverse">
         {/* Display mode */}
         <div className="flex min-w-0 flex-0 items-center justify-center">
           <div className="flex gap-1">
@@ -41,11 +41,11 @@ export default function PredefinedCartClient({ products }: { products: any[] }) 
           </div>
         </div>
         {/* Sort by */}
-        <div className="relative flex min-w-0 flex-1 items-center justify-center">
+        <div className="relative hidden min-w-0 flex-1 items-center justify-center md:flex">
           <ProductSortDropdown align="right" />
         </div>
         {/* Per page */}
-        <div className="flex min-w-0 flex-1 items-center justify-center">
+        <div className="hidden min-w-0 flex-1 items-center justify-center md:flex">
           <Listbox
             value={perPage}
             aria-label="מוצרים לעמוד"
