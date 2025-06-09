@@ -39,7 +39,7 @@ export default async function Page() {
                 className="mt-1 rounded border border-zinc-300 px-2 py-1 text-sm focus:ring-2 focus:ring-zinc-400 focus:outline-none"
               />
             </label>
-            <button className="mt-5 rounded bg-zinc-800 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-700 sm:mt-6">
+            <button className="mt-5 max-h-13 rounded bg-zinc-800 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-700 sm:mt-6">
               חפש
             </button>
           </div>
@@ -85,6 +85,20 @@ export default async function Page() {
                           <span>{product.size}</span>
                         </Text>
                         <Text className="text-xs text-zinc-500">Qty {product.quantity}</Text>
+                        <Text className="text-xs text-zinc-500">
+                          מחיר כולל מע"מ: ₪{(parseFloat(product.price) * 1.17).toFixed(2)}
+                        </Text>
+                        {product.address && (
+                          <Text className="mt-1 text-xs text-zinc-500">
+                            <span>כתובת משלוח:</span>
+                            <br />
+                            {product.address.map((line: string, idx: number) => (
+                              <span key={idx} className="block">
+                                {line}
+                              </span>
+                            ))}
+                          </Text>
+                        )}
                         <Text className="mt-auto font-medium text-zinc-900">{product.price}</Text>
                       </div>
                     </div>

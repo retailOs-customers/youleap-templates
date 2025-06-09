@@ -94,9 +94,9 @@ export default async function Page() {
                 <dt className="font-medium text-zinc-900 uppercase">כתובת משלוח</dt>
                 <dd className="mt-2">
                   <address className="uppercase not-italic">
-                    <span className="block">Kristin Watson</span>
-                    <span className="block">7363 Cynthia Pass</span>
-                    <span className="block">Toronto, ON N3Y 4H8</span>
+                    <span className="block">דניאל כהן</span>
+                    <span className="block">רחוב הרצל 15</span>
+                    <span className="block">תל אביב, 6713201</span>
                   </address>
                 </dd>
               </div>

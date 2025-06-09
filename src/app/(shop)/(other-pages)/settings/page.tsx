@@ -11,8 +11,8 @@ import type { Metadata } from 'next'
 import { Address } from './address'
 
 export const metadata: Metadata = {
-  title: 'Settings',
-  description: 'Manage your organization settings.',
+  title: 'הגדרות',
+  description: 'נהל את הגדרות הארגון שלך.',
 }
 
 export default function Settings() {
@@ -20,17 +20,17 @@ export default function Settings() {
     <div className="container">
       <form method="post" className="mx-auto max-w-4xl py-20">
         <Heading>
-          Account <span data-slot="italic">Settings</span>
+          <span data-slot="italic">הגדרות</span> חשבון
         </Heading>
         <Divider className="my-10" />
 
         <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="space-y-1">
-            <Text className="font-medium">Organization Name</Text>
-            <Text className="text-zinc-500">This will be displayed on your public profile.</Text>
+            <Text className="font-medium">שם הארגון</Text>
+            <Text className="text-zinc-500">זה יוצג בפרופיל הציבורי שלך.</Text>
           </div>
           <div>
-            <Input aria-label="Organization Name" name="name" placeholder="Mrs. / " />
+            <Input aria-label="שם הארגון" name="name" placeholder="הזן את שם הארגון" />
           </div>
         </section>
 
@@ -38,13 +38,11 @@ export default function Settings() {
 
         <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="space-y-1">
-            <Text className="font-medium">Organization Bio</Text>
-            <Text className="text-zinc-500">
-              This will be displayed on your public profile. Maximum 240 characters.
-            </Text>
+            <Text className="font-medium">אודות הארגון</Text>
+            <Text className="text-zinc-500">זה יוצג בפרופיל הציבורי שלך. מקסימום 240 תווים.</Text>
           </div>
           <div>
-            <Textarea aria-label="Organization Bio" name="bio" />
+            <Textarea aria-label="אודות הארגון" name="bio" />
           </div>
         </section>
 
@@ -52,14 +50,14 @@ export default function Settings() {
 
         <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="space-y-1">
-            <Text className="font-medium">Organization Email</Text>
-            <Text className="text-zinc-500">This is how customers can contact you for support.</Text>
+            <Text className="font-medium">דואל הארגון</Text>
+            <Text className="text-zinc-500">כך לקוחות יכולים ליצור איתך קשר לתמיכה.</Text>
           </div>
           <div className="space-y-4">
-            <Input type="email" aria-label="Organization Email" name="email" defaultValue="info@example.com" />
+            <Input type="email" aria-label="דואל הארגון" name="email" defaultValue="info@example.com" />
             <CheckboxField>
               <Checkbox name="email_is_public" defaultChecked />
-              <Label>Show email on public profile</Label>
+              <Label>הצג דוא"ל בפרופיל הציבורי</Label>
             </CheckboxField>
           </div>
         </section>
@@ -68,8 +66,8 @@ export default function Settings() {
 
         <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="space-y-1">
-            <Text className="font-medium">Address</Text>
-            <Text className="text-zinc-500">This is where your organization is registered.</Text>
+            <Text className="font-medium">כתובת</Text>
+            <Text className="text-zinc-500">כאן רשום הארגון שלך.</Text>
           </div>
           <Address />
         </section>
@@ -78,13 +76,13 @@ export default function Settings() {
 
         <section className="grid gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="space-y-1">
-            <Text className="font-medium">Currency</Text>
-            <Text className="text-zinc-500">The currency that your organization will be collecting.</Text>
+            <Text className="font-medium">מטבע</Text>
+            <Text className="text-zinc-500">המטבע שהארגון שלך יגבה.</Text>
           </div>
           <div>
-            <Select aria-label="Currency" name="currency" defaultValue="cad">
-              <option value="cad">CAD - Canadian Dollar</option>
-              <option value="usd">USD - United States Dollar</option>
+            <Select aria-label="מטבע" name="currency" defaultValue="cad">
+              <option value="cad">CAD - דולר קנדי</option>
+              <option value="usd">USD - דולר אמריקאי</option>
             </Select>
           </div>
         </section>
@@ -93,9 +91,9 @@ export default function Settings() {
 
         <div className="flex justify-end gap-2.5">
           <Button type="reset" outline>
-            Reset
+            איפוס
           </Button>
-          <Button type="submit">Save changes</Button>
+          <Button type="submit">שמור שינויים</Button>
         </div>
       </form>
 

@@ -158,7 +158,7 @@ export default function AllDocumentsPage() {
               onChange={(e) => setToDate(e.target.value)}
             />
           </label>
-          <Button className="px-6">חפש</Button>
+          <Button className="max-h-13 px-6">חפש</Button>
         </div>
       </div>
       <div className="overflow-x-auto rounded-lg bg-white shadow">
