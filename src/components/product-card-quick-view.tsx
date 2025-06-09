@@ -124,9 +124,7 @@ export default function ProductCardQuickView({ product, className, badge }: Prod
           {/* Price */}
           <div className="mb-1 flex flex-col items-center">
             <div className="flex items-center gap-2">
-              <span className="text-2xl font-extrabold tracking-tight text-emerald-900">
-                ₪ {salePrice.toLocaleString()}
-              </span>
+              <span className="text-2xl font-extrabold tracking-tight text-black">₪ {salePrice.toLocaleString()}</span>
               <span className="text-lg font-medium text-zinc-400 line-through">₪ {price.toLocaleString()}</span>
             </div>
             <div className="text-xs text-zinc-500">כולל מע"מ {vatRate * 100}%</div>
@@ -159,7 +157,7 @@ export default function ProductCardQuickView({ product, className, badge }: Prod
         size="2xl"
         dir="rtl"
         className={clsx(
-          'z-[99999] row-start-2 flex min-h-[60vh] w-full min-w-0 flex-col items-center justify-center rounded-t-3xl bg-white p-[--gutter] shadow-lg ring-1 ring-zinc-950/10 transition duration-100 will-change-transform [--gutter:--spacing-8] data-closed:translate-y-12 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in sm:mb-auto sm:max-w-2xl sm:rounded-2xl sm:data-closed:translate-y-0 sm:data-closed:data-enter:scale-95 dark:bg-zinc-900 dark:ring-white/10 forced-colors:outline'
+          'z-[99999] row-start-2 flex w-full min-w-0 flex-col items-center justify-center rounded-t-3xl bg-white p-[--gutter] shadow-lg ring-1 ring-zinc-950/10 transition duration-100 will-change-transform [--gutter:--spacing-8] data-closed:translate-y-12 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in sm:mb-auto sm:max-w-2xl sm:rounded-2xl sm:data-closed:translate-y-0 sm:data-closed:data-enter:scale-95 dark:bg-zinc-900 dark:ring-white/10 forced-colors:outline'
         )}
       >
         <button
@@ -170,7 +168,7 @@ export default function ProductCardQuickView({ product, className, badge }: Prod
         >
           <XMarkIcon className="h-6 w-6 text-zinc-700" />
         </button>
-        <div className="relative mx-auto flex w-full max-w-2xl flex-col items-center gap-10 p-6 md:flex-row md:items-start">
+        <div className="relative mx-auto flex w-full max-w-2xl flex-col items-center gap-10 px-6 py-10 md:flex-row md:items-start">
           {/* Product image clickable */}
           <div
             className="relative flex h-60 w-44 flex-shrink-0 cursor-pointer flex-col items-center"

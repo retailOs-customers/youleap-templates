@@ -51,11 +51,11 @@ export default function MyAccountPage() {
       <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-3">
         {[
           { label: 'סל קבוע', onClick: () => router.push('/predefined-cart') },
-          { label: 'מסמכים' },
-          { label: 'טיוטות' },
+          { label: 'מסמכים', onClick: () => router.push('/documents') },
+          { label: 'טיוטות', onClick: () => router.push('/drafts') },
           { label: 'מועדפים', onClick: () => router.push('/wishlist') },
-          { label: 'כרטסת' },
-          { label: 'גיול חובות' },
+          { label: 'כרטסת', onClick: () => router.push('/all-documents') },
+          { label: 'הזמנות', onClick: () => router.push('/orders') },
         ].map((item) => (
           <div
             key={item.label}
