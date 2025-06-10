@@ -20,9 +20,9 @@ export default function PredefinedCartClient({ products }: { products: any[] }) 
 
   return (
     <>
-      <div className="mb-6 flex w-full min-w-0 flex-col items-center gap-2 border-b border-zinc-200 pb-4 md:flex-row-reverse">
+      <div className="mb-6 flex w-full min-w-0 flex-col items-center gap-4 border-b border-zinc-200 pb-4 md:flex-row-reverse">
         {/* Display mode */}
-        <div className="flex min-w-0 flex-0 items-center justify-center">
+        <div className="flex flex-0 items-center justify-center">
           <div className="flex gap-1">
             <button
               className={`z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border ${displayMode === 'grid' ? 'border-zinc-900 bg-zinc-100 text-zinc-900' : 'border-zinc-200 bg-white text-zinc-500 hover:bg-zinc-50'} text-sm transition`}
@@ -41,11 +41,11 @@ export default function PredefinedCartClient({ products }: { products: any[] }) 
           </div>
         </div>
         {/* Sort by */}
-        <div className="relative hidden min-w-0 flex-1 items-center justify-center md:flex">
+        <div className="relative hidden items-center justify-center md:flex">
           <ProductSortDropdown align="right" />
         </div>
         {/* Per page */}
-        <div className="hidden min-w-0 flex-1 items-center justify-center md:flex">
+        <div className="hidden flex-1 items-center justify-center md:flex">
           <Listbox
             value={perPage}
             aria-label="מוצרים לעמוד"

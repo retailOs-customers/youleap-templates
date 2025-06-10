@@ -24,7 +24,7 @@ const ProductSortDropdown = ({ className, align = 'left' }: ProductSortDropdownP
     <div className={className}>
       <Menu as="div" className="relative inline-block text-right">
         <div>
-          <MenuButton className="group inline-flex justify-center focus-visible:outline-none">
+          <MenuButton className="group inline-flex justify-center gap-2 focus-visible:outline-none">
             <Text>מיון</Text>
             <span className="sr-only">מיון</span>
             <HugeiconsIcon

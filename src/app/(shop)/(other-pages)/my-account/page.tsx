@@ -12,7 +12,7 @@ export default function MyAccountPage() {
       {/* Header */}
       <h1 className="mb-8 text-right text-3xl font-bold text-zinc-900">אזור אישי</h1>
       <div className="mb-10 flex flex-col items-center gap-6 rounded-xl border border-neutral-100 bg-white p-8 shadow md:flex-row md:items-stretch">
-        <Button color="dark/zinc" className="mb-4 max-h-13 w-full md:order-2 md:mb-0 md:w-auto">
+        <Button color="blackwhite" className="mb-4 max-h-13 w-full md:order-2 md:mb-0 md:w-auto">
           התנתק
         </Button>
         <div className="grid flex-1 grid-cols-2 gap-6 text-center text-base md:grid-cols-7">

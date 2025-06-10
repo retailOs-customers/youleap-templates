@@ -59,7 +59,7 @@ const InputNumber: FC<NcInputNumberProps> = ({
 
       <div className="flex w-24 items-center justify-between sm:w-28">
         <button
-          className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-950/15 bg-white hover:border-zinc-950/20 focus:outline-none disabled:cursor-default dark:border-neutral-500 dark:bg-neutral-900 dark:hover:border-neutral-400"
+          className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-zinc-950/15 bg-white hover:border-zinc-950/20 focus:outline-none disabled:cursor-default dark:border-neutral-500 dark:bg-neutral-900 dark:hover:border-neutral-400"
           type="button"
           onClick={handleClickDecrement}
           disabled={min >= value}
@@ -68,7 +68,7 @@ const InputNumber: FC<NcInputNumberProps> = ({
         </button>
         <span className="block flex-1 text-center leading-none select-none">{value}</span>
         <button
-          className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-950/15 bg-white hover:border-zinc-950/20 focus:outline-none disabled:cursor-default dark:border-neutral-500 dark:bg-neutral-900 dark:hover:border-neutral-400"
+          className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-zinc-950/15 bg-white hover:border-zinc-950/20 focus:outline-none disabled:cursor-default dark:border-neutral-500 dark:bg-neutral-900 dark:hover:border-neutral-400"
           type="button"
           onClick={handleClickIncrement}
           disabled={max ? max <= value : false}

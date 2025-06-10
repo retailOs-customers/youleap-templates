@@ -141,7 +141,7 @@ export default function ProductCardQuickView({ product, className, badge }: Prod
           </div>
           {/* Buttons */}
           <div className="mt-auto flex w-full flex-col gap-2">
-            <Button color="dark/zinc" className="w-full cursor-pointer">
+            <Button color="blackwhite" className="w-full cursor-pointer">
               הוספה לסל
             </Button>
             <Button outline className="w-full cursor-pointer" onClick={() => setOpen(true)}>
@@ -170,17 +170,15 @@ export default function ProductCardQuickView({ product, className, badge }: Prod
         </button>
         <div className="relative mx-auto flex w-full max-w-2xl flex-col items-center gap-10 px-6 py-10 md:flex-row md:items-start">
           {/* Product image clickable */}
-          <div
-            className="relative flex h-60 w-44 flex-shrink-0 cursor-pointer flex-col items-center"
-            onClick={handleImageClick}
-            title="לעמוד מוצר"
-          >
+          <div className="relative flex h-60 w-44 flex-shrink-0 flex-col items-center">
             <Image
               src={image1}
               alt={title}
               width={176}
               height={176}
-              className="scale-95 rounded-xl bg-white object-contain transition hover:scale-105"
+              onClick={handleImageClick}
+              title="לעמוד מוצר"
+              className="scale-95 cursor-pointer rounded-xl bg-white object-contain transition hover:scale-105"
               sizes="176px"
             />
             <div className="mt-4 text-center text-zinc-600">₪ 2.90 לק"ג</div>
@@ -223,7 +221,7 @@ export default function ProductCardQuickView({ product, className, badge }: Prod
               </div>
             </div>
             <div className="mt-6 flex w-full flex-col gap-2">
-              <Button color="dark/zinc" className="w-full cursor-pointer">
+              <Button color="blackwhite" className="w-full cursor-pointer">
                 הוספה לסל
               </Button>
             </div>
