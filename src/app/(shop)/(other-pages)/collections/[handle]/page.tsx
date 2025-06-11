@@ -56,7 +56,7 @@ export default async function Collection({ params }: { params: Promise<{ handle:
             <Text className="mt-5 max-w-xl text-white">{collection.description}</Text>
           </div>
 
-          <div className="flex flex-wrap justify-between gap-4">
+          <div className="sticky top-0 z-[999999] flex flex-wrap justify-between gap-4 bg-white py-6">
             <div className="flex gap-2.5">
               <Text className="text-zinc-500">{products.length} products</Text>
               <Text className="text-zinc-300">/</Text>

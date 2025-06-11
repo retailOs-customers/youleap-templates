@@ -67,7 +67,7 @@ const CategoryFilters1 = () => {
         />
       </button>
 
-      <div className="hidden lg:block">
+      <div className="sticky top-0 z-[999999] hidden bg-white py-6 lg:block">
         <form className="divide-y divide-gray-200">
           {filters.map((section) => (
             <div key={section.name} className="py-10 first:pt-0 last:pb-0">

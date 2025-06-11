@@ -56,7 +56,7 @@ export default async function Collection({ params }: { params: Promise<{ handle:
             <Text className="mt-5 max-w-xl">{collection.description}</Text>
           </div>
 
-          <div className="flex justify-between gap-4">
+          <div className="flex justify-between gap-4 pt-6">
             <Text>{products.length} products</Text>
             <ProductSortDropdown align="right" />
           </div>
