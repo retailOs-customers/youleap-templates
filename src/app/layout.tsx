@@ -7,12 +7,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - קונימבו',
-    default: 'קונימבו',
+    template: '%s - RetailOs',
+    default: 'RetailOs',
   },
   description:
-    'קונימבו היא פלטפורמה מתקדמת לבניית חנויות אינטרנט. המערכת מציעה פתרון מודרני, מהיר ונוח לעסקים המעוניינים למכור אונליין – עם דגש על ביצועים, נגישות, ועיצוב ייחודי.',
-  keywords: ['חנויות אינטרנט', 'קונימבו', 'E-commerce', 'מערכת חנות', 'עיצוב רספונסיבי', 'UX', 'מכירות אונליין'],
+    'RetailOS A unified system for managing multi-channel retail networks—across currencies, websites, regions, and languages—with full integration into all your business systems. It delivers a powerful digital presence and a seamless 360° customer experience, all built on the world’s most advanced technology stack.',
+  keywords: ['חנויות אינטרנט', 'RetailOs', 'E-commerce', 'מערכת חנות', 'עיצוב רספונסיבי', 'UX', 'מכירות אונליין'],
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
