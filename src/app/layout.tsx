@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'RetailOs',
   },
   description:
-    'RetailOS A unified system for managing multi-channel retail networks—across currencies, websites, regions, and languages—with full integration into all your business systems. It delivers a powerful digital presence and a seamless 360° customer experience, all built on the world’s most advanced technology stack.',
+    'RetailOs is a unified system for managing multi-channel retail networks—across currencies, websites, regions, and languages—with full integration into all your business systems. It delivers a powerful digital presence and a seamless 360° customer experience, all built on the world’s most advanced technology stack.',
   keywords: ['חנויות אינטרנט', 'RetailOs', 'E-commerce', 'מערכת חנות', 'עיצוב רספונסיבי', 'UX', 'מכירות אונליין'],
 }
 
