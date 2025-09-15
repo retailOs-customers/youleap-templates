@@ -1,4 +1,4 @@
-# Retailos Fashion
+# Youleap Templates
 
 A modern, high-end fashion e-commerce platform built with Next.js, featuring stunning animations and an immersive shopping experience.
 
@@ -32,8 +32,8 @@ A modern, high-end fashion e-commerce platform built with Next.js, featuring stu
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/retailos-fashion.git
-cd retailos-fashion
+git clone https://github.com/retailOs-customers/youleap-templates.git
+cd youleap-templates
 ```
 
 2. Install dependencies:
@@ -65,7 +65,7 @@ yarn dev
 ## Project Structure
 
 ```
-retailos-fashion/
+youleap-template/
 ├── src/
 │   ├── components/     # Reusable UI components
 │   ├── sections/       # Page sections
@@ -90,4 +90,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-Project Link: [https://github.com/your-username/retailos-fashion](https://github.com/your-username/retailos-fashion)
+Project Link: [https://github.com/your-username/youleap-templates](https://github.com/your-username/youleap-templates)
