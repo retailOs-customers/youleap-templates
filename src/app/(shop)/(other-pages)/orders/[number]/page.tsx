@@ -140,9 +140,9 @@ const Page = async ({ params }: { params: Promise<{ number: string }> }) => {
               <div>
                 <dt className="font-medium text-zinc-900">כתובת חשבונית</dt>
                 <dd className="mt-3 text-zinc-500">
-                  <span className="block">איתי RetailOs</span>
-                  <span className="block">כביש הפרדס 12</span>
-                  <span className="block">פתח תקווה, ישראל</span>
+                  <span className="block">Youleap</span>
+                  <span className="block">האופה 2</span>
+                  <span className="block">קדימה-צורן, ישראל</span>
                 </dd>
               </div>
               <div>

@@ -7,12 +7,12 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - RetailOs',
-    default: 'RetailOs',
+    template: '%s - Youleap',
+    default: 'Youleap',
   },
   description:
-    'RetailOs is a unified system for managing multi-channel retail networks—across currencies, websites, regions, and languages—with full integration into all your business systems. It delivers a powerful digital presence and a seamless 360° customer experience, all built on the world’s most advanced technology stack.',
-  keywords: ['חנויות אינטרנט', 'RetailOs', 'E-commerce', 'מערכת חנות', 'עיצוב רספונסיבי', 'UX', 'מכירות אונליין'],
+    'Youleap is a unified system for managing multi-channel retail networks—across currencies, websites, regions, and languages—with full integration into all your business systems. It delivers a powerful digital presence and a seamless 360° customer experience, all built on the world’s most advanced technology stack.',
+  keywords: ['חנויות אינטרנט', 'Youleap', 'E-commerce', 'מערכת חנות', 'עיצוב רספונסיבי', 'UX', 'מכירות אונליין'],
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
