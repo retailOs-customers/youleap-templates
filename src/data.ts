@@ -619,6 +619,110 @@ export async function getProductByHandle(handle: string) {
     }
   }
 
+  // JEWELRY PRODUCT
+  if (handle === 'demo-product-4') {
+    return {
+      id: 'id://Product/6001',
+      title: 'Elegant Necklace',
+      handle: 'demo-product-4',
+      vendor: 'JewelryStore',
+      featured_image: {
+        id: '1',
+        src: '/images/jewelry/jewelry-1.jpeg',
+        alt: 'Elegant Necklace',
+        width: 1200,
+        height: 1800,
+      },
+      images: [
+        {
+          id: '1',
+          src: '/images/jewelry/jewelry-1.jpeg',
+          alt: 'Elegant Necklace',
+          width: 1200,
+          height: 1800,
+        },
+        {
+          id: '2',
+          src: '/images/jewelry/jewelry-2.jpeg',
+          alt: 'Elegant Necklace Detail',
+          width: 1200,
+          height: 1800,
+        },
+      ],
+      descriptionHtml: `<div class="space-y-8">
+            <div>
+              <p>
+                שרשרת אלגנטית ומרשימה, מושלמת לכל אירוע. עשויה מחומרים איכותיים ובעיצוב על-זמני.
+              </p>
+            </div>
+            <div>
+              <p class="mb-3 text-sm text-zinc-500 uppercase">Product Details</p>
+              <ul class="list-inside list-disc *:marker:text-zinc-300">
+                <li>Material: Gold Plated / Silver</li>
+                <li>Length: Adjustable</li>
+                <li>Hypoallergenic</li>
+              </ul>
+            </div>
+          </div>`,
+      description: 'A beautiful necklace suitable for any occasion.',
+      publishedAt: '2025-05-06T10:00:00-04:00',
+      collections: [
+        {
+          id: 'id://Collection/1',
+          handle: 'jewelry',
+          title: 'Jewelry',
+        },
+      ],
+      options: [
+        {
+          name: 'Material',
+          optionValues: [
+            {
+              name: 'Gold',
+              swatch: {
+                color: '#FFD700',
+                image: null,
+              },
+            },
+            {
+              name: 'Silver',
+              swatch: {
+                color: '#C0C0C0',
+                image: null,
+              },
+            },
+          ],
+        },
+      ],
+      selectedOrFirstAvailableVariant: {
+        id: 'variant-60011',
+        selectedOptions: [{ name: 'Material', value: 'Gold' }],
+        price: '₪5000.00',
+        compareAtPrice: null,
+        sku: 'JW-001',
+        available: true,
+        image: {
+          id: 'id://ProductImage/1',
+          url: '/images/jewelry/jewelry-1.jpeg',
+          altText: 'Elegant Necklace',
+          width: 1200,
+          height: 1800,
+        },
+      },
+      price: '₪5000.00',
+      compareAtPrice: null,
+      sku: 'JW-001',
+      unitPrice: null,
+      product: {
+        title: 'Elegant Necklace',
+        handle: 'elegant-necklace',
+      },
+      outstandingFeatures: [],
+      reviewCount: 5,
+      rating: 4.8,
+    }
+  }
+
   // SKINCARE PRODUCT
   return {
     id: 'id://Product/2356',
@@ -3239,7 +3343,7 @@ export async function getFashionGroupCollections() {
 
 // ------------------------ COMMON DEMO DATA ------------------------
 // ------------------------  COMMON DEMO DATA ------------------------
-export async function getGroupCollections(theme: 'fashion' | 'shoe' | 'skincare' | 'drink') {
+export async function getGroupCollections(theme: 'fashion' | 'shoe' | 'skincare' | 'drink' | 'jewelry') {
   if (theme === 'fashion') {
     return getFashionGroupCollections()
   }
@@ -3252,8 +3356,11 @@ export async function getGroupCollections(theme: 'fashion' | 'shoe' | 'skincare'
   if (theme === 'drink') {
     return getDrinkGroupCollections()
   }
+  if (theme === 'jewelry') {
+    return getJewelryGroupCollections()
+  }
 }
-export async function getCollections(theme: 'fashion' | 'shoe' | 'skincare' | 'drink' | 'all') {
+export async function getCollections(theme: 'fashion' | 'shoe' | 'skincare' | 'drink' | 'jewelry' | 'all') {
   if (theme === 'fashion') {
     return await getFashionCollections()
   }
@@ -3266,15 +3373,25 @@ export async function getCollections(theme: 'fashion' | 'shoe' | 'skincare' | 'd
   if (theme === 'drink') {
     return await getDrinkCollections()
   }
+  if (theme === 'jewelry') {
+    return await getJewelryCollections()
+  }
 
   if (theme === 'all') {
     const fashionCollections = getFashionCollections()
     const shoeCollections = getshoeCollections()
     const skincareCollections = getSkincareCollections()
     const drinkCollections = getDrinkCollections()
+    const jewelryCollections = getJewelryCollections()
 
     // use promises.all to get all collections
-    const collections = await Promise.all([fashionCollections, shoeCollections, skincareCollections, drinkCollections])
+    const collections = await Promise.all([
+      fashionCollections,
+      shoeCollections,
+      skincareCollections,
+      drinkCollections,
+      jewelryCollections,
+    ])
     return collections.flat()
   }
 }
@@ -3709,6 +3826,141 @@ export async function getDrinkGroupCollections(): Promise<TDrinkGroupCollection[
       title: 'בירה',
       handle: 'beer',
       description: 'מגוון בירות איכותיות',
+      collections,
+    },
+  ]
+}
+
+// ------------------------ JEWELRY DATA ------------------------
+export async function getJewelryCollections() {
+  return [
+    {
+      id: '1',
+      title: 'Jewelry',
+      handle: 'jewelry',
+      description: 'Elegant jewelry for every occasion.',
+      updatedAt: '2025-05-06T10:00:00-04:00',
+      image: '/images/jewelry/jewelry-1.jpeg',
+      url: '/collections/jewelry',
+      products: [
+        {
+          id: 6001,
+          title: 'Elegant Necklace',
+          handle: 'elegant-necklace',
+          description: 'A beautiful necklace.',
+          published_at: '2025-05-06T10:00:00-04:00',
+          created_at: '2025-05-06T10:00:00-04:00',
+          vendor: 'JewelryStore',
+          type: 'Necklace',
+          tags: ['Jewelry', 'Necklace'],
+          price: 5000,
+          price_min: 5000,
+          price_max: 5000,
+          images: ['/images/jewelry/jewelry-1.jpeg', '/images/jewelry/jewelry-2.jpeg'],
+          featured_image: '/images/jewelry/jewelry-1.jpeg',
+          url: '/products/elegant-necklace',
+          variants: [
+            {
+              id: 60011,
+              title: 'Gold',
+              price: 5000,
+              selectedOptions: [{ name: 'Material', value: 'Gold' }],
+            },
+          ],
+        },
+        {
+          id: 6002,
+          title: 'Shiny Ring',
+          handle: 'shiny-ring',
+          description: 'A shiny ring.',
+          published_at: '2025-05-06T10:00:00-04:00',
+          created_at: '2025-05-06T10:00:00-04:00',
+          vendor: 'JewelryStore',
+          type: 'Ring',
+          tags: ['Jewelry', 'Ring'],
+          price: 3000,
+          price_min: 3000,
+          price_max: 3000,
+          images: ['/images/jewelry/jewelry-2.jpeg', '/images/jewelry/jewelry-3.jpeg'],
+          featured_image: '/images/jewelry/jewelry-2.jpeg',
+          url: '/products/shiny-ring',
+          variants: [
+            {
+              id: 60021,
+              title: 'Silver',
+              price: 3000,
+              selectedOptions: [{ name: 'Material', value: 'Silver' }],
+            },
+          ],
+        },
+        {
+          id: 6003,
+          title: 'Luxury Earrings',
+          handle: 'luxury-earrings',
+          description: 'Luxury earrings.',
+          published_at: '2025-05-06T10:00:00-04:00',
+          created_at: '2025-05-06T10:00:00-04:00',
+          vendor: 'JewelryStore',
+          type: 'Earrings',
+          tags: ['Jewelry', 'Earrings'],
+          price: 4000,
+          price_min: 4000,
+          price_max: 4000,
+          images: ['/images/jewelry/jewelry-3.jpeg', '/images/jewelry/jewelry-4.jpeg'],
+          featured_image: '/images/jewelry/jewelry-3.jpeg',
+          url: '/products/luxury-earrings',
+          variants: [
+            {
+              id: 60031,
+              title: 'Diamond',
+              price: 4000,
+              selectedOptions: [{ name: 'Material', value: 'Diamond' }],
+            },
+          ],
+        },
+        {
+          id: 6004,
+          title: 'Classic Bracelet',
+          handle: 'classic-bracelet',
+          description: 'Classic bracelet.',
+          published_at: '2025-05-06T10:00:00-04:00',
+          created_at: '2025-05-06T10:00:00-04:00',
+          vendor: 'JewelryStore',
+          type: 'Bracelet',
+          tags: ['Jewelry', 'Bracelet'],
+          price: 2500,
+          price_min: 2500,
+          price_max: 2500,
+          images: ['/images/jewelry/jewelry-4.jpeg', '/images/jewelry/jewelry-1.jpeg'],
+          featured_image: '/images/jewelry/jewelry-4.jpeg',
+          url: '/products/classic-bracelet',
+          variants: [
+            {
+              id: 60041,
+              title: 'Gold',
+              price: 2500,
+              selectedOptions: [{ name: 'Material', value: 'Gold' }],
+            },
+          ],
+        },
+      ],
+    },
+  ]
+}
+
+export async function getJewelryGroupCollections() {
+  const collections = await getJewelryCollections()
+  return [
+    {
+      title: 'New Arrivals',
+      handle: 'new-arrivals',
+      description: 'New jewelry arrivals',
+      collections,
+    },
+    {
+      title: 'Best Selling',
+      handle: 'best-selling',
+      description: 'Best selling jewelry',
       collections,
     },
   ]

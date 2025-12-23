@@ -21,7 +21,9 @@ export function ProductForm({ product }: { product: TProductDetail }) {
   const status = 'in stock'
 
   const collection = collections[0]
-  const currentColor = selectedVariant.selectedOptions.filter((option) => option.name === 'Color')?.[0].value
+  const currentColor =
+    selectedVariant.selectedOptions.find((option) => option.name === 'Color')?.value ??
+    selectedVariant.selectedOptions[0]?.value
 
   // NOTE: this for demo ...
   // You need to recalculate according to your data structure and project
