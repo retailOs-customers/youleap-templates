@@ -1,5 +1,5 @@
 import { Logo } from '@/app/logo'
-import { getSkincareCollections } from '@/data'
+import { getJewelryCollections } from '@/data'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { TextLink } from '../text'
@@ -32,9 +32,11 @@ const mega_menus = [
       { name: 'כל הקולקציות 1', href: '/collections/all' },
       { name: 'כל הקולקציות 2', href: '/collections/page-style-2/all' },
       { name: 'עמוד קולקציה', href: '/collections/face-wash' },
+      { name: 'עמוד קולקציה 3', href: '/collections/jewelry' },
       { name: 'פרטי מוצר', href: '/products/demo-product-1' },
       { name: 'פרטי מוצר 2', href: '/products/page-style-2/demo-product-2' },
       { name: 'פרטי מוצר 3', href: '/products/page-style-3/demo-product-3' },
+      { name: 'פרטי מוצר 4', href: '/products/demo-product-4' },
     ],
   },
   {
@@ -68,7 +70,7 @@ interface HeaderProps {
 }
 
 const Header = async ({ className, hasBottomBorder = true, variant = 'default', megamenuVariant }: HeaderProps) => {
-  const collections = await getSkincareCollections()
+  const collections = await getJewelryCollections()
   const featuredCollections = collections.slice(0, 3) // Get 3 collections
 
   return (

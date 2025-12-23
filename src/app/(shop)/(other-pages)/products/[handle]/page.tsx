@@ -31,10 +31,11 @@ export async function generateMetadata({ params }: { params: Promise<{ handle: s
 
 export default async function Product({ params }: { params: Promise<{ handle: string }> }) {
   const { handle } = await params
+  console.log('🚀 ~ page.tsx:34 ~ Product ~ handle:', handle)
 
-  const product = await getProductByHandle('demo-product-1')
+  const product = await getProductByHandle(handle)
   // for demo product. you need to change for the yourself
-  const relatedProducts = (await getCollections('skincare'))?.[0].products
+  const relatedProducts = (await getCollections('jewelry'))?.[0].products
   // for demo product. you need to change for the yourself
   const combineProduct = relatedProducts?.[1]
   const productReviews = await getProductReviews()
