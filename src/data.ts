@@ -644,7 +644,14 @@ export async function getProductByHandle(handle: string) {
         {
           id: '2',
           src: '/images/jewelry/jewelry-5.jpeg',
-          alt: 'Elegant Necklace Detail',
+          alt: 'White Gold Ring',
+          width: 1200,
+          height: 1800,
+        },
+        {
+          id: '3',
+          src: '/images/jewelry/jewelry-6.jpeg',
+          alt: 'Elegant Silver Earrings',
           width: 1200,
           height: 1800,
         },

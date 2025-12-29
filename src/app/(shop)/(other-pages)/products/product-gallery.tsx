@@ -28,6 +28,7 @@ export function ProductGallery({ media, className }: { media: TImage[]; classNam
     setActiveIndex(0)
   }
 
+  console.log('🚀 ~ product-gallery.tsx:31 ~ ProductGallery ~ media:', media)
   if (!media.length) {
     return null
   }
