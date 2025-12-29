@@ -628,7 +628,7 @@ export async function getProductByHandle(handle: string) {
       vendor: 'JewelryStore',
       featured_image: {
         id: '1',
-        src: '/images/jewelry/jewelry-1.jpeg',
+        src: '/images/jewelry/jewelry-7.jpeg',
         alt: 'Elegant Necklace',
         width: 1200,
         height: 1800,
@@ -636,14 +636,14 @@ export async function getProductByHandle(handle: string) {
       images: [
         {
           id: '1',
-          src: '/images/jewelry/jewelry-1.jpeg',
+          src: '/images/jewelry/jewelry-7.jpeg',
           alt: 'Elegant Necklace',
           width: 1200,
           height: 1800,
         },
         {
           id: '2',
-          src: '/images/jewelry/jewelry-2.jpeg',
+          src: '/images/jewelry/jewelry-5.jpeg',
           alt: 'Elegant Necklace Detail',
           width: 1200,
           height: 1800,
@@ -703,7 +703,7 @@ export async function getProductByHandle(handle: string) {
         available: true,
         image: {
           id: 'id://ProductImage/1',
-          url: '/images/jewelry/jewelry-1.jpeg',
+          url: '/images/jewelry/jewelry-7.jpeg',
           altText: 'Elegant Necklace',
           width: 1200,
           height: 1800,
@@ -3840,7 +3840,7 @@ export async function getJewelryCollections() {
       handle: 'jewelry',
       description: 'Elegant jewelry for every occasion.',
       updatedAt: '2025-05-06T10:00:00-04:00',
-      image: '/images/jewelry/jewelry-1.jpeg',
+      image: '/images/jewelry/jewelry-7.jpeg',
       url: '/collections/jewelry',
       products: [
         {
@@ -3856,8 +3856,8 @@ export async function getJewelryCollections() {
           price: 5000,
           price_min: 5000,
           price_max: 5000,
-          images: ['/images/jewelry/jewelry-1.jpeg', '/images/jewelry/jewelry-2.jpeg'],
-          featured_image: '/images/jewelry/jewelry-1.jpeg',
+          images: ['/images/jewelry/jewelry-7.jpeg', '/images/jewelry/jewelry-5.jpeg'],
+          featured_image: '/images/jewelry/jewelry-7.jpeg',
           url: '/products/elegant-necklace',
           variants: [
             {
@@ -3881,8 +3881,8 @@ export async function getJewelryCollections() {
           price: 3000,
           price_min: 3000,
           price_max: 3000,
-          images: ['/images/jewelry/jewelry-2.jpeg', '/images/jewelry/jewelry-3.jpeg'],
-          featured_image: '/images/jewelry/jewelry-2.jpeg',
+          images: ['/images/jewelry/jewelry-5.jpeg', '/images/jewelry/jewelry-6.jpeg'],
+          featured_image: '/images/jewelry/jewelry-5.jpeg',
           url: '/products/shiny-ring',
           variants: [
             {
@@ -3906,8 +3906,8 @@ export async function getJewelryCollections() {
           price: 4000,
           price_min: 4000,
           price_max: 4000,
-          images: ['/images/jewelry/jewelry-3.jpeg', '/images/jewelry/jewelry-4.jpeg'],
-          featured_image: '/images/jewelry/jewelry-3.jpeg',
+          images: ['/images/jewelry/jewelry-6.jpeg', '/images/jewelry/jewelry-7.jpeg'],
+          featured_image: '/images/jewelry/jewelry-6.jpeg',
           url: '/products/luxury-earrings',
           variants: [
             {
@@ -3931,8 +3931,8 @@ export async function getJewelryCollections() {
           price: 2500,
           price_min: 2500,
           price_max: 2500,
-          images: ['/images/jewelry/jewelry-4.jpeg', '/images/jewelry/jewelry-1.jpeg'],
-          featured_image: '/images/jewelry/jewelry-4.jpeg',
+          images: ['/images/jewelry/jewelry-7.jpeg', '/images/jewelry/jewelry-7.jpeg'],
+          featured_image: '/images/jewelry/jewelry-7.jpeg',
           url: '/products/classic-bracelet',
           variants: [
             {
